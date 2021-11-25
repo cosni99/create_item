@@ -1,0 +1,118 @@
+﻿@charset "utf-8";
+
+/* 基本レイアウト ここから↓ */
+@import "common.css";
+
+body{line-height: 1.9;}
+
+header, nav, #breadcrumb, #contents, footer #pagetop{
+	width: 830px; margin: 0 auto;
+	overflow: hidden; 
+}
+header h1{margin: 0; padding: 25px 0;}
+
+nav ul{list-style-type: none; margin: 0 -14px 25px 0; padding-left: 0;
+overflow: hidden;}
+
+#nav_facility a{background-image: url(../images/nav1.png);}
+#nav_admission a{background-image: url(../images/nav2.png);}
+#nav_astronomy a{background-image: url(../images/nav3.png);}
+#nav_contact a{background-image: url(../images/nav4.png);}
+
+nav ul li{width: 197px; margin-right: 14px; float: left;}
+nav ul li a{display: block;overflow: hidden;;padding-top: 50px;
+height: 0;}
+
+#main{width: 568px;float: left;}
+#sub{width: 210px;float: right;}
+footer #pagetop a{display: block;float: right;}
+footer #information_area{clear: both;}
+
+#main h1{margin: 0 0 30px 0; 
+	padding: 8px 0 8px 30px;
+	 background-image: url(../images/h1_top.png), url(../images/h1_bottom.jpg);
+   background-repeat: no-repeat,repeat-x;
+   background-position: left top,left bottom;
+	font-weight: normal; font-size: 1.8em;}
+
+#facility #nav_facility a
+, #admission #nav_admission a
+, #astronomy #nav_astronomy a
+, #contact #nav_contact a
+, nav ul li a:hover{background-position: 0 -50px;}
+
+#sub div{
+	padding-left: 50px;
+}
+/* 基本レイアウト ここまで↑ */
+
+
+
+/* トップページ ここから↓ */
+#news dl {display: flex;	flex-wrap: wrap;}
+#news dt,#news dd{border-top: dotted 1px #ccc;line-height: 3em;} 
+#news dt{padding-right: 1em;color: #2e5ebe;width: 30%;box-sizing: border-box;} 
+#news dt:last-of-type,#news dd:last-of-type{border-bottom: dotted 1px #ccc;} 
+#news dd{margin-left: 0;width: 70%;box-sizing: border-box;} 
+
+
+#contents{
+	display: block;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#main{
+	display: block;
+	float: left;
+	width: 70%;
+}
+
+#sub{
+	display: block;
+	float: left;
+	width: 20%;
+
+}
+/* トップページ ここまで↑ */
+
+
+
+
+/* 「天文台について」ページ ここから↓ */
+	.facility_section{
+		margin-bottom: 20px;
+		overflow: hidden;
+	}
+	.facility_section:last-child{
+		margin-bottom: 0;
+	}
+
+/* 「天文台について」ページ ここまで↑ */
+
+
+
+
+/* 「入館案内」ページ ここから↓ */
+table thead{background-color: #45537e; color: #ffffff; }
+table tbody tr:nth-child(even){background-color: #dadde5;}
+#admission table{border-collapse: collapse; width: 100%;} 
+/* 「入館案内」ページ ここまで↑ */
+
+
+
+
+
+/* 「天文情報」ページ ここから↓ */
+	.lineup_box figure{width: 180px; margin: 0 15px 30px 0; }
+	.lineup_box figure:nth-child(3){margin-right: 0;}
+	.lineup_box { display: flex;} 
+/* 「天文情報」ページ ここまで↑ */
+
+
+
+
+/* 「お問い合わせ」ページ ここから↓ */
+input[required]{width: 250px;background: #fffbee;}
+input:not([type="image"]),select{padding: 7px 5px;	border: solid 1px #ccc;} 
+/* 「お問い合わせ」ページ ここまで↑ */

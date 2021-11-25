@@ -1,0 +1,43 @@
+
+<html>
+  <head>
+<style>
+/* 日曜日の色設定 */
+td.ui-datepicker-week-end:last-child a.ui-state-default{
+  color: #f00!important;       /* 文字色：赤 */
+}
+/* 土曜日の色設定 */
+td.ui-datepicker-week-end a.ui-state-default{
+  color: #00f!important;       /* 文字色：青 */
+}
+
+</style>
+
+    <meta charset="utf-8">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- 日本語化のjs -->
+    <script src=https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  </head>
+  <body>
+    日付を選択
+    <input type="text" id="target">
+  </body>
+</html>
+
+<script>
+  $(function() {
+    $("#target").datepicker({
+      changeMonth: true,
+      duration: 300,
+      showAnim: 'show',
+      firstDay: 1,
+    });
+  });
+
+</script>
+

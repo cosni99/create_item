@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+ 
+ 
+<body> 
+
+  
+<div style="display: flex;">
+  <p>
+    <label>発行日</label><br>
+    <input type="text" id="datepicker_1" >
+  </p>
+
+  <p>
+    <label>お振込期限</label><br>
+    <input type="text" id="datepicker_2" >
+  </p>
+</div>
+
+
+  </main>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<script>
+
+var disableDates = [ "2021/10/20" ,"2021/10/23"];//選択できない特定日
+var dateFormat   = 'yy/mm/dd';
+
+$('#datepicker_1').datepicker({
+      changeMonth: true,
+      duration: 300,
+      showAnim: 'show',
+      firstDay: 1,
+      beforeShowDay : function(date) {
+        var disableDate = jQuery.datepicker.formatDate(dateFormat, date);
+				var gtday  =  date.getDay(); // 曜日(数値)
+				var gtdate  =  date.getDate() ;	// 日
+        console.log(gtday,gtdate);
+        return [( gtday!=1 //月曜なら1火曜なら2日曜なら0
+                  && disableDates.indexOf(disableDate) == -1
+                  && !( Math.floor(( gtdate+6) / 7) ==3 && gtday==1)
+                 ) ];
+        /*return [( gtday!=0 && gtday!=1 
+                  && disableDates.indexOf(disableDate) == -1
+                  && !( Math.floor(( gtdate+6) / 7) ==3 && gtday==1)
+                 ) ];これで日曜と月曜が休み*/
+        
+      }
+    });
+    $('#datepicker_2').datepicker();
+  </script>
+</body>
+</html>
+

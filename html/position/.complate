@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="awesome4/css/font-awesome.min.css">
+<style>
+
+a{text-decoration: none;}
+img { max-width: 100%;}
+
+
+img.attention_ico {
+  position: absolute;
+  z-index: 2;
+}
+article {
+  width: 25%;
+  border: solid 1px #ccc; 
+  box-shadow: 2px 3px 5px #eee;
+}
+i.fa.fa-map-marker
+,.endofday
+{ color: #fb6868;}
+
+.entry-content {
+    padding: 6px;
+}
+
+figure.post-field-image {
+    margin: 0;
+}
+.endofday
+,strong.genre
+{ border: solid 1px; 
+    border-radius: 5px;
+    padding: 0 5px;
+    font-size: .9em;
+ }
+
+i.fa.fa-gift {
+    color: #FFC107;
+}
+
+.tosen_count
+,address.area 
+,h3.tenpo_name
+,strong.genre 
+{
+    color: #888;
+}
+
+h2.entry-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+h3.tenpo_name {
+    margin: 0;  font-size: 1em;
+}
+.tablink {
+    height: 4em;
+    position: relative;
+}
+i.fa.fa-instagram {
+    display: block;
+    font-size: 2em;
+    background: -webkit-gradient(linear, 64% 62%, 64% 22%, from(#FD233B), to(#9E1FFF));
+    color: #fff;
+    width: 30px;
+    border-radius: 6px;
+    padding-left: 1px;
+     position: absolute;
+    right: 0;
+  }
+</style>
+<article>
+		<div class="post-column">
+
+				
+			<figure class="post-field-image">
+				<img src="attention.png" alt="注目キャンペーン" class="attention_ico">			
+				<img src="001-640-304x190.jpg" alt="ランタンポレル 店舗">
+			</figure>
+
+				
+			<div class="entry-content">
+							
+				<header class="entry-header">
+					<strong class="endofday">
+						<i class="fa fa-calendar-check-o" aria-hidden="true"></i> あと 739 日
+					</strong>
+					
+					<i class="fa fa-gift" aria-hidden="true"></i>
+					<strong class="tosen_count">3名 </strong><br>
+				
+				 	<h2 class="entry-title">ワインとひととき写真インスタ投稿キャンペーン</h2>
+				</header>
+
+				 <address class="area">
+				 	<i class="fa fa-map-marker" aria-hidden="true"></i>東京外苑前
+			   </address>
+		    	<h3 class="tenpo_name"> ランタンポレル l’intemporel</h3>
+						
+					<div class="tablink">
+					 	<a href="/?genre=洋食"><strong class="genre">洋食</strong></a>
+					 	<a href="/?genre=フレンチ"><strong class="genre">フレンチ</strong></a>
+					 	<a href="https://www.instagram.com/restaurant_lintemporel/" target="blank">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+					 	</a>				 
+					</div>
+			</div><!-- end .entry-content -->
+			
+	</div>	<!-- end .post-column -->
+</article>

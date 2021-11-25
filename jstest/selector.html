@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="selector.css">
+<h1>みだし1</h1>
+<main>
+ <h2>みだし2</h2>
+  <div>メインのDivだけ</div>
+
+  <article>
+    <h3>みだし3</h3>
+    <div>アーティクルの直下Divだけ
+      <div>アーティクルの孫のDiv</div>
+    </div>
+     <div class="content pr fl m30">contenntクラスあり</div>
+     <div class="main pr"></div>contenntクラスあり</div>
+  </article>
+
+  <section>
+    <div>クラスなし</div>
+    <div class="content fw">contenntクラスあり</div>
+    <p>contentに隣接する兄弟のp</p>
+    <p class="content">contentに隣接しない兄弟のp</p>
+    <div>
+      <small>
+        <input type="number" name="month">月
+        <input type="number" name="day">日
+        <input type="submit" value="送信">
+      </small>
+    </div>
+  </section>
+</main>
+
+<footer class="content pa">
+  <p class="banme2">contentに隣接する兄弟のp<span class="content pr">ここはフッターspan</span></p>
+   <p id="sd">contentに隣接しない兄弟のp
+    <span >ここはフッターid span 1</span>
+    <span id="ftspan" class="banme2">ここはフッターid span 2 </span>
+    <span>ここはフッターid span 3</span></p>   
+</footer>
+
+<script>
+  $('#sd span:nth-of-type(2)').css();
+  $('.banme2').css(); 
+  $('#ftspan').css(); 
+</script>
+  クラスはデザイン､レイアウト目的
+  idは要素を特定する目的

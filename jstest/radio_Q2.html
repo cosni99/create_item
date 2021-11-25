@@ -1,0 +1,43 @@
+<style>label{display:block}</style>
+<form id="radioB">
+ 
+</form>
+<input type="button" value="採点" onclick="saiten()" />
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+<script>
+ var cities = {//連想2次元配列 cities["カナダ"][0]であればオタワが入ってる 
+     "カナダ" : ["オタワ","トロント","モントリオール"],
+     "スイス" : ["ジュネーブ","チューリッヒ","ベルン"],
+     "ドイツ" : ["ハンブルク","ブレーメン","ベルリン"],
+     "スペイン" : ["バルセロナ","マドリード","リスボン"],
+     "オーストラリア" : ["シドニー","メルボルン","キャンベラ"],
+     "デンマーク" : ["どこか","正解","どこか3"]
+ };
+
+ $.each( cities , function(index,e){//2次元配列cities内を繰り返す無名関数 index はkey値 eはkey値の配列
+  console.log(index,e);
+    $('#radioB').append(`<h3>${index}の首都は？</h3>`);//index国をappendする
+    for( let i =0 ; i<3 ; i++){
+      $('#radioB').append(`<label><input type="radio" name=Q${index} value=${e[i]}> ${e[i]} </label>`);
+      //inputタグのnameがkey値になる valueにcities[key値][i]番目の首都がはいるあと表示する文字も
+    }
+ });
+
+function saiten(){
+  var seikai=0; //正解数を入れる変数
+  var goukei=0;
+  var ten=0;
+  //答えの番号を配列に入れる
+  var trueAns = [0,5,8,10,14,16];
+  
+  for (i=0 ; i<trueAns.length ; i++)  {
+     if($('[type="radio"]:eq('+trueAns[i]+'):checked').val())
+      seikai++;
+  }
+  goukei = seikai * (100/trueAns.length)* 100;//*100で小数桁をへらす
+  ten = Math.floor(goukei*0.01);//大きくなった桁を減らして小数点切り捨て
+  alert("あなたは"+ten+"点でした！");
+}
+</script>

@@ -1,0 +1,51 @@
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+<style>
+  .slick-next{
+    right:0!important;
+}
+.slick-prev{
+    left:0!important;
+}
+.slick-arrow{
+    width: initial!important;
+    height: initial!important;
+    z-index:2!important;
+}
+.slick-arrow:before{
+    font-size: 30px!important;
+}
+
+.slider img{
+width: 100%;
+}
+.slider{
+	width:80%;
+  margin:0 auto;
+  text-align: center;
+  }
+  .slick-slide{
+	  height:auto!important;
+  }
+</style>
+
+<div class="slider">   
+  <div><img src="metaslider01.jpg"></div>
+  <div><img src="metaslider05.png"></div>   
+  <div><img src="metaslider03.jpg"></div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+  $('.slider').slick({
+    autoplay:true,
+    autoplaySpeed:2000,
+    dots:true,
+    speed:1500,
+    variableWidth: false,
+    adaptiveHeight: true,
+  });
+
+</script>

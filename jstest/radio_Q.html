@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <meta name="GENERATOR" content="UTF-8 Writer" />
+<title>ラジオボタンによる三択クイズ</title>
+
+<style type="text/css">
+<!--
+
+-->
+</style>
+
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" alink="#ff0000" vlink="#800080"></body>
+<form name="radioB">
+
+
+<script>
+var ctiy = ["オタワ", "トロント", "モントリオール","ジュネーブ","チューリッヒ","ベルン","ハンブルク","ブレーメン","ベルリン","バルセロナ","マドリード","リスボン","シドニー","メルボルン","キャンベラ"];
+var country =["カナダ","スイス","ドイツ","スペイン","オーストラリア"];
+var name=["Q1","Q2","Q3","Q4","Q5"];
+
+
+var q =0;
+for(i=0; i< 5;i++){
+  document.write(country[i] + 'の首都は？<br>');
+  for(a = 0; a<3 ;a++){
+    document.write('<input type="radio" name="'+name[i]+ '">' + ctiy[q]+ '<br>');
+    q++;
+  }
+}
+
+</script>
+
+<input type="button" value="採点" onclick="saiten()" />
+</form>
+
+
+
+<script type="text/javascript">
+<!--
+function saiten(){
+
+  var seikai=0; //正解数を入れる変数
+  
+  //答えの番号を配列に入れる
+  var trueAns = new Array(0,5,8,10,14);
+  
+  //正解のラジオボタンがチェックされているか確認
+  for (i=0 ; i<5 ; i++)
+  {
+    if( document.radioB.elements[trueAns[i]].checked )
+      seikai++;
+  }
+  
+  alert("あなたは"+seikai*20+"点でした！");
+}
+// -->
+
+</script>
+
+
+</body>
+</html>

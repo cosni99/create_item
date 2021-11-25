@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryのテスト</title>
+<script src="http://code.jquery.com/jquery-3.6.0.js"></script>
+
+<script>
+jQuery(function ($) {
+  $("a[href^='#']").click(function() {//#は要素から始まる
+	var myHref= $(this).attr("href");//目的地取得
+	var myPos = $(myHref).offset().top;//目的地の位置取得
+  $(myHref).append("<br>高さは"+myPos);//デバック用高さ表示
+	$("html,body").animate({scrollTop : myPos}, 2000);//アニメーション2000ミリ秒
+	//return false;
+  });
+  function bigFunc() {
+        $(this).animate({width: "500px"});
+        console.log(this.id);
+			}
+	function smallFunc() {
+        $(this).animate({width: "200px"});
+			}
+  $(function () {
+				$("div").hover(bigFunc, smallFunc);
+			});
+});
+</script>
+
+<style>
+  div{height:300px;width:200px;Background:#888}
+</style>
+
+</head>
+<body>
+
+  <a id="myTop">ページの始まり</a><br />
+
+  <a href="#content_1">content_1</a>
+  <a href="#content_2">content_2</a>
+  <a href="#content_3">content_3</a>
+  <a href="#content_4">content_4</a>
+  <a href="#content_5">content_5</a>
+
+  <a href="#test">test</a><br />
+  <div id="content_1">content 1<br /><a href="#myTop">トップへ戻る</a></div>
+  <div id="content_2">content 2<br /><a href="#myTop">トップへ戻る</a></div>
+  <div id="content_3">content 3<br /><a href="#myTop">トップへ戻る</a></div>
+  <div id="content_4">content 4<br /><a href="#myTop">トップへ戻る</a></div>
+  <div id="content_5">content 5<br /><a href="#myTop">トップへ戻る</a></div>
+  <div id="test">test<br /><a href="#myTop">トップへ戻る</a></div>
+  </body>
+</html>

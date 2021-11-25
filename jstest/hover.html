@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-3.6.0.js"></script>
+		<script type="text/javascript">
+			function bigFunc() {
+				$(this).animate({width: "300px"});
+			}
+			function smallFunc() {
+				$(this).animate({width: "100px"});
+			}
+			$(function () {
+				$("div").hover(bigFunc, smallFunc);
+			});
+
+		</script>
+		<style type="text/css">
+		<!--
+			div{
+				width:100px;
+				height:50px;
+				background-color:#F90;
+			}
+		-->
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

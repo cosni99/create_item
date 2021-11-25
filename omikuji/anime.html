@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- CSShake -->
+	<!-- or from surge.sh -->
+	<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+</head>
+<style>
+	.test{
+		height: 100px;
+		width: 100px;
+		position: relative;
+		background-color: blue;
+	}
+	.md{
+		height: 50px;
+		width: 50px;
+		position: absolute;
+		margin: 25px 25px;
+		background-color: red;
+		animation: myAnim 2s ease 0s infinite normal forwards;
+}
+@keyframes myAnim {
+  0%{transform: translate(-100px);}
+  50%{transform: translate(0px);}
+  75%{transform: translate(50px);}
+  100% {transform: translate(100px);}
+}
+
+.ure{
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	animation: myAnim2 2s ease 0s infinite normal forwards;
+}
+@keyframes myAnim2 {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+
+
+</style>
+<body>
+	<div class="test">
+		<div class="md">
+		</div>
+	</div>
+	<div class="ure"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>checkbox</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <label><input type="checkbox" name="cb1">check box off</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="cb2" checked>check box on</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="cb3"
+                <?= rand(0, 100)<50 ? 'checked' : '' ?>
+            >check box randum</label>
+        </li>
+    </ul>
+</body>
+</html>

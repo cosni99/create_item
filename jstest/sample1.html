@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryのテスト</title>
+<script
+src="http://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+jQuery(function ($) {
+
+//メソッドチェーン一つのセレクタに対してつなげて書く
+$("#family").append("<li>三郎</li>").prepend("<li>花子</li>").wrap('<section>');
+
+//配列の中身ををアペンドしていく
+array = ["Apple", "Orange", "Grape"];
+$.each(array, function(index, val) {//each 繰り返し関数
+  $('ul').append("<li>" + index + "：" + val + "</li>");
+});
+
+});
+
+</script>
+</head>
+<body>
+<div id="color_div">ここのDIVの枠線をjQueryで変更します</div>
+<ul id="family">
+  <li>太郎</li>
+  <li>次郎</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<script src="http://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+  jQuery(function ($) {
+
+    var tabeta = false;
+    var hikikae = true;
+    var waribiki = true;
+    var shojikin = 400;
+
+  //ネスト表現
+  if(!tabeta){
+    if(hikikae){
+        if(waribiki){
+            if(shojikin >= 400){
+                //買える処理
+                $('#kekka').append('買える400');
+            }
+        }else{
+          if(shojikin >= 500){
+                //買える処理
+                $("#kekka").append("買える500");
+            }
+        }
+    }else{
+      $("#kekka").append("引換券ないから買えない");
+    }
+
+  }else{
+    $("#kekka").append("食べているから買えない");
+  }
+
+  //if(!tabeta && hikikae && (waribiki && shojikin >= 400)|| shojikin >=500){
+    //$('#kekka').append('買える');
+  //}まとめた式
+});
+</script>
+<p></p>
+<p id="kekka"></p>

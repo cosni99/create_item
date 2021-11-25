@@ -1,0 +1,46 @@
+<form name="chbox">
+  <p>あなたの好きな動物は？（複数可）</p>
+  <input type="checkbox" value="イヌ">イヌ<br>
+  <input type="checkbox" value="ネコ">ネコ<br>
+  <input type="checkbox" value="ウサギ">ウサギ<br>
+  <input type="checkbox" value="ハムスター">ハムスター<br>
+  <input type="checkbox" value="熱帯魚">熱帯魚<br>
+  <input type="checkbox" value="他">この中には無い<br>
+  <input type="button" value="確認" onclick="boxCheck()">
+  </form>
+<script>
+function noch(){
+  //「この中には無い」がチェックされているか確認
+  if( document.chbox.elements[5].checked )
+  {
+    //チェックされていたら、他の項目のチェックを外す
+    for( i=0 ; i<5 ; i++)
+    {
+      document.chbox.elements[i].checked=false;
+    }
+  }
+}
+
+function boxCheck(){
+
+  noch();
+
+  var str="";//初期化
+
+  for(i=0;i<6;i++){
+    if(document.chbox.elements[i].checked){//チェックボックス i 番目のcheckedがあるか
+    
+      if(str != "") str=str+",";//strに文字列が入っていればカンマを後ろに足す処理**このif文は1行で終わっている
+
+      str=str+document.chbox.elements[i].value;//チェックされているValue値をstrに代入
+    }
+  }
+
+if(str==""){
+   alert("どれか選択してください。");
+}else{
+  alert(str+"が選択されました。");
+}
+}
+
+</script>

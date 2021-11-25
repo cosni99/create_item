@@ -1,0 +1,29 @@
+@charset "UTF-8";
+  ul{padding-left: 1em;list-style-type: none;}
+  a { text-decoration: none;}
+
+  #category-posts-3 {
+    background-image: url(dog-limited-90r.png), url(curry-india-004.png);
+    background-repeat: no-repeat;
+    background-position: 174px 48px, top left;
+    padding: 21px 13px 0 22px;
+    margin-left: 9px;
+    width: 265px;
+    height: 320px;
+  }
+
+ .widgettitle {color: #fff;
+    font-size: 1.4em;
+    margin: 0 auto 0 .6em;
+  }
+
+.post-title ,
+.post-title + p{
+  margin: 0 ;color:#fff; font-size: .9em; 
+}
+.cat-post-item img {
+    width: 217px;
+    margin: 0 20px 5px 0;
+    border: #ccc solid;
+    height: 154px;
+  }

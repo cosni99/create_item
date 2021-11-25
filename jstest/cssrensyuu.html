@@ -1,0 +1,26 @@
+<script
+src="http://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+var st = 'https://www.tokyo-solamachi.jp/enjoy/spot/img/img-skytree-spot-02.png';
+var gd = 'https://news.walkerplus.com/article/1007565/10059367_615.jpg';
+jQuery(function ($) {
+$('.meisho:eq(0)').append('<h2>title1</b>');
+$('.meisho:eq(0)').append('<img>');
+$('.meisho:eq(1)').append('<h2>title2</b>');
+$('.meisho:eq(1)').append('<img>');
+$('.meisho:eq(0) img').attr('src', st);
+$('.meisho:eq(1) img').attr('src', gd);
+
+$('.meisho img').width('450');
+});
+</script>
+
+<body>
+  *****http → httpsは読めない
+  
+  meisho にそれぞれ img タグを埋め込んで,src属性に上記の画像を付与しなさい
+ それぞれの画像の横幅を取得してコンソールに出しなさい
+ 画像サイスがどちらも450pxになるように
+ それぞれの画像の前面に適当なタイトル文字を <h2>で表示｡文字色は白に
+</body>
+

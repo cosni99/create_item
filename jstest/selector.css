@@ -1,0 +1,33 @@
+@charset 'utf-8';
+/*みだし(h1,h2,h3)に同時に当たるセレクタを{の前に書け*/
+  h1,h2,h3{color:#49f}
+
+/*main のh2 だけ 子孫セレクタを{の前に書け */
+ main h2{font-weight:100}
+
+/*メインのDivだけ タイプセレクタを{の前に書け*/
+  main div{color:#f94}
+
+/* アーティクルの直下(孫要素以下ではない)Divだけ を{の前に書け*/
+  article > div{color:#94f}
+
+/* footer以外のcontentに 疑似クラス:not(除外) を{の前に書け*/
+  .content:not(footer){letter-spacing: 3px;}
+
+/* contentに隣接する兄弟のpだけ を{の前に書け*/
+  .content + p {border-bottom: solid 1px;}
+
+/*contentがついたpタグだけ を{の前に書け*/
+  p.content{background: #333;color:#fff;}
+
+/*月日の入力BOXを幅2文字分に 属性セレクタ を{の前に書け*/
+ [type="number"] {width: 2em}
+
+/* ここはフッターid span だけにあたるセレクタを{の前に書け
+*/ 
+#sd span{color:#4e7}
+
+ 
+/*content と prを持つタグすべてにあたるセレクタを{の前に書け*/
+.content ,.pr{font-size: .5em}
+ 

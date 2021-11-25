@@ -1,0 +1,61 @@
+コンソールに"次郎"だけだしてください
+<ul>
+  <li><span>太郎</span></li>
+  <li><span>次郎</span></li>
+  <li><span>花子</span></li>
+</ul>
+
+1. ボタンのクリックで選択したセレクトの値をコンソールに表示 <br>
+2. ボタンのクリックで選択したセレクトの文字の方をコンソールに表示
+<form>
+  <select id="myselect" >
+    <option value="">下から選択して下さい</option>
+    <option value="taro">太郎</option>
+    <option value="jiro">次郎</option>
+    <option value="hanako">花子</option>
+  </select>
+  <input type="button" value="valueを取得" id="get_val">
+  <input type="button" value="textを取得" id="get_text">
+</form>
+
+<section class="a">
+  <p>ボタンのクリックで選択したラジオボタンの値をコンソールに表示</p>
+  <input type="radio" name="rdo" value="あ">あ <br>
+  <input type="radio" name="rdo" value="い">い <br>
+  <input type="radio" name="rdo" value="う">う <br>
+  <input type="button" value="valueを取得" id="get_val">
+</section>
+
+<section class="b">
+<p>ボタンのクリックで選択したチェックBOXの値をコンソールに表示</p>
+  <input type="checkbox" name="chk" value="か">か <br>
+  <input type="checkbox" name="chk" value="き">き <br>
+  <input type="checkbox" name="chk" value="く">く <br>
+  <input type="button" value="valueを取得" id="get_val">
+</section>
+
+<script src="http://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+jQuery(function ($) {
+  console.log( $('li:eq(0)').text() ); //太郎
+
+$('#get_val').click(function(){ //セレクトの値
+	console.log( $('#myselect').val() );
+});
+$('#get_text').click(function(){ //文字の方
+  console.log( $('#myselect option:selected').text() );
+});
+
+$('#get_val_rdo').click(function(){ //ラジオ
+  console.log( $('[name="rdo"]:checked').val() );
+});
+
+$('#get_val_chk').click(function(){ //チェック
+	$('[name="chk"]:checked').each(function(i,e){
+   console.log( $(e).val() );
+  });
+});
+
+
+});
+</script>
