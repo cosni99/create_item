@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery余り計算</title>
+</head>
+<body>
+    <!--jQuery使用の商と余り計算-->
+    <div>
+        <h3>商と余り計算</h3>
+    <div>
+        <input type="text" name="val1" value="">
+        ÷
+        <input type="text" name="val2" value="">
+    </div>
+    <button class="button">計算</button>
+    </div>
+    <div class="wari"></div>
+    <div class="amari"></div>
+    <script src="http://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+
+jQuery(function ($) {
+
+    $('.button').click( function(){
+        var v1 = parseInt($('input[name="val1"]').val());//取得時は文字列なので整数に
+        var v2 = parseInt($('input[name="val2"]').val());//取得時は文字列なので整数に
+        var v4 = Math.floor(v1 / v2);//整数のみ取出し
+        var v3 = v1 % v2;
+        $('.wari').text('商:'+v4);
+        $('.amari').text('余り:'+v3);
+    });
+});
+
+</script>
+</body>
+
+</html>
