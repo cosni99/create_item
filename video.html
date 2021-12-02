@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  @charset "utf-8";
+
+/*========= 背景動画設定のCSS ===============*/
+
+/*header設定*/
+#header{
+    position: relative;/*h1の中央寄せ配置の起点とするためのrelative*/
+    height: 100vh;/*高さを全画面にあわせる*/
+} 
+
+#video-area{
+    position: fixed;
+    z-index: -1;/*最背面に設定*/
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+}
+
+#video {
+    /*天地中央配置*/
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*縦横幅指定*/
+    width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+    height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/*見出し設定*/
+h1{
+    /*要素の配置*/
+    position:absolute;
+    /*要素を天地中央寄せ*/
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    /*見た目の調整*/
+    color:#fff;
+    text-shadow: 0 0 15px #666;
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+#container{
+  background:#fff;
+  padding:300px 0;
+  text-align: center;
+}
+</style>
+<body>
+  <header id="header">
+    <h1>Title</h1>
+      <div id="video-area">
+    <video id="video" poster="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-3-1/img/movie.jpg" webkit-playsinline playsinline muted autoplay loop>
+      <!--
+          poster：動画ファイルが利用できない環境で代替表示される画像
+          webkit-playsinline：iOS 9までのSafari用インライン再生指定
+          playsinline：iOS 10以降のSafari用インライン再生指定
+          muted：音声をミュートさせる
+          autoplay：動画を自動再生させる
+          loop：動画をループさせる
+          controls：コントロールバーを表示する
+      -->
+    <source src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-3-1/video/movie.mp4" type="video/mp4">
+    <source src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-3-1/video/movie.ogv" type="video/ogv">
+    <source src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-3-1/video/movie.webm" type="video/webm">
+    <p>動画を再生できる環境ではありません。</p>
+    </video>
+      <!--/video-area--></div>
+  </header>
+  <div id="container">
+  <p>ここにコンテンツが入ります</p>  
+  <!--/container--></div> 
+</body>
+</html>

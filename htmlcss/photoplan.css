@@ -1,0 +1,216 @@
+body * {
+  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", "Sawarabi Mincho", serif;
+}
+
+.container.wrap {
+  max-width: 980px;
+}
+
+.mb23 {
+  margin-bottom: 23px;
+}
+
+.tc {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+dd,
+dt,
+p {
+  letter-spacing: 0.8px;
+  line-height: 1.6;
+}
+
+.sec1,
+.sec2,
+.sec3,
+.sec4,
+.sec5,
+.sec6 {
+  margin-top: 120px;
+}
+
+.mb2 {
+  margin-bottom: 2px;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+.bd-tb {
+  border-top: 1px solid #a5911f;
+  border-bottom: 1px solid #a5911f;
+  font-size: 2em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.jsa {
+  justify-content: space-around;
+}
+
+.pr {
+  position: relative;
+}
+
+.balloon3 {
+  position: absolute;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 0 5px;
+  width: 166px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #FFF;
+  font-size: 1em;
+  font-weight: bold;
+  background: #ff7070;
+  border-radius: 50%;
+  box-sizing: border-box;
+  right: -18px;
+  top: 30px;
+}
+
+.balloon3:before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #ff7070;
+  z-index: 0;
+}
+
+.dt-bt {
+  background: #aea27f;
+  margin: 1em 0;
+  padding: 0.3em;
+  text-align: center;
+  color: #fff;
+}
+
+.dt-bt a {
+  display: block;
+  border: solid 1px;
+  color: #fff;
+  padding: 0.2em;
+}
+
+.mt120 {
+  margin-top: 120px !important;
+}
+
+.time-line {
+  padding-left: 44px;
+  box-sizing: border-box;
+  border-left: 5px solid;
+}
+
+.time-line {
+  padding-left: 44px;
+  box-sizing: border-box;
+  border-left: 5px solid;
+}
+
+.time-lineb {
+  border-bottom: 2px solid;
+  margin-left: -1em;
+  padding-left: 2em;
+  padding-bottom: 0.5em;
+}
+
+time.pa {
+  display: block;
+  width: 2.4em;
+  height: 2.4em;
+  background: #111;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 2.2em;
+  padding: 13px 5px 0;
+  box-sizing: border-box;
+  position: absolute;
+  left: -42px;
+}
+
+.mb90 {
+  margin-top: 90px;
+}
+
+.mt170 {
+  margin-top: 100px;
+}
+
+.star {
+  text-align: center;
+  display: inline-block;
+  border-bottom: 2px dotted #e5004f;
+  padding-bottom: 10px;
+  margin-bottom: 1em;
+}
+
+.red {
+  color: hsl(0deg 85% 70%);
+}
+ul{list-style-type: none;}
+table.red,
+.red td,
+.red th {
+  border: 2px solid #f1c5c5;
+}
+
+th {
+  padding: 0.5em;
+}
+table {
+  width: 100%;
+  box-sizing: border-box;
+}
+table,
+td,
+th {
+  border: 3px solid #dedede;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.ml15 {
+  margin-left: 0.5em;
+}
+
+.mr15 {
+  margin-right: 1em;
+}
+
+.brs {
+  max-width: 250px;
+  border-radius: 8px;
+  margin-right: 24px;
+}
+
+.tar {
+  display: block;
+  text-align: right;
+}
+
+.mb90 {
+  margin-top: 90px;
+}
+.mt30 {
+margin-top: 30px;
+}
+.mainVisual {
+width: 100%;
+margin: 0;
+position: relative;
+}
+.fl-l{float: left;}

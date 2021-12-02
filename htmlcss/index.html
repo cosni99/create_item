@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+</head>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+  <!-- この中に貼る↓ -->
+<style>
+table {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+.tc{text-align: center;}
+
+.bd-tb{
+	border-top: solid 1px;
+	border-bottom: solid 1px;
+}
+
+.balloon3 {
+  position: absolute;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 0 5px;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #FFF;
+  font-size: 1em;
+  font-weight: bold;
+  background: #ff7070;
+  border-radius: 50%;
+  box-sizing: border-box;
+  right: -18px;
+  top: 30px;
+}
+
+.balloon3:before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #ff7070;
+  z-index: 0;
+}
+
+.pr{
+  position: relative;
+}
+
+.sec1,.sec3,.sec4,.sec5{
+  margin-top: 100px;
+}
+.jsa{
+  justify-content: space-around;
+}
+
+h4{
+  margin-top: 20px;
+}
+
+.bd-tb {
+  border-top: 1px solid #a5911f;
+  border-bottom: 1px solid #a5911f;
+  font-size: 2em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+a{
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  display: block;
+  border: solid 1px red;
+}
+
+.dt-bt {
+  background: black;
+  margin: 5px 0;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.time-line {
+  border-left: solid 1px;
+  padding-left: 44px;
+  box-sizing: border-box;
+}
+.time-lineb{
+  border-bottom: solid 2px;
+}
+.mt120{
+  margin-top: 120px;
+}
+.mt170{
+  margin-top: 170px;
+}
+
+time.pa{
+  display: block;
+  padding: 15px 12px 0;
+  width: 60px;
+  height: 60px;
+  background: black;
+  border-radius: 50%;
+  color: white;
+  box-sizing: border-box;
+  position: absolute;
+  left: -32px;
+}
+
+.mb90{
+  margin-top: 90px;
+}
+
+.red{
+  color: red;
+} 
+
+.star{
+  border-bottom: dotted 1px red;
+  display: inline-block;
+}
+
+li{
+  list-style: none;
+}
+
+.fl-l{
+  float: left;
+}
+
+.mr15{
+  margin-right: 15px;
+}
+
+table.red,
+.red td,
+.red th {
+  border: 2px solid #f1c5c5;
+}
+
+td,th{
+  text-align: center;
+}
+
+.brs{
+  border-radius: 10%;
+}
+
+</style>
+
+<body>
+  <div class="mainVisual ">
+    <img class="img-fluid" src="photoplan/slider-1.jpeg" alt="">
+  </div>
+  
+  <div class="contentBlock-w9 container-fluid">
+
+    <div class="mt-4">
+      <div class="container wrap">
+
+        <h1 class="tc mb23">リゾート感溢れるロケーションで<br>非日常を感じる写真を残しませんか?</h1>
+        <p class="top-catche tc wbs">
+          スタジオでは撮れない特別なロケーション で記念に残る撮影を是非お楽しみください。<br>マタニティフォト、バースデーフォト、
+          七五三前撮り、成人式前撮り、
+          どれも大切な家族の記念日です。<br>その大切な日にお撮りしたお写真を一生の宝物に。</p>
+        <div class="row sec1">
+
+          <div class="col-12 col-md-4">
+            <p class="tc mb2">リゾート感溢れるロケーションで<br>最高の１枚を♪</p>
+            <figure><img src="photoplan/risortkan-2.jpeg" alt=""></figure>
+          </div>
+          <div class="col-12 col-md-4">
+            <p class="tc mb2">専属プロカメラマンによる<br>写真撮影♪</p>
+            <figure><img src="photoplan/sec1-2.jpeg" alt=""></figure>
+          </div>
+          <div class="col-12 col-md-4">
+            <p class="tc mb2">２名様分のランチコースも含まれた<br>贅沢なプラン♪</p>
+            <figure><img src="photoplan/2meisama-2.jpeg" alt=""></figure>
+          </div>
+
+        </div>
+
+
+
+
+        <section class="sec3">
+
+          <h2 class="bd-tb tc">PHOTO PLAN</h2>
+          <article class="row jsa dfg">
+            <div class="col-md-5 col-6">
+              <h4 class="tc">気軽にカメラマンお任せ<br>3ポーズプラン</h4>
+              <figure><img src="photoplan/sec3-1.jpeg" alt=""></figure>
+              <p class="dt-bt"><a href="/omakase-standard">詳細はこちら</a></p>
+            </div>
+            <div class="col-md-5 col-6 pr">
+              <strong class="pa balloon3">カメラマンのお勧め♪</strong>
+              <h4 class="tc">こだわりリクエスト叶えます<br>6ポーズプラン</h4>
+              <figure><img src="photoplan/sec3-2.jpeg" alt=""></figure>
+              <p class="dt-bt"><a href="/photo-plan-kodararispesial">詳細はこちら</a></p>
+            </div>
+          </article>
+        </section>
+
+
+
+        <section class="sec4">
+          <h2 class="bd-tb tc">当日のスケジュール <br><small class="wbs">マタニティフォト 3ポーズプラン
+              ヘアメイクご予約の場合</small> </h2>
+          <p class="tc">ご来館時間はプラン内容により異なりますので事前にお問い合わせください。</p>
+
+          <article class="row jsa">
+            <div class="col-md-5 col-6">
+              <h5 class="mt120">美容室にてブライダルメイクスタッフによるヘアメイク(約60分)</h5>
+              <figure><img src="photoplan/biyoushitsu.jpeg" alt=""></figure>
+              <figure class="mt170"><img src="photoplan/toujitsu.jpeg" alt=""></figure>
+            </div>
+
+            <div class="col-6 time-line pr">
+              <aside>
+                <time class="pa"><b>11</b><small>:00</small></time>
+                <h5 class="time-lineb">アルタビスタガーデンへご来館</h5>
+                <figure>
+                  <img src="photoplan/tojitu-altagaikan.jpeg" alt="">
+                </figure>
+              </aside>
+
+              <aside class="mb90">
+                <time class="pa"><b>12</b><small>:00</small></time>
+                <h5 class="time-lineb">撮影開始☆<br>撮影時間 約20分 <br>(6ポーズプランは約45分)</h5>
+                <figure>
+                  <img src="photoplan/sec4-3.jpeg" alt="">
+                </figure>
+              </aside>
+
+              <aside class="mb90">
+                <time class="pa"><b>12</b><small>:30</small></time>
+                <h5 class="time-lineb">お支度後、レストランでお食事♪</h5>
+              </aside>
+            </div>
+          </article>
+
+
+          <article class="mt120">
+            <h5 class="red star"><i class="far fa-star"></i> 2名様分のアルタビスタランチコースがプラン内に含まれています <i class="far fa-star"></i>
+            </h5>
+            <div class="row sp-fl">
+
+              <div class="">
+                <img class="col-5 fl-l mr15" src="photoplan/sec4-4.jpeg" alt="集合ランチ">
+                <ul class="menu2 ">
+                  <li>アンティパストミスト</li>
+                  <li>本日のスープ</li>
+                  <li>季節のおすすめパスタ</li>
+                  <li>2種類のメインよりいづれか一品をチョイス
+                    <ul>
+                      <li>本日のお魚料理</li>
+                      <li>本日のお肉料理</li>
+                    </ul>
+                  </li>
+                  <li>デザートワゴンより 　3種チョイス</li>
+                  <li>EXVオリーブオイルとブレット</li>
+                  <li>コーヒー 又は　狭山紅茶</li>
+                </ul>
+                <p class="red fz13">旬の食材をふんだんに使い、オーガニックでボリューム満点なランチタイムをお過ごしください</p>
+              </div>
+            </div>
+          </article>
+        </section>
+
+
+
+        <section class="sec5">
+          <h2 class="bd-tb tc">料金のご案内</h2>
+          <p class="tc">プランの中に、２名分のランチコース、撮影代、データ納品代が含まれています</p>
+          <table class="red">
+            <thead class="thead-light tc">
+              <tr>
+                <th>プラン</th>
+                <th>料金</th>
+                <th>カット数</th>
+                <th>撮影時間</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>カメラマンおすすめ♪<br>
+                  こだわりリクエストの<br>
+                  6ポーズプラン
+                </td>
+                <td><s>¥66,280</s>
+                  <div>↓</div>¥57,600<br>
+                </td>
+                <td>約50カット</td>
+                <td>約45分</td>
+              </tr>
+              <tr>
+                <td>気軽にカメラマンお任せ<br>
+                  3ポーズプラン<br>
+                </td>
+                <td>¥36,000</td>
+                <td>約15カット</td>
+                <td>約20分</td>
+              </tr>
+            </tbody>
+          </table>
+          <span>※税込価格</span>
+          <br><span>※メンバーの方はさらに20%割引あり､お気軽にお問い合わせください。</span>
+        </section>
+
+
+
+        <section class="sec5">
+          <h2 class="bd-tb tc">オプション料金のご案内</h2>
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <h5 class="ml15 red star">マタニティフォト</h5>
+            </div>
+            <figure class="col-4 col-md-4"><img class="brs" src="photoplan/sec5-1.jpeg" alt=""></figure>
+
+            <div class="col4 col-8 col-md-5">
+              <table>
+                <tbody>
+                  <tr class="bdn">
+                    <td>ヘアメイクセット</td>
+                    <td>¥6,600-</td>
+                  </tr>
+                  <tr>
+                    <td>花かんむり</td>
+                    <td>¥1,100-</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">☆ヘアメイク注文の方は無料</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="red tar">税込価格</span>
+            </div>
+
+          </div>
+
+          <div class="row  mb90">
+            <div class="col-12 col-md-3">
+              <h5 class="ml15 red star">七五三前撮り</h5>
+            </div>
+            <figure class="col-4 col-md-4"><img class="brs" src="photoplan/sec5-2.jpeg" alt=""><img class="brs mt30"
+                src="photoplan/sec5-3.jpeg" alt=""></figure>
+            <div class="col4 col-8 col-md-5">
+              <table class="">
+                <tbody>
+                  <tr>
+                    <td>３歳着付け</td>
+                    <td>¥5,500-</td>
+                  </tr>
+                  <tr>
+                    <td>５歳着付け</td>
+                    <td>¥8,800-</td>
+                  </tr>
+                  <tr>
+                    <td>７歳着付け</td>
+                    <td>¥13,200-</td>
+                  </tr>
+                  <tr>
+                    <td>お子様ヘアセット</td>
+                    <td>¥3,300-</td>
+                  </tr>
+                  <tr>
+                    <td>お子様メイク</td>
+                    <td>¥4,950-</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="mt30">
+                <tbody>
+                  <tr>
+                    <td>大人着付け</td>
+                    <td>¥8,800-</td>
+                  </tr>
+                  <tr>
+                    <td>紋服着付け</td>
+                    <td>¥11,000-</td>
+                  </tr>
+                  <tr>
+                    <td>大人ヘアセット</td>
+                    <td>¥5,500-</td>
+                  </tr>
+                  <tr>
+                    <td>大人メイク</td>
+                    <td>¥4,950-</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="red tar">税込価格</span>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+      <!--container-->
+
+
+
+
+
+    </div>
+  </div>
+
+</body>
+
+</html>

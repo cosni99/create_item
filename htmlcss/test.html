@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<style>
+.balloon3 {
+  position: absolute;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 0 5px;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  color: #FFF;
+  background: #ff7070;
+  border-radius: 50%;
+  box-sizing: border-box;
+  left: 100px;
+  top: 30px;
+}
+
+.balloon3:before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #ff7070;
+  z-index: 0;
+}
+
+.pr{
+	position: relative;
+}
+</style>
+<body>
+
+<div class="pr">
+  <div>
+	<img src="photoplan/sec3-1.jpeg"></div>
+	<div class="balloon3">
+  POINT
+	</div>
+</div>
+
+</body>
+</html>
