@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQLインサート文作成</title>
+</head>
+<body>
+	クォーテーション除去数字変換
+	<br>変換前
+    <textarea id="txtInput" rows="10"></textarea><br>
+    <input type="button" value="INSERT文を生成" onclick="func()"><br>
+	変換後
+    <textarea id="StrTitle" rows="10" style="background-color:#DDFFDD" onclick="this.focus(); this.select()"></textarea>
+</body>
+<script>
+
+	function func() {
+
+		let nama = document.getElementById('txtInput').value;	//入力データ		
+		var strInputData = nama.replace(/\"/g,'').replace(/\'/g,''); //入力データのクォーテーションを取る
+		var strSeparator = '\n';										//改行
+		var arrString1 = strInputData.split(strSeparator);				//改行でスプリット
+		var lngCnt = arrString1.length;									//改行の数
+		var strHeader = '';												//固定部分の書き出しデータ
+		var strFooter = '';												//可変部分の書き出しデータ						
+		
+		//改行のぶんループ
+		for (var i = 0; i < lngCnt; i++) {
+		
+			//1行目はテーブル名
+			if(i == 0){				
+				strHeader = 'INSERT INTO ' + arrString1[0] + '(';
+			}
+			
+			//2行目は列名
+			if(i == 1){
+				var strSeparator = ',';
+				var arrString2 = arrString1[1].split(strSeparator);			
+			
+				arrString2.forEach(function(strSplitData2){
+					strHeader +=  strSplitData2 + ',';
+				});	
+				
+				strHeader = strHeader.substr(0,	strHeader.length -1);	//一番後ろのカンマを取る
+				strHeader = strHeader + ') ';														
+			}			
+			
+			//3行目以降はデータ
+			if(i > 1){						
+				
+				
+				var strSeparator = ',';
+				var arrString2 = arrString1[i].split(strSeparator);		
+				
+				//データがない場合は生成しない	
+				if(arrString2 != ''){		
+				
+					strFooter += strHeader + 'VALUES(';
+			
+					arrString2.forEach(function(strSplitData2){
+						if (isNaN(strSplitData2)) {
+    						strFooter +=  '\'' + strSplitData2 + '\',';//文字ならクォーテーションと前後に
+  						}else{
+							strFooter +=  strSplitData2 + ',';
+						}
+					});		
+					
+					strFooter = strFooter.substr(0,	strFooter.length -1);	//一番後ろのカンマを取る				
+					strFooter += ');' + '\n' ;		
+				}	
+			}			
+		}
+		
+		if(!strFooter){
+			strFooter =	'テーブル名、列名またはインサートデータがありません。'	
+		}
+		
+		
+		//処理結果をテキストボックスに書き出す
+		document.getElementById('StrTitle').value = strFooter;			
+	}
+	
+</script>
+</html>
