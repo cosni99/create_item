@@ -1,0 +1,61 @@
+﻿@charset "utf-8";
+
+header, nav, #main_img, #contents, footer #footer_box {
+	width: 450px;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+}
+#main_img {
+	height: 193px;
+	padding-top: 10px;
+}
+#main_img ul li img {
+	width: 450px;
+}
+#main {
+	width: auto;
+	float: none;
+}
+nav ul li#nav_concept,
+nav ul li#nav_shop,
+nav ul li#nav_fish,
+nav ul li#nav_contact {
+	width: 219px;
+	margin: 1px;
+	border: 2px solid #26b6d5;
+}
+nav ul li#nav_concept a,
+nav ul li#nav_shop a,
+nav ul li#nav_fish a,
+nav ul li#nav_contact a {
+	min-height: 15px;
+	margin-bottom: 0;
+	padding: 15px 0 15px 0;
+	background-image: none;
+	color: #26b6d5;
+	text-align: center;
+	text-decoration: none;
+}
+nav ul li#nav_concept a:hover,
+nav ul li#nav_shop a:hover,
+nav ul li#nav_fish a:hover,
+nav ul li#nav_contact a:hover {
+	background-color: #b8e8f2;
+}
+#news ul li {
+	padding: 10px 0 10px 0;
+	text-indent: 0;
+}
+#news ul li time {
+	display: block;
+	width: auto;
+	margin-bottom: 5px;
+}
+#sub {
+	margin-top: 50px;
+	margin-left: 10px;
+	float: none;
+}

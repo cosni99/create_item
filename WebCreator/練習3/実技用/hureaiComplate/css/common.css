@@ -1,0 +1,170 @@
+﻿@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 87.5%;
+	line-height: 1.5;
+}
+p {
+	margin: 0 0 20px 0;
+}
+img {
+	border: 0;
+	vertical-align: bottom;
+}
+a {
+	color: #333333;
+}
+a:hover {
+	color: #ff0000;
+}
+header h1 {
+	margin: 0 0 25px 0;
+	padding-top: 25px;
+}
+header h1 a {
+	display: inline-block;
+}
+#breadcrumb ul {
+	list-style-type: none;
+	margin-bottom: 20px;
+	padding: 0;
+}
+#breadcrumb ul li {
+	display: inline;
+	margin-right: 5px;
+}
+#breadcrumb ul li a {
+	padding-right: 15px;
+}
+#contents {
+	overflow: hidden;
+}
+.sub_area {
+	margin-bottom: 15px;
+}
+.sub_area dt img {
+	margin-bottom: 6px;
+}
+.sub_area a {
+	color:#329900;
+	text-decoration: none;
+	font-weight: bold;
+}
+.sub_area dl, .sub_area dt, .sub_area dd, .sub_area p {
+	margin: 0;
+}
+footer {
+	margin-top: 50px;
+}
+footer #pagetop {
+	margin-bottom: 0;
+}
+footer #pagetop a {
+	min-height: 16px;
+	padding: 6px 0 6px 18px;
+	background-image: url(../images/pagetop_left.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+footer #information_area {
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+footer address {
+	padding-top: 15px;
+	font-style: normal;
+}
+footer #copyright {
+	margin-bottom: 15px;
+}
+footer #copyright small {
+	font-size: 100%;
+}
+#main h2 {
+	margin-top: 0;
+	margin-bottom: 5px;
+	padding: 0 0 10px 24px;
+	background-image: url(../images/h2_left.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	font-size: 143.75%;
+}
+#graphic_area {
+	width: 840px;
+	height: 360px;
+	margin: 0 auto 30px auto;
+}
+#graphic_area ul {
+	list-style: none;
+	padding-left: 0;
+}
+#graphic_area ul li {
+	display: none;
+	position: absolute;
+}
+#graphic_area ul li.now {
+	display: block;
+}
+#announce_area ul li time {
+	display: inline-block;
+	width: 10.9em;
+	color: #339900;
+	font-weight: bold;
+	text-indent: 0;
+}
+.about_area p:last-child {
+	margin-bottom: 0;
+}
+.image_left {
+	margin: 0 25px 15px 0;
+	float: left;
+}
+.image_right {
+	margin: 0 0 15px 25px;
+	float: right;
+}
+table {
+	width: 568px;
+	border-collapse: collapse;
+}
+table caption {
+	overflow: hidden;
+	text-align: left;
+}
+table caption p {
+	margin-bottom: 30px;
+}
+table th, table td {
+	padding: 15px;
+	border: 1px solid #6c5f45;
+	font-weight: normal;
+}
+table thead th:nth-child(2), table tbody td {
+	width: 140px;
+}
+table tbody td {
+	text-align: right;
+}
+.image_area {
+	overflow: hidden;
+}
+.image_area:first-of-type {
+	margin-top: 30px;
+}
+form p:nth-last-child(2) {
+	margin-bottom: 7px;
+}
+form p:last-child {
+	margin-bottom: 0;
+}
+input, textarea {
+	margin-top: 7px;
+}
+textarea {
+	width: 400px;
+	height: 130px;
+	overflow: scroll;
+}

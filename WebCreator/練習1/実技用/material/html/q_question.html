@@ -1,0 +1,1904 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>実技問題</title>
+<link rel="stylesheet" href="../common/q_common.css">
+</head>
+
+<body id="question">
+<header id="header_q">
+	<h1>Webクリエイター能力認定試験 エキスパート <br>
+		Eパターン（HTML5）実技問題</h1>
+	<nav>
+		<ul id="menu_extra" class="clearfix">
+			<li id="menu_img"><span><span>▼</span>仕上り見本</span>
+				<ul>
+					<li><a href="d_region.html" target="img">各領域の名称</a></li>
+					<li><a href="d_design0.html" target="img">基本ページ</a></li>
+					<li><a href="d_design1.html" target="img">トップページ</a></li>
+					<li><a href="d_responsive.html" target="img">トップページ（レスポンシブWebデザイン）</a></li>
+					<li><a href="d_design2.html" target="img">「天文台について」ページ</a></li>
+					<li><a href="d_design3.html" target="img">「入館案内」ページ</a></li>
+					<li><a href="d_design4.html" target="img">「天文情報」ページ</a></li>
+					<li><a href="d_design5.html" target="img">「お問い合わせ」ページ</a></li>
+				</ul>
+			</li>
+			<li id="menu_reference"><span><span>▼</span>受験者用リファレンス</span>
+				<ul>
+					<li><a href="r_refhtml.html" target="reference">HTML編</a></li>
+					<li><a href="r_refcss.html" target="reference">CSS編</a></li>
+				</ul>
+			</li>
+			<li id="menu_note"><a href="q_note_ex.html" target="note">注意事項</a></li>
+		</ul>
+	</nav>
+	<nav>
+		<ul id="menu_question_chapter" class="clearfix">
+			<li><a href="#q_constitution" id="q_anchor_constitution">Webサイトの概要・仕様</a></li>
+			<li><a href="#q01" id="q_anchor01">問題</a></li>
+			<li><a href="#q02" id="q_anchor02">問題</a></li>
+			<li><a href="#q03" id="q_anchor03">問題</a></li>
+			<li><a href="#q04" id="q_anchor04">問題</a></li>
+			<li><a href="#q05" id="q_anchor05">問題</a></li>
+			<li><a href="#q06" id="q_anchor06">問題</a></li>
+			<li><a href="#q_area" id="q_anchor_all">すべて</a></li>
+		</ul>
+	</nav>
+	<nav id="menu_question_section">
+		<ul id="q01_link" class="clearfix section_number">
+			<li><a href="#q01_01">(</a></li>
+			<li><a href="#q01_02">(</a></li>
+			<li><a href="#q01_03">(</a></li>
+			<li><a href="#q01_04">(</a></li>
+			<li><a href="#q01_05">(</a></li>
+		</ul>
+		<ul id="q02_link" class="clearfix section_number">
+			<li><a href="#q02_01">(</a></li>
+			<li><a href="#q02_02">(</a></li>
+			<li><a href="#q02_03">(</a></li>
+			<li><a href="#q02_04">(</a></li>
+			<li><a href="#q02_05">(</a></li>
+		</ul>
+		<ul id="q03_link" class="clearfix section_number">
+			<li><a href="#q03_01">(</a></li>
+			<li><a href="#q03_02">(</a></li>
+		</ul>
+		<ul id="q04_link" class="clearfix section_number">
+			<li><a href="#q04_01">(</a></li>
+			<li><a href="#q04_02">(</a></li>
+			<li><a href="#q04_03">(</a></li>
+		</ul>
+		<ul id="q05_link" class="clearfix section_number">
+			<li><a href="#q05_01">(</a></li>
+			<li><a href="#q05_02">(</a></li>
+			<li><a href="#q05_03">(</a></li>
+		</ul>
+		<ul id="q06_link" class="clearfix section_number">
+			<li><a href="#q06_01">(</a></li>
+			<li><a href="#q06_02">(</a></li>
+			<li><a href="#q06_03">(</a></li>
+		</ul>
+	</nav>
+</header>
+<div id="q_area">
+	<article id="q_constitution">
+		<h2><span>Webサイトの概要・仕様</span></h2>
+		<p class="q_lead">以下の「テーマ」「ページ構成」「フォルダーおよびファイル構成」「仕様」に従い、Webサイトを完成させなさい。</p>
+		<section id="q00_01">
+			<h3><span>テーマ</span></h3>
+			<div class="inner">
+				<ul class="list">
+					<li>「月丘天文台」のWebサイトである。</li>
+					<li>トップページには、スライドショーとお知らせを掲載する。</li>
+					<li>「天文台について」ページでは、天文台の説明や設備の見どころを掲載する。</li>
+					<li>「入館案内」ページでは、入館の際に必要な料金を一覧表で掲載する。</li>
+					<li>「天文情報」ページでは、今月の空に見える星座を掲載する。</li>
+					<li>「お問い合わせ」ページでは、館内に関するお問い合わせフォームを設置する。</li>
+				</ul>
+			</div>
+		</section>
+		<section id="q00_02">
+			<h3><span>ページ構成</span></h3>
+			<div class="inner">
+				<p>下図の通りのページ構成とし、トップページと各ページは相互にリンクさせること。</p>
+				<p><img src="../img/sitemap.png" alt=""></p>
+			</div>
+		</section>
+		<section id="q00_03">
+			<h3><span>フォルダーおよびファイル構成</span></h3>
+			<div class="inner">
+				<ul class="list">
+					<li>「site」フォルダー内に必要なファイルを作成・修正し、Webサイトを完成させること。</li>
+					<li>問題で使用する画像ファイルは、「images」フォルダー内のファイルを使用すること。</li>
+					<li>問題で使用するCSSファイルは、「css」フォルダー内のファイルを使用すること。</li>
+					<li>問題で使用するJavaScriptファイルは、「js」フォルダー内のファイルを使用すること。</li>
+					<li>「material」フォルダーには、「start.html」に関連するファイルが格納されている。関連するファイルの閲覧は「start.html」からWebブラウザーで開き、確認すること。</li>
+				</ul>
+				<div id="lv">
+					<ul>
+						<li><span id="lv1">「実技用」フォルダー</span>
+							<ul>
+								<li>start.html</li>
+								<li>「material」フォルダー</li>
+								<li class="folder_block1"><span>「site」フォルダー</span>
+									<ul>
+										<li>admission.html ★新規作成</li>
+										<li>astronomy.html ★新規作成</li>
+										<li>base.html</li>
+										<li>contact.html ★新規作成</li>
+										<li>facility.html ★新規作成</li>
+										<li>index.html ★新規作成</li>
+										<li class="folder_block2"><span>「css」フォルダー</span>
+											<ul>
+												<li>common.css</li>
+												<li>responsive.css</li>
+												<li>style.css</li>
+											</ul>
+										</li>
+										<li class="folder_block2"><span>「js」フォルダー</span>
+											<ul>
+												<li>slideshow.js</li>
+											</ul>
+										</li>
+										<li class="folder_block3"><span>「images」フォルダー</span>
+											<ul>
+												<li>bnr_astronomy.jpg</li>
+												<li>bnr_contact.png</li>
+												<li>breadcrumb.png</li>
+												<li>conf.png</li>
+												<li>footer.png</li>
+												<li>h1_bottom.jpg</li>
+												<li>h1_top.png</li>
+												<li>h2.png</li>
+												<li>index1.jpg</li>
+												<li>index2.jpg</li>
+												<li>index3.jpg</li>
+												<li>logo.png</li>
+												<li>nav1.png</li>
+												<li>nav2.png</li>
+												<li>nav3.png</li>
+												<li>nav4.png</li>
+												<li>pagetop.png</li>
+												<li>pic_asterism1.jpg</li>
+												<li>pic_asterism2.jpg</li>
+												<li>pic_asterism3.jpg</li>
+												<li>pic_asterism4.jpg</li>
+												<li>pic_asterism5.jpg</li>
+												<li>pic_asterism6.jpg</li>
+												<li>pic_observatory1.jpg</li>
+												<li>pic_observatory2.jpg</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="q00_04">
+			<h3><span>仕様</span></h3>
+			<div class="inner">
+				<p>以下の仕様で記述すること。</p>
+				<ul class="list">
+					<li>マークアップ言語：HTML5</li>
+					<li>スタイルシート：CSS 2.1およびCSS3</li>
+					<li>スクリプト：JavaScript</li>
+					<li>文字コード：UTF-8（BOM付推奨）</li>
+					<li>改行コード：CR+LF</li>
+				</ul>
+			</div>
+		</section>
+	</article>
+	<article id="q01">
+		<h2><span>問題1 基本ページの作成</span></h2>
+		<p class="q_chapter_lead">仕上り見本を参考に基本ページを作成しなさい。</p>
+		<ul class="q_this_design">
+			<li><a href="d_region.html" target="img" id="img_region">仕上り見本：各領域の名称</a></li>
+			<li><a href="d_design0.html" target="img" id="img_design0">仕上り見本：基本ページ</a></li>
+		</ul>
+		<section id="q01_01">
+			<h3><span>基本ページのHTMLの編集</span></h3>
+			<p class="q_lead">「site」フォルダーにある「base.html」に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> title要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>meta要素の次の行に、title要素を挿入し、以下のテキストをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">title要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>天文台について | 月丘天文台</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> link要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>title要素の次の行に、link要素を挿入し、「css」フォルダーにある「style.css」を設定する。<br>
+						ただし、type属性は省略すること。</p>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ヘッダー領域の設定<br>
+						（仕上り見本「各領域の名称」を参照）</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>body要素の中に、header要素を挿入し、ページの先頭に戻るためのid属性「top」を設定する。</p>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>header要素の中に、画像「logo.png」を挿入し、以下の代替テキストをコピー&amp;ペーストする。</p>
+							<table>
+								<tr>
+									<th scope="row">代替テキスト</th>
+									<td>月丘天文台</td>
+								</tr>
+								<tr>
+									<th scope="row">幅</th>
+									<td>(属性は省略)</td>
+								</tr>
+								<tr>
+									<th scope="row">高さ</th>
+									<td>(属性は省略)</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>画像「logo.png」に、h1要素をマークアップし、「index.html」へのリンクを設定する。<br>
+								なお、リンクはh1要素の中に設定すること。</p>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ナビゲーション領域の設定<br>
+						（仕上り見本「各領域の名称」を参照）</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>header要素の次の行に、nav要素を挿入する。</p>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>nav要素の中に、以下のテキストをコピー&amp;ペーストし、箇条書きリストをul要素、li要素でマークアップする。<br>
+								なお、これらのテキストに、リンクと、それを内包するli要素のid属性を設定すること。</p>
+							<table>
+								<tr>
+									<th scope="row">テキスト</th>
+									<td>天文台について</td>
+								</tr>
+								<tr>
+									<th scope="row">リンク先</th>
+									<td>facility.html</td>
+								</tr>
+								<tr>
+									<th scope="row">li要素のid名</th>
+									<td>nav_facility</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<th scope="row">テキスト</th>
+									<td>入館案内</td>
+								</tr>
+								<tr>
+									<th scope="row">リンク先</th>
+									<td>admission.html</td>
+								</tr>
+								<tr>
+									<th scope="row">li要素のid名</th>
+									<td>nav_admission</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<th scope="row">テキスト</th>
+									<td>天文情報</td>
+								</tr>
+								<tr>
+									<th scope="row">リンク先</th>
+									<td>astronomy.html</td>
+								</tr>
+								<tr>
+									<th scope="row">li要素のid名</th>
+									<td>nav_astronomy</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<th scope="row">テキスト</th>
+									<td>お問い合わせ</td>
+								</tr>
+								<tr>
+									<th scope="row">リンク先</th>
+									<td>contact.html</td>
+								</tr>
+								<tr>
+									<th scope="row">li要素のid名</th>
+									<td>nav_contact</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> パンくずリスト領域の設定<br>
+						（仕上り見本「各領域の名称」を参照）</label>
+				</h4>
+				<div class="inner">
+					<p>nav要素の次の行に、div要素を挿入し、id属性「breadcrumb」を設定するとともに、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;ol&gt;<br>&lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;ホーム&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;天文台について&lt;/li&gt;<br>&lt;/ol&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> コンテンツ領域の設定<br>
+						（仕上り見本「各領域の名称」を参照）</label>
+				</h4>
+				<div class="inner">
+					<p>div要素（id属性「breadcrumb」）の次の行に、div要素を挿入し、id属性「contents」を設定する。</p>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> メイン領域の設定<br>
+						（仕上り見本「各領域の名称」を参照）</label>
+				</h4>
+				<div class="inner">
+					<p>div要素（id属性「contents」）の中に、div要素を挿入し、id属性「main」を設定するとともに、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;article&gt;<br>&lt;h1&gt;天文台について&lt;/h1&gt;<br>&lt;/article&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> サブ領域の設定<br>
+						（仕上り見本「各領域の名称」を参照）</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>div要素（id属性「main」）の次の行に、div要素を挿入し、id属性「sub」を設定する。</p>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>div要素（id属性「sub」）の中に、aside要素を挿入し、以下のソースをコピー&amp;ペーストする。</p>
+							<table>
+								<tr>
+									<th scope="col">ソース</th>
+								</tr>
+								<tr>
+									<td>&lt;div class=&quot;bnr_box&quot;&gt;<br>&lt;dl&gt;<br>&lt;dt&gt;&lt;img src=&quot;images/bnr_astronomy.jpg&quot; alt=&quot;天文情報&quot;&gt;&lt;/dt&gt;<br>&lt;dd&gt;毎月1日深夜0時に更新&lt;/dd&gt;<br>&lt;/dl&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;bnr_box&quot;&gt;<br>&lt;a href=&quot;contact.html&quot;&gt;<br>&lt;p&gt;&lt;img src=&quot;images/bnr_contact.png&quot; alt=&quot;お問い合わせ&quot;&gt;&lt;/p&gt;<br>&lt;/a&gt;<br>&lt;/div&gt;</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>ソースの中にあるdl要素に、「astronomy.html」へのリンクを設定する。<br>
+								なお、リンクはdl要素の外に設定すること。</p>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> フッター領域の設定<br>
+						（仕上り見本「各領域の名称」を参照）</label>
+				</h4>
+				<div class="inner">
+					<p>div要素（id属性「contents」）の次の行に、footer要素を挿入し、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;p id=&quot;pagetop&quot;&gt;&lt;a href=&quot;#top&quot;&gt;ページの先頭へ戻る&lt;/a&gt;&lt;/p&gt;<br>&lt;div id=&quot;information_area&quot;&gt;<br>&lt;address&gt;宮城県仙台市月ノ森X-X-X　電話 022-XXXX-7890&lt;/address&gt;<br>&lt;p id=&quot;copyright&quot;&gt;&lt;small&gt;Copyright 2016 月丘天文台 All rights reserved.&lt;/small&gt;&lt;/p&gt;<br>&lt;/div&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q01_02">
+			<h3><span>基本レイアウトのCSSの編集</span></h3>
+			<p class="q_lead">「css」フォルダーにある「style.css」の「/* 基本レイアウト ここから↓ */」と「/* 基本レイアウト ここまで↑ */」の中に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 外部スタイルシートの設定</label>
+				</h4>
+				<div class="inner">
+					<p>外部スタイルシート「common.css」を設定する。</p>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ページ全体の設定</label>
+				</h4>
+				<div class="inner">
+					<p>ページ全体のスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>body</td>
+						</tr>
+						<tr>
+							<th scope="row">行の高さ</th>
+							<td>1.9</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 各領域の設定</label>
+				</h4>
+				<div class="inner">
+					<p>ヘッダー領域、ナビゲーション領域、パンくずリスト領域、コンテンツ領域、フッター領域内のリンク「ページの先頭へ戻る」が左右中央揃えに配置されるようにマージンを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>header, nav, #breadcrumb, #contents, footer #pagetop</td>
+						</tr>
+						<tr>
+							<th scope="row">幅</th>
+							<td>830ピクセル</td>
+						</tr>
+						<tr>
+							<th scope="row">左マージン</th>
+							<td>(各自考える)</td>
+						</tr>
+						<tr>
+							<th scope="row">右マージン</th>
+							<td>(各自考える)</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ヘッダー領域の設定</label>
+				</h4>
+				<div class="inner">
+					<p>ヘッダー領域のh1要素にスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>header h1</td>
+						</tr>
+						<tr>
+							<th scope="row">マージン</th>
+							<td>0</td>
+						</tr>
+						<tr>
+							<th scope="row">パディング</th>
+							<td><div>上: 25ピクセル、</div>
+								<div>下: 25ピクセル、</div>
+								<div>左: 0、</div>
+								<div>右: 0</div></td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ナビゲーション領域の設定</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>ナビゲーション領域のリストのマーカーの表示を消し、位置を設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>nav ul</td>
+								</tr>
+								<tr>
+									<th scope="row">リストマーカーの種類</th>
+									<td>なし</td>
+								</tr>
+								<tr>
+									<th scope="row">マージン</th>
+									<td><div>上: 0、</div>
+										<div>下: 25ピクセル、</div>
+										<div>左: 0、</div>
+										<div>右: -14ピクセル</div></td>
+								</tr>
+								<tr>
+									<th scope="row">左パディング</th>
+									<td>0</td>
+								</tr>
+								<tr>
+									<th scope="row">オーバーフロー</th>
+									<td>hidden</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>ナビゲーション領域にある、リストを横並びに設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>nav ul li</td>
+								</tr>
+								<tr>
+									<th scope="row">幅</th>
+									<td>197ピクセル</td>
+								</tr>
+								<tr>
+									<th scope="row">右マージン</th>
+									<td>14ピクセル</td>
+								</tr>
+								<tr>
+									<th scope="row">フロート</th>
+									<td>左</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>ナビゲーション領域にある、リンクのスタイルを設定する。<br>
+								高さを0にし、パディングとオーバーフロー時の処理を設定することで画像置換を行う。</p>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>nav ul li a</td>
+								</tr>
+								<tr>
+									<th scope="row">表示形式</th>
+									<td>ブロックレベル</td>
+								</tr>
+								<tr>
+									<th scope="row">高さ</th>
+									<td>0</td>
+								</tr>
+								<tr>
+									<th scope="row">上パディング</th>
+									<td>50ピクセル</td>
+								</tr>
+								<tr>
+									<th scope="row">オーバーフロー</th>
+									<td>hidden</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>画像置換によって表示するリンクの画像を設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>nav ul li#nav_facility a</td>
+								</tr>
+								<tr>
+									<th scope="row">背景画像</th>
+									<td>nav1.png</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>nav ul li#nav_admission a</td>
+								</tr>
+								<tr>
+									<th scope="row">背景画像</th>
+									<td>nav2.png</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>nav ul li#nav_astronomy a</td>
+								</tr>
+								<tr>
+									<th scope="row">背景画像</th>
+									<td>nav3.png</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>nav ul li#nav_contact a</td>
+								</tr>
+								<tr>
+									<th scope="row">背景画像</th>
+									<td>nav4.png</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> メイン領域の設定</label>
+				</h4>
+				<div class="inner">
+					<p>メイン領域のスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>#main</td>
+						</tr>
+						<tr>
+							<th scope="row">幅</th>
+							<td>568ピクセル</td>
+						</tr>
+						<tr>
+							<th scope="row">フロート</th>
+							<td>左</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> サブ領域の設定</label>
+				</h4>
+				<div class="inner">
+					<p>サブ領域のスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>#sub</td>
+						</tr>
+						<tr>
+							<th scope="row">幅</th>
+							<td>210ピクセル</td>
+						</tr>
+						<tr>
+							<th scope="row">フロート</th>
+							<td>右</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> フッター領域の設定</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>フッター領域にある、リンク「ページの先頭へ戻る」にスタイルを設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>footer #pagetop a</td>
+								</tr>
+								<tr>
+									<th scope="row">表示形式</th>
+									<td>ブロックレベル</td>
+								</tr>
+								<tr>
+									<th scope="row">フロート</th>
+									<td>右</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>フッター領域にある、住所、電話番号、コピーライトのグループにフロートの解除（クリア）を設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>footer #information_area</td>
+								</tr>
+								<tr>
+									<th scope="row">フロートの解除(クリア)</th>
+									<td>両方</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> メイン領域のh1要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>メイン領域のh1要素にスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>#main h1</td>
+						</tr>
+						<tr>
+							<th scope="row">マージン</th>
+							<td><div>上: 0、</div>
+								<div>下: 30ピクセル、</div>
+								<div>左: 0、</div>
+								<div>右: 0</div></td>
+						</tr>
+						<tr>
+							<th scope="row">パディング</th>
+							<td><div>上: 8ピクセル、</div>
+								<div>下: 8ピクセル、</div>
+								<div>左: 30ピクセル、</div>
+								<div>右: 0</div></td>
+						</tr>
+						<tr>
+							<th scope="row">背景画像(複数指定)</th>
+							<td><div>1枚目: h1_top.png、</div>
+								<div>2枚目: h1_bottom.jpg</div></td>
+						</tr>
+						<tr>
+							<th scope="row">背景画像の繰り返し(複数指定)</th>
+							<td><div>1枚目: なし、</div>
+								<div>2枚目: 横方向のみ繰り返し</div></td>
+						</tr>
+						<tr>
+							<th scope="row">背景画像の位置(複数指定)</th>
+							<td><div>1枚目の水平方向: 左、</div>
+								<div>1枚目の垂直方向: 上、</div>
+								<div>2枚目の水平方向: 左、</div>
+								<div>2枚目の垂直方向: 下</div></td>
+						</tr>
+						<tr>
+							<th scope="row">フォントの太さ</th>
+							<td>ノーマル</td>
+						</tr>
+						<tr>
+							<th scope="row">文字のサイズ</th>
+							<td>1.8エム</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q01_03">
+			<h3><span>基本ページを使用した各ページの複製</span></h3>
+			<p class="q_lead">問題1(1)で保存した「base.html」を複製し、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ファイルの保存</label>
+				</h4>
+				<div class="inner">
+					<p>「base.html」を複製し、「index.html」、「facility.html」、「admission.html」、「astronomy.html」、「contact.html」として保存する。</p>
+				</div>
+			</section>
+		</section>
+		<section id="q01_04">
+			<h3><span>各ページのCSSスプライトに関連するHTMLの編集</span></h3>
+			<p class="q_lead">各HTMLファイルに、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> body要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>以下のファイルのbody要素にid属性を設定する。</p>
+					<table>
+						<tr>
+							<th scope="col">ファイル名</th>
+							<th scope="col">body要素のid名</th>
+						</tr>
+						<tr>
+							<th scope="row">facility.html</th>
+							<td>facility</td>
+						</tr>
+						<tr>
+							<th scope="row">admission.html</th>
+							<td>admission</td>
+						</tr>
+						<tr>
+							<th scope="row">astronomy.html</th>
+							<td>astronomy</td>
+						</tr>
+						<tr>
+							<th scope="row">contact.html</th>
+							<td>contact</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q01_05">
+			<h3><span>各ページのCSSスプライトに関連するCSSの編集</span></h3>
+			<p class="q_lead">「css」フォルダーにある「style.css」の「/* 基本レイアウト ここから↓ */」と「/* 基本レイアウト ここまで↑ */」の中に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ナビゲーション領域の設定</label>
+				</h4>
+				<div class="inner">
+					<p>CSSスプライトを用いて、「facility.html」、「admission.html」、「astronomy.html」、「contact.html」のナビゲーション領域で、現在表示されているページのリンクの背景画像が変わるようにし、各リンクにロールオーバーを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>#facility #nav_facility a, #admission #nav_admission a, #astronomy #nav_astronomy a, #contact #nav_contact a, nav ul li a:hover</td>
+						</tr>
+						<tr>
+							<th scope="row">背景画像の位置</th>
+							<td><div>水平方向: 0、</div>
+								<div>垂直方向: -50ピクセル</div></td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<p class="q_next">問題1は終了です。問題2に進んでください。</p>
+	</article>
+	<article id="q02">
+		<h2><span>問題2 トップページの作成</span></h2>
+		<p class="q_chapter_lead">仕上り見本を参考にトップページを作成しなさい。</p>
+		<ul class="q_this_design">
+			<li><a href="d_design1.html" target="img" id="img_design1">仕上り見本：トップページ</a></li>
+			<li><a href="d_responsive.html" target="img" id="img_responsive">仕上り見本：トップページ（レスポンシブWebデザイン）</a></li>
+		</ul>
+		<section id="q02_01">
+			<h3><span>トップページのタイトルに関連するHTMLの編集</span></h3>
+			<p class="q_lead">問題1(3)で保存した「index.html」に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> title要素の変更</label>
+				</h4>
+				<div class="inner">
+					<p>title要素を以下のテキストに変更する。<br>
+						なお、テキストはコピー&amp;ペーストすること。</p>
+					<table>
+						<tr>
+							<th scope="col">title要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>月丘天文台</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q02_02">
+			<h3><span>トップページのJavaScriptに関連するHTMLの編集</span></h3>
+			<p class="q_lead">「index.html」に、JavaScriptによるスライドの設定を行い、保存しなさい。<br>
+				なお、スライドの表示はブラウザーで確認すること。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> パンくずリスト領域の変更</label>
+				</h4>
+				<div class="inner">
+					<p>パンくずリスト領域のid属性「breadcrumb」をid属性「pickup_box」に変更し、番号付きリストのol要素、li要素を削除して、以下のソースに変更する。<br>
+						なお、ソースはコピー&amp;ペーストすること。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;ul&gt;<br>&lt;li class=&quot;now&quot;&gt;&lt;img src=&quot;images/index1.jpg&quot; alt=&quot;星を探しに天体観測に出かけよう&quot; class=&quot;image1&quot;&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;img src=&quot;images/index2.jpg&quot; alt=&quot;天体観測キャンプ　8月17日（水）～19日（金）参加申し込み受付中&quot; class=&quot;image2&quot;&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;img src=&quot;images/index3.jpg&quot; alt=&quot;9月天体観望会　9月3日（土）・9月17日（土）※雨天中止&quot; class=&quot;image3&quot;&gt;&lt;/li&gt;<br>&lt;/ul&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> スクリプト要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>フッター領域の次の行に、スクリプト要素を挿入し、「js」フォルダーの中の「slideshow.js」を設定する。<br>
+						ただし、type属性は省略すること。</p>
+				</div>
+			</section>
+		</section>
+		<section id="q02_03">
+			<h3><span>トップページのメイン領域のHTMLの編集</span></h3>
+			<p class="q_lead">「index.html」のメイン領域に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> article要素の変更</label>
+				</h4>
+				<div class="inner">
+					<p>article要素をsection要素に変更し、id属性「news」を設定する。</p>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> h1要素の変更</label>
+				</h4>
+				<div class="inner">
+					<p>h1要素をh2要素に変更し、テキスト「天文台について」を以下のテキストに変更する。<br>
+						なお、テキストはコピー&amp;ペーストすること。</p>
+					<table>
+						<tr>
+							<th scope="col">h2要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>お知らせ</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ソースのコピー&amp;ペースト</label>
+				</h4>
+				<div class="inner">
+					<p>h2要素の次の行に、以下のソースをコピー&amp;ペーストする。 </p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;ul&gt;<br>&lt;li&gt;2016年8月10日夏休み「星空自由研究講座」を窓口で受付開始しました&lt;/li&gt;<br>&lt;li&gt;2016年7月30日小学生対象「天体観測キャンプ」定員を30名に増やしました&lt;/li&gt;<br>&lt;li&gt;2016年7月20日8月の休館日はお盆の8月12日～15日です&lt;/li&gt;<br>&lt;li&gt;2016年6月29日七夕の日に特別イベントとして七夕写真展を開催いたします&lt;/li&gt;<br>&lt;/ul&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> time要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>ソースの中にある日付をtime要素でマークアップし、以下の属性を設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">datetime(※1)</th>
+							<td>(YYYY-MM-DD形式)</td>
+						</tr>
+					</table>
+					<p>(※1) 例：2016年1月1日は、「2016-01-01」。</p>
+				</div>
+			</section>
+		</section>
+		<section id="q02_04">
+			<h3><span>トップページのCSSの編集</span></h3>
+			<p class="q_lead">「css」フォルダーにある「style.css」の「/* トップページ ここから↓ */」と「/* トップページ ここまで↑ */」の中に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 「お知らせ」のリストの設定</label>
+				</h4>
+				<div class="inner">
+					<p>トップページの「お知らせ」のリストにスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>#news ul</td>
+						</tr>
+						<tr>
+							<th scope="row">リストマーカーの種類</th>
+							<td>なし</td>
+						</tr>
+						<tr>
+							<th scope="row">上マージン</th>
+							<td>0</td>
+						</tr>
+						<tr>
+							<th scope="row">左パディング</th>
+							<td>0</td>
+						</tr>
+						<tr>
+							<th scope="row">上ボーダー</th>
+							<td><div>太さ: 1ピクセル、</div>
+								<div>スタイル: 点線、</div>
+								<div>色: #55382b</div></td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>#news ul li</td>
+						</tr>
+						<tr>
+							<th scope="row">パディング</th>
+							<td><div>上: 0.8エム、</div>
+								<div>下: 0.8エム、</div>
+								<div>左: 9.5エム、</div>
+								<div>右: 0</div></td>
+						</tr>
+						<tr>
+							<th scope="row">下ボーダー</th>
+							<td><div>太さ: 1ピクセル、</div>
+								<div>スタイル: 点線、</div>
+								<div>色: #55382b</div></td>
+						</tr>
+						<tr>
+							<th scope="row">インデント</th>
+							<td>-9.5エム</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q02_05">
+			<h3><span>トップページのレスポンシブWebデザインに関連するHTMLの編集</span></h3>
+			<p class="q_lead rwd">問題2(3)で保存した「index.html」に、レスポンシブWebデザインの設定を行い、保存しなさい。</p>
+			<ul class="q_lead">
+				<li>・レスポンシブWebデザインの表示はブラウザーの幅を縮めて確認すること。</li>
+				<li>・ブラウザーがEdgeの場合はInternet Explorerで開き、レスポンシブWebデザインの表示を確認すること。</li>
+			</ul>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> link要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>link要素の次の行に、続けてlink要素を挿入し、「css」フォルダーの「responsive.css」を設定するとともに、以下の属性を設定する。<br>
+						ただし、type属性は省略すること。</p>
+					<table>
+						<tr>
+							<th scope="row">メディアクエリー</th>
+							<td>screen and (max-width: 480px)</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<p class="q_next">問題2は終了です。問題3に進んでください。</p>
+	</article>
+	<article id="q03">
+		<h2><span>問題3 「天文台について」ページの作成</span></h2>
+		<p class="q_chapter_lead">仕上り見本を参考に「天文台について」ページを作成しなさい。</p>
+		<ul class="q_this_design">
+			<li><a href="d_design2.html" target="img" id="img_design2">仕上り見本：「天文台について」ページ</a></li>
+		</ul>
+		<section id="q03_01">
+			<h3><span>「天文台について」ページのメイン領域のHTMLの編集</span></h3>
+			<p class="q_lead">問題1(4)で保存した「facility.html」のメイン領域に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> section要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>h1要素の次の行に、section要素を挿入し、クラス「facility_section」を設定するとともに、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;h2&gt;月丘天文台とは&lt;/h2&gt;<br>&lt;p&gt;&lt;img src=&quot;images/pic_observatory1.jpg&quot; alt=&quot;&quot; class=&quot;pic_left&quot;&gt;月丘天文台は、皆様に美しい星空を身近に感じ、天体や宇宙に親しんでいただきたいという思いから設立されました。&lt;/p&gt;<br>&lt;p&gt;天体観測のための望遠鏡、いつでも星空を楽しめるプラネタリウム、宇宙の成り立ちや天体を紹介する展示ホールなどを通じ、宇宙や地球環境についての興味や関心を深め、世代をこえて１日中楽しむことができる施設となっています。&lt;/p&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> section要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>section要素の次の行に、続けてsection要素を挿入し、クラス「facility_section」を設定するとともに、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;h2&gt;主な設備と見どころ&lt;/h2&gt;<br>&lt;p&gt;&lt;img src=&quot;images/pic_observatory2.jpg&quot; alt=&quot;&quot; class=&quot;pic_right&quot;&gt;口径500mmの反射望遠鏡を備え、定期的な夜間観望会と、天体現象に合わせた特別観望会を実施しています。都会の明かりから遠く離れ、澄んだ空気の中でひときわ輝く星たちは、癒しと感動を与えてくれます。&lt;/p&gt;<br>&lt;p&gt;直径25ｍのプラネタリウムでは、日本の星空をはじめ、日本では見ることのできない北極や南半球の星空を紹介し、また、各国の神話など、スタッフの解説を交えながら星座を見ることができます。プログラムは季節ごとに替わり、迫力の星空の中を漂う感覚が味わえます。&lt;/p&gt;<br>&lt;p&gt;展示ホールでは、地球や太陽系、天体についての解説や宇宙探査の歴史の展示、望遠鏡の構造や観測装置の仕組みなど、天文の世界を見て、体感できます。&lt;br&gt;その他、地場食材のレストラン、売店、施設の外には日時計や自然を生かした庭園などがあります。月丘天文台で素敵な１日を過ごしてみませんか？&lt;/p&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q03_02">
+			<h3><span>「天文台について」ページのCSSの編集</span></h3>
+			<p class="q_lead">「css」フォルダーにある「style.css」の「/* 「天文台について」ページ ここから↓ */」と「/* 「天文台について」ページ ここまで↑ */」の中に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> クラス「facility_section」の設定</label>
+				</h4>
+				<div class="inner">
+					<p>section要素の余白を空けるためにクラス「facility_section」のスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>.facility_section</td>
+						</tr>
+						<tr>
+							<th scope="row">下マージン</th>
+							<td>20ピクセル</td>
+						</tr>
+						<tr>
+							<th scope="row">オーバーフロー</th>
+							<td>hidden</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> クラス「facility_section」の設定</label>
+				</h4>
+				<div class="inner">
+					<p>メイン領域をトップページの余白と合わせるためにクラス「facility_section」のスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>.facility_section:last-child</td>
+						</tr>
+						<tr>
+							<th scope="row">下マージン</th>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<p class="q_next">問題3は終了です。問題4に進んでください。</p>
+	</article>
+	<article id="q04">
+		<h2><span>問題4 「入館案内」ページの作成</span></h2>
+		<p class="q_chapter_lead">仕上り見本を参考に「入館案内」ページを作成しなさい。</p>
+		<ul class="q_this_design">
+			<li><a href="d_design3.html" target="img" id="img_design3">仕上り見本：「入館案内」ページ</a></li>
+		</ul>
+		<section id="q04_01">
+			<h3><span>「入館案内」ページのタイトルに関連するHTMLの編集</span></h3>
+			<p class="q_lead">問題1(4)で保存した「admission.html」に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 各テキストの変更</label>
+				</h4>
+				<div class="inner">
+					<p>各要素内のテキストを以下のテキストに変更する。<br>
+						なお、テキストはコピー&amp;ペーストすること。</p>
+					<table>
+						<tr>
+							<th scope="col">title要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>入館案内 | 月丘天文台</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="col">パンくずリスト領域のli要素のテキスト「天文台について」</th>
+						</tr>
+						<tr>
+							<td>入館案内</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="col">メイン領域のh1要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>入館案内</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q04_02">
+			<h3><span>「入館案内」ページのメイン領域のHTMLの編集</span></h3>
+			<p class="q_lead">「admission.html」のメイン領域に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ソースのコピー&amp;ペースト</label>
+				</h4>
+				<div class="inner">
+					<p>h1要素の次の行に、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;table&gt;<br>&lt;tr&gt;&lt;th scope=&quot;col&quot;&gt;区分&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;個人&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;団体&lt;/th&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;大人&lt;/th&gt;&lt;td&gt;500円&lt;/td&gt;&lt;td&gt;400円&lt;/td&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;大学生・高校生&lt;/th&gt;&lt;td&gt;400円&lt;/td&gt;&lt;td&gt;300円&lt;/td&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;中学生&lt;/th&gt;&lt;td&gt;200円&lt;/td&gt;&lt;td&gt;100円&lt;/td&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;小学生以下&lt;/th&gt;&lt;td&gt;無料&lt;/td&gt;&lt;td&gt;無料&lt;/td&gt;&lt;/tr&gt;<br>&lt;/table&gt;</td>  
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> caption要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>table要素の中にcaption要素を挿入し、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;strong&gt;入館料&lt;/strong&gt;&lt;p&gt;月丘天文台の入館料は、以下のとおりです。&lt;br&gt;団体入館料はグループの合計が20名以上の場合に適用となります。&lt;/p&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> thead要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>テーブルの一行目をthead要素でマークアップする。</p>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> tbody要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>テーブルの二行目～五行目を一つの括りとして、tbody要素でマークアップする。</p>
+				</div>
+			</section>
+		</section>
+		<section id="q04_03">
+			<h3><span>「入館案内」ページのCSSの編集</span></h3>
+			<p class="q_lead">「css」フォルダーにある「style.css」の「/* 「入館案内」ページ ここから↓ */」と「/* 「入館案内」ページ ここまで↑ */」の中に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> テーブルの設定</label>
+				</h4>
+				<div class="inner">
+					<p>テーブルに交互の背景色を設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>table thead</td>
+						</tr>
+						<tr>
+							<th scope="row">背景色</th>
+							<td>#45537e</td>
+						</tr>
+						<tr>
+							<th scope="row">文字色</th>
+							<td>#ffffff</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>table tbody tr:nth-child(偶数のアルファベット値を設定)</td>
+						</tr>
+						<tr>
+							<th scope="row">背景色</th>
+							<td>#dadde5</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<p class="q_next">問題4は終了です。問題5に進んでください。</p>
+	</article>
+	<article id="q05">
+		<h2><span>問題5 「天文情報」ページの作成</span></h2>
+		<p class="q_chapter_lead">仕上り見本を参考に「天文情報」ページを作成しなさい。</p>
+		<ul class="q_this_design">
+			<li><a href="d_design4.html" target="img" id="img_design4">仕上り見本：「天文情報」ページ</a></li>
+		</ul>
+		<section id="q05_01">
+			<h3><span>「天文情報」ページのタイトルに関連するHTMLの編集</span></h3>
+			<p class="q_lead">問題1(4)で保存した「astronomy.html」に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 各テキストの変更</label>
+				</h4>
+				<div class="inner">
+					<p>各要素内のテキストを以下のテキストに変更する。<br>
+						なお、テキストはコピー&amp;ペーストすること。</p>
+					<table>
+						<tr>
+							<th scope="col">title要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>天文情報 | 月丘天文台</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="col">パンくずリスト領域のli要素のテキスト「天文台について」</th>
+						</tr>
+						<tr>
+							<td>天文情報</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="col">メイン領域のh1要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>天文情報</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q05_02">
+			<h3><span>「天文情報」ページのメイン領域のHTMLの編集</span></h3>
+			<p class="q_lead">「astronomy.html」のメイン領域に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ソースのコピー&amp;ペースト</label>
+				</h4>
+				<div class="inner">
+					<p>h1要素の次の行に、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;p&gt;8月の空には、夏の大三角の一部「はくちょう座」や、星座の中で5番目に大きい「ヘルクレス座」、12星座のひとつである「やぎ座」などを観測することができます。&lt;/p&gt;<br>&lt;div class=&quot;lineup_box&quot;&gt;<br>&lt;img src=&quot;images/pic_asterism1.jpg&quot;&gt;<br>はくちょう座<br>&lt;img src=&quot;images/pic_asterism2.jpg&quot;&gt;<br>ヘルクレス座<br>&lt;img src=&quot;images/pic_asterism3.jpg&quot;&gt;<br>ケフェウス座<br>&lt;/div&gt;<br>&lt;div class=&quot;lineup_box&quot;&gt;<br>&lt;img src=&quot;images/pic_asterism4.jpg&quot;&gt;<br>うしかい座<br>&lt;img src=&quot;images/pic_asterism5.jpg&quot;&gt;<br>かんむり座<br>&lt;img src=&quot;images/pic_asterism6.jpg&quot;&gt;<br>やぎ座<br>&lt;/div&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> figure要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>img要素とimg要素の直下にあるテキストをfigure要素で6箇所にマークアップする。</p>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> figcaption要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>figure要素の中にあるテキストをfigcaption要素で6箇所にマークアップする。</p>
+				</div>
+			</section>
+		</section>
+		<section id="q05_03">
+			<h3><span>「天文情報」ページのCSSの編集</span></h3>
+			<p class="q_lead">「css」フォルダーにある「style.css」の「/* 「天文情報」ページ ここから↓ */」と「/* 「天文情報」ページ ここまで↑ */」の中に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> サムネイルの設定</label>
+				</h4>
+				<div class="inner">
+					<p>サムネイルを横並びにし、スタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>.lineup_box figure</td>
+						</tr>
+						<tr>
+							<th scope="row">幅</th>
+							<td>180ピクセル</td>
+						</tr>
+						<tr>
+							<th scope="row">マージン</th>
+							<td><div>上: 0、</div>
+								<div>下: 30ピクセル、</div>
+								<div>左: 0、</div>
+								<div>右: 14ピクセル</div></td>
+						</tr>
+						<tr>
+							<th scope="row">フロート</th>
+							<td>左</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> サムネイルの設定</label>
+				</h4>
+				<div class="inner">
+					<p>サムネイルの三列目がカラム落ちしないように、マージンを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>.lineup_box figure:nth-child(数値を設定)</td>
+						</tr>
+						<tr>
+							<th scope="row">右マージン</th>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<p class="q_next">問題5は終了です。問題6に進んでください。</p>
+	</article>
+	<article id="q06">
+		<h2><span>問題6 「お問い合わせ」ページの作成</span></h2>
+		<p class="q_chapter_lead">仕上り見本を参考に「お問い合わせ」ページを作成しなさい。</p>
+		<ul class="q_this_design">
+			<li><a href="d_design5.html" target="img" id="img_design5">仕上り見本：「お問い合わせ」ページ</a></li>
+		</ul>
+		<section id="q06_01">
+			<h3><span>「お問い合わせ」ページのタイトルに関連するHTMLの編集</span></h3>
+			<p class="q_lead">問題1(4)で保存した「contact.html」に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 各テキストの変更</label>
+				</h4>
+				<div class="inner">
+					<p>各要素内のテキストを以下のテキストに変更する。<br>
+						なお、テキストはコピー&amp;ペーストすること。</p>
+					<table>
+						<tr>
+							<th scope="col">title要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>お問い合わせ | 月丘天文台</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="col">パンくずリスト領域のli要素のテキスト「天文台について」</th>
+						</tr>
+						<tr>
+							<td>お問い合わせ</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="col">メイン領域のh1要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>お問い合わせ</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q06_02">
+			<h3><span>「お問い合わせ」ページのメイン領域のHTMLの編集</span></h3>
+			<p class="q_lead">「contact.html」のメイン領域に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ソースのコピー&amp;ペースト</label>
+				</h4>
+				<div class="inner">
+					<p>h1要素の次の行に、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;p&gt;天体や月丘天文台に関するご質問などがありましたら、下記フォームよりお気軽にお問い合わせください。&lt;/p&gt;<br>&lt;ul&gt;<br>&lt;li&gt;必要事項を記入し、「確認」をクリックしてください。&lt;/li&gt;<br>&lt;li&gt;ご記入いただいた個人情報は、お問い合わせの確認以外には使用いたしません。&lt;/li&gt;<br>&lt;/ul&gt;<br>&lt;form action=&quot;#&quot;&gt;<br>&lt;p&gt;お名前（必須）&lt;/p&gt;<br>&lt;p&gt;メールアドレス（必須）&lt;/p&gt;<br>&lt;p&gt;お問い合わせ種類&lt;/p&gt;<br>&lt;p&gt;お問い合わせ内容&lt;/p&gt;<br>&lt;/form&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 「お名前」欄の設定</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「お名前（必須）」の後に、段落内改行を挿入し、続けて名前を入力するためのテキストフィールドを挿入するとともに、以下の属性を設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">type</th>
+									<td>(テキスト形式を設定）</td>
+								</tr>
+								<tr>
+									<th scope="row">name</th>
+									<td>name</td>
+								</tr>
+								<tr>
+									<th scope="row">必須</th>
+									<td>(属性名のみ設定)</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「お名前（必須）」からテキストフィールドまでをlabel要素でマークアップする。<br>
+								なお、label要素はp要素の中に設定すること。</p>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 「メールアドレス」欄の設定</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「メールアドレス（必須）」の後に、段落内改行を挿入し、続けてメールアドレスを入力するためのテキストフィールドを挿入するとともに、以下の属性を設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">type</th>
+									<td>(メールアドレス形式を設定)</td>
+								</tr>
+								<tr>
+									<th scope="row">name</th>
+									<td>emailaddress</td>
+								</tr>
+								<tr>
+									<th scope="row">必須</th>
+									<td>(属性名のみ設定)</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「メールアドレス（必須）」からテキストフィールドまでをlabel要素でマークアップする。<br>
+								なお、label要素はp要素の中に設定すること。</p>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 「お問い合わせ種類」欄の設定</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「お問い合わせ種類」の後に、段落内改行を挿入し、select要素を挿入するとともに、以下の属性を設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">name</th>
+									<td>sort</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>select要素の中に、以下のテキストをコピー&amp;ペーストし、選択リストの項目をマークアップするとともに、以下の属性を設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">テキスト</th>
+									<td>天体</td>
+								</tr>
+								<tr>
+									<th scope="row">value</th>
+									<td>celestial</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<th scope="row">テキスト</th>
+									<td>プラネタリウム</td>
+								</tr>
+								<tr>
+									<th scope="row">value</th>
+									<td>planetarium</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<th scope="row">テキスト</th>
+									<td>その他</td>
+								</tr>
+								<tr>
+									<th scope="row">value</th>
+									<td>other</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「お問い合わせ種類」からselect要素までをlabel要素でマークアップする。<br>
+								なお、label要素はp要素の中に設定すること。</p>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 「お問い合わせ内容」欄の設定</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「お問い合わせ内容」の後に、段落内改行を挿入し、続けて内容を入力するためのテキストエリアを挿入するとともに、以下の属性を設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">name</th>
+									<td>comment</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「お問い合わせ内容」からテキストエリアまでをlabel要素でマークアップする。<br>
+								なお、label要素はp要素の中に設定すること。</p>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 画像ボタンの設定</label>
+				</h4>
+				<div class="inner">
+					<p>テキストエリアを内包しているp要素の次の行に、画像ボタンを挿入し、p要素でマークアップする。<br>
+						なお、画像ボタンには、以下の属性を設定すること。</p>
+					<table>
+						<tr>
+							<th scope="row">type</th>
+							<td>image</td>
+						</tr>
+						<tr>
+							<th scope="row">ファイル名</th>
+							<td>conf.png</td>
+						</tr>
+						<tr>
+							<th scope="row">alt</th>
+							<td>確認</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q06_03">
+			<h3><span>「お問い合わせ」ページのCSSの編集</span></h3>
+			<p class="q_lead">「css」フォルダーにある「style.css」の「/* 「お問い合わせ」ページ ここから↓ */」と「/* 「お問い合わせ」ページ ここまで↑ */」の中に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> テキストフィールドの設定</label>
+				</h4>
+				<div class="inner">
+					<p>必須の属性のあるテキストフィールドにスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>input[(必須属性名のみ設定)]</td>
+						</tr>
+						<tr>
+							<th scope="row">幅</th>
+							<td>250ピクセル</td>
+						</tr>
+						<tr>
+							<th scope="row">背景色</th>
+							<td>#fffbee</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<p class="q_next">問題6は終了です。実技問題は以上です。</p>
+	</article>
+</div>
+<script src="../common/jquery-min.js"></script> 
+<script src="../common/q_common.js"></script>
+</body>
+</html>

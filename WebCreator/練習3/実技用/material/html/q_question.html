@@ -1,0 +1,1904 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>実技問題</title>
+<link rel="stylesheet" href="../common/q_common.css">
+</head>
+
+<body id="question">
+<header id="header_q">
+	<h1>Webクリエイター能力認定試験 エキスパート <br>
+		Bパターン（HTML5）実技問題</h1>
+	<nav>
+		<ul id="menu_extra" class="clearfix">
+			<li id="menu_img"><span><span>▼</span>仕上り見本</span>
+				<ul>
+					<li><a href="d_region.html" target="img">各領域の名称</a></li>
+					<li><a href="d_design0.html" target="img">基本ページ</a></li>
+					<li><a href="d_design1.html" target="img">トップページ</a></li>
+					<li><a href="d_responsive.html" target="img">トップページ（レスポンシブWebデザイン）</a></li>
+					<li><a href="d_design2.html" target="img">「植物園の紹介」ページ</a></li>
+					<li><a href="d_design3.html" target="img">「入園案内」ページ</a></li>
+					<li><a href="d_design4.html" target="img">「園内の植物」ページ</a></li>
+					<li><a href="d_design5.html" target="img">「緑と花の相談所」ページ</a></li>
+				</ul>
+			</li>
+			<li id="menu_reference"><span><span>▼</span>受験者用リファレンス</span>
+				<ul>
+					<li><a href="r_refhtml.html" target="reference">HTML編</a></li>
+					<li><a href="r_refcss.html" target="reference">CSS編</a></li>
+				</ul>
+			</li>
+			<li id="menu_note"><a href="q_note_ex.html" target="note">注意事項</a></li>
+		</ul>
+	</nav>
+	<nav>
+		<ul id="menu_question_chapter" class="clearfix">
+			<li><a href="#q_constitution" id="q_anchor_constitution">Webサイトの概要・仕様</a></li>
+			<li><a href="#q01" id="q_anchor01">問題</a></li>
+			<li><a href="#q02" id="q_anchor02">問題</a></li>
+			<li><a href="#q03" id="q_anchor03">問題</a></li>
+			<li><a href="#q04" id="q_anchor04">問題</a></li>
+			<li><a href="#q05" id="q_anchor05">問題</a></li>
+			<li><a href="#q06" id="q_anchor06">問題</a></li>
+			<li><a href="#q_area" id="q_anchor_all">すべて</a></li>
+		</ul>
+	</nav>
+	<nav id="menu_question_section">
+		<ul id="q01_link" class="clearfix section_number">
+			<li><a href="#q01_01">(</a></li>
+			<li><a href="#q01_02">(</a></li>
+			<li><a href="#q01_03">(</a></li>
+			<li><a href="#q01_04">(</a></li>
+			<li><a href="#q01_05">(</a></li>
+		</ul>
+		<ul id="q02_link" class="clearfix section_number">
+			<li><a href="#q02_01">(</a></li>
+			<li><a href="#q02_02">(</a></li>
+			<li><a href="#q02_03">(</a></li>
+			<li><a href="#q02_04">(</a></li>
+			<li><a href="#q02_05">(</a></li>
+		</ul>
+		<ul id="q03_link" class="clearfix section_number">
+			<li><a href="#q03_01">(</a></li>
+			<li><a href="#q03_02">(</a></li>
+		</ul>
+		<ul id="q04_link" class="clearfix section_number">
+			<li><a href="#q04_01">(</a></li>
+			<li><a href="#q04_02">(</a></li>
+			<li><a href="#q04_03">(</a></li>
+		</ul>
+		<ul id="q05_link" class="clearfix section_number">
+			<li><a href="#q05_01">(</a></li>
+			<li><a href="#q05_02">(</a></li>
+			<li><a href="#q05_03">(</a></li>
+		</ul>
+		<ul id="q06_link" class="clearfix section_number">
+			<li><a href="#q06_01">(</a></li>
+			<li><a href="#q06_02">(</a></li>
+			<li><a href="#q06_03">(</a></li>
+		</ul>
+	</nav>
+</header>
+<div id="q_area">
+	<article id="q_constitution">
+		<h2><span>Webサイトの概要・仕様</span></h2>
+		<p class="q_lead">以下の「テーマ」「ページ構成」「フォルダーおよびファイル構成」「仕様」に従い、Webサイトを完成させなさい。</p>
+		<section id="q00_01">
+			<h3><span>テーマ</span></h3>
+			<div class="inner">
+				<ul class="list">
+					<li>植物園「ふれあいグリーンガーデン」のWebサイトである。</li>
+					<li>トップページには、スライドショーとお知らせを掲載する。</li>
+					<li>「植物園の紹介」ページでは、植物園の概要と育成室の様子を掲載する。</li>
+					<li>「入園案内」ページでは、入園料を掲載する。</li>
+					<li>「園内の植物」ページでは、園内植物の一部を画像と紹介文のセットで掲載する。</li>
+					<li>「緑と花の相談所」ページでは、相談や質問についての問い合わせフォームを設置する。</li>
+				</ul>
+			</div>
+		</section>
+		<section id="q00_02">
+			<h3><span>ページ構成</span></h3>
+			<div class="inner">
+				<p>下図の通りのページ構成とし、トップページと各ページは相互にリンクさせること。</p>
+				<p><img src="../img/sitemap.png" alt=""></p>
+			</div>
+		</section>
+		<section id="q00_03">
+			<h3><span>フォルダーおよびファイル構成</span></h3>
+			<div class="inner">
+				<ul class="list">
+					<li>「site」フォルダー内に必要なファイルを作成・修正し、Webサイトを完成させること。</li>
+					<li>問題で使用する画像ファイルは、「images」フォルダー内のファイルを使用すること。</li>
+					<li>問題で使用するCSSファイルは、「css」フォルダー内のファイルを使用すること。</li>
+					<li>問題で使用するJavaScriptファイルは、「js」フォルダー内のファイルを使用すること。</li>
+					<li>「material」フォルダーには、「start.html」に関連するファイルが格納されている。関連するファイルの閲覧は「start.html」からWebブラウザーで開き、確認すること。</li>
+				</ul>
+				<div id="lv">
+					<ul>
+						<li><span id="lv1">「実技用」フォルダー</span>
+							<ul>
+								<li>start.html</li>
+								<li>「material」フォルダー</li>
+								<li class="folder_block1"><span>「site」フォルダー</span>
+									<ul>
+										<li>about.html ★新規作成</li>
+										<li>admission.html ★新規作成</li>
+										<li>base.html</li>
+										<li>consultation.html ★新規作成</li>
+										<li>index.html ★新規作成</li>
+										<li>plants.html ★新規作成</li>
+										<li class="folder_block2"><span>「css」フォルダー</span>
+											<ul>
+												<li>common.css</li>
+												<li>responsive.css</li>
+												<li>style.css</li>
+											</ul>
+										</li>
+										<li class="folder_block2"><span>「js」フォルダー</span>
+											<ul>
+												<li>slideshow.js</li>
+											</ul>
+										</li>
+										<li class="folder_block3"><span>「images」フォルダー</span>
+											<ul>
+												<li>about_banner.jpg</li>
+												<li>about_image1.jpg</li>
+												<li>about_image2.jpg</li>
+												<li>consultation_banner.png</li>
+												<li>fade1.jpg</li>
+												<li>fade2.jpg</li>
+												<li>fade3.jpg</li>
+												<li>footer_top.png</li>
+												<li>h1_bottom.png</li>
+												<li>h1_top.png</li>
+												<li>h2_left.png</li>
+												<li>logo.png</li>
+												<li>nav1.png</li>
+												<li>nav2.png</li>
+												<li>nav3.png</li>
+												<li>nav4.png</li>
+												<li>pagetop_left.png</li>
+												<li>plants_image1.jpg</li>
+												<li>plants_image2.jpg</li>
+												<li>plants_image3.jpg</li>
+												<li>plants_image4.jpg</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="q00_04">
+			<h3><span>仕様</span></h3>
+			<div class="inner">
+				<p>以下の仕様で記述すること。</p>
+				<ul class="list">
+					<li>マークアップ言語：HTML5</li>
+					<li>スタイルシート：CSS 2.1およびCSS3</li>
+					<li>スクリプト：JavaScript</li>
+					<li>文字コード：UTF-8（BOM付推奨）</li>
+					<li>改行コード：CR+LF</li>
+				</ul>
+			</div>
+		</section>
+	</article>
+	<article id="q01">
+		<h2><span>問題1 基本ページの作成</span></h2>
+		<p class="q_chapter_lead">仕上り見本を参考に基本ページを作成しなさい。</p>
+		<ul class="q_this_design">
+			<li><a href="d_region.html" target="img" id="img_region">仕上り見本：各領域の名称</a></li>
+			<li><a href="d_design0.html" target="img" id="img_design0">仕上り見本：基本ページ</a></li>
+		</ul>
+		<section id="q01_01">
+			<h3><span>基本ページのHTMLの編集</span></h3>
+			<p class="q_lead">「site」フォルダーにある「base.html」に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> title要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>meta要素の次の行に、title要素を挿入し、以下のテキストをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">title要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>植物園の紹介 : ふれあいグリーンガーデン</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> link要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>title要素の次の行に、link要素を挿入し、「css」フォルダーにある「style.css」を設定する。<br>
+						ただし、type属性は省略すること。</p>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ヘッダー領域の設定<br>
+						（仕上り見本「各領域の名称」を参照）</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>body要素の中に、header要素を挿入し、ページの先頭に戻るためのid属性「top」を設定する。</p>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>header要素の中に、画像「logo.png」を挿入し、以下の代替テキストをコピー&amp;ペーストする。</p>
+							<table>
+								<tr>
+									<th scope="row">代替テキスト</th>
+									<td>ふれあいグリーンガーデン</td>
+								</tr>
+								<tr>
+									<th scope="row">幅</th>
+									<td>(属性は省略)</td>
+								</tr>
+								<tr>
+									<th scope="row">高さ</th>
+									<td>(属性は省略)</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>画像「logo.png」に、h1要素をマークアップし、「index.html」へのリンクを設定する。<br>
+								なお、リンクはh1要素の中に設定すること。</p>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ナビゲーション領域の設定<br>
+						（仕上り見本「各領域の名称」を参照）</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>header要素の次の行に、nav要素を挿入する。</p>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>nav要素の中に、以下のテキストをコピー&amp;ペーストし、箇条書きリストをul要素、li要素でマークアップする。<br>
+								なお、これらのテキストに、リンクと、それを内包するli要素のid属性を設定すること。</p>
+							<table>
+								<tr>
+									<th scope="row">テキスト</th>
+									<td>植物園の紹介</td>
+								</tr>
+								<tr>
+									<th scope="row">リンク先</th>
+									<td>about.html</td>
+								</tr>
+								<tr>
+									<th scope="row">li要素のid名</th>
+									<td>nav_about</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<th scope="row">テキスト</th>
+									<td>入園案内</td>
+								</tr>
+								<tr>
+									<th scope="row">リンク先</th>
+									<td>admission.html</td>
+								</tr>
+								<tr>
+									<th scope="row">li要素のid名</th>
+									<td>nav_admission</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<th scope="row">テキスト</th>
+									<td>園内の植物</td>
+								</tr>
+								<tr>
+									<th scope="row">リンク先</th>
+									<td>plants.html</td>
+								</tr>
+								<tr>
+									<th scope="row">li要素のid名</th>
+									<td>nav_plants</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<th scope="row">テキスト</th>
+									<td>緑と花の相談所</td>
+								</tr>
+								<tr>
+									<th scope="row">リンク先</th>
+									<td>consultation.html</td>
+								</tr>
+								<tr>
+									<th scope="row">li要素のid名</th>
+									<td>nav_consultation</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> パンくずリスト領域の設定<br>
+						（仕上り見本「各領域の名称」を参照）</label>
+				</h4>
+				<div class="inner">
+					<p>nav要素の次の行に、div要素を挿入し、id属性「breadcrumb」を設定するとともに、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;ul&gt;<br>&lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;ホーム&lt;/a&gt;&amp;gt;&lt;/li&gt;<br>&lt;li&gt;植物園の紹介&lt;/li&gt;<br>&lt;/ul&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> コンテンツ領域の設定<br>
+						（仕上り見本「各領域の名称」を参照）</label>
+				</h4>
+				<div class="inner">
+					<p>div要素（id属性「breadcrumb」）の次の行に、div要素を挿入し、id属性「contents」を設定する。</p>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> メイン領域の設定<br>
+						（仕上り見本「各領域の名称」を参照）</label>
+				</h4>
+				<div class="inner">
+					<p>div要素（id属性「contents」）の中に、div要素を挿入し、id属性「main」を設定するとともに、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;article&gt;<br>&lt;h1&gt;植物園の紹介&lt;/h1&gt;<br>&lt;/article&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> サブ領域の設定<br>
+						（仕上り見本「各領域の名称」を参照）</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>div要素（id属性「main」）の次の行に、div要素を挿入し、id属性「sub」を設定する。</p>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>div要素（id属性「sub」）の中に、aside要素を挿入し、以下のソースをコピー&amp;ペーストする。</p>
+							<table>
+								<tr>
+									<th scope="col">ソース</th>
+								</tr>
+								<tr>
+									<td>&lt;div class=&quot;sub_area&quot;&gt;<br>&lt;dl&gt;<br>&lt;dt&gt;&lt;img src=&quot;images/about_banner.jpg&quot; alt=&quot;植物園の紹介&quot;&gt;&lt;/dt&gt;<br>&lt;dd&gt;ふれあいグリーンガーデンについてご紹介いたします。&lt;/dd&gt;<br>&lt;/dl&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;sub_area&quot;&gt;<br>&lt;a href=&quot;consultation.html&quot;&gt;<br>&lt;p&gt;&lt;img src=&quot;images/consultation_banner.png&quot; alt=&quot;緑と花の相談所&quot;&gt;&lt;/p&gt;<br>&lt;/a&gt;<br>&lt;/div&gt;</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>ソースの中にあるdl要素に、「about.html」へのリンクを設定する。<br>
+								なお、リンクはdl要素の外に設定すること。</p>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> フッター領域の設定<br>
+						（仕上り見本「各領域の名称」を参照）</label>
+				</h4>
+				<div class="inner">
+					<p>div要素（id属性「contents」）の次の行に、footer要素を挿入し、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;p id=&quot;pagetop&quot;&gt;&lt;a href=&quot;#top&quot;&gt;ページの先頭へ戻る&lt;/a&gt;&lt;/p&gt;<br>&lt;div id=&quot;information_area&quot;&gt;<br>&lt;address&gt;東京都中央区X-X-X 電話 0120-000-XXX 営業時間 9:30～17:00（月曜日定休）&lt;/address&gt;<br>&lt;p id=&quot;copyright&quot;&gt;&lt;small&gt;Copyright 2015 ふれあいグリーンガーデン All rights reserved.&lt;/small&gt;&lt;/p&gt;<br>&lt;/div&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q01_02">
+			<h3><span>基本レイアウトのCSSの編集</span></h3>
+			<p class="q_lead">「css」フォルダーにある「style.css」の「/* 基本レイアウト ここから↓ */」と「/* 基本レイアウト ここまで↑ */」の中に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 外部スタイルシートの設定</label>
+				</h4>
+				<div class="inner">
+					<p>外部スタイルシート「common.css」を設定する。</p>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ページ全体の設定</label>
+				</h4>
+				<div class="inner">
+					<p>ページ全体のスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>body</td>
+						</tr>
+						<tr>
+							<th scope="row">背景色</th>
+							<td>#fffee6</td>
+						</tr>
+						<tr>
+							<th scope="row">文字色</th>
+							<td>#333333</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 各領域の設定</label>
+				</h4>
+				<div class="inner">
+					<p>ヘッダー領域、ナビゲーション領域、パンくずリスト領域、コンテンツ領域、フッター領域内のリンク「ページの先頭へ戻る」が左右中央揃えに配置されるようにマージンを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>header, nav, #breadcrumb, #contents, footer #pagetop</td>
+						</tr>
+						<tr>
+							<th scope="row">幅</th>
+							<td>840ピクセル</td>
+						</tr>
+						<tr>
+							<th scope="row">左マージン</th>
+							<td>(各自考える)</td>
+						</tr>
+						<tr>
+							<th scope="row">右マージン</th>
+							<td>(各自考える)</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ナビゲーション領域の設定</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>ナビゲーション領域のリストのマーカーの表示を消し、位置を設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>nav ul</td>
+								</tr>
+								<tr>
+									<th scope="row">リストマーカーの種類</th>
+									<td>なし</td>
+								</tr>
+								<tr>
+									<th scope="row">マージン</th>
+									<td><div>上: 0、</div>
+										<div>下: 20ピクセル、</div>
+										<div>左: 0、</div>
+										<div>右: 0</div></td>
+								</tr>
+								<tr>
+									<th scope="row">左パディング</th>
+									<td>0</td>
+								</tr>
+								<tr>
+									<th scope="row">オーバーフロー</th>
+									<td>hidden</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>ナビゲーション領域にある、リストを横並びに設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>nav ul li</td>
+								</tr>
+								<tr>
+									<th scope="row">幅</th>
+									<td>210ピクセル</td>
+								</tr>
+								<tr>
+									<th scope="row">フロート</th>
+									<td>左</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>ナビゲーション領域にある、リンクのスタイルを設定する。<br>
+								高さを0にし、パディングとオーバーフロー時の処理を設定することで画像置換を行う。</p>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>nav ul li a</td>
+								</tr>
+								<tr>
+									<th scope="row">表示形式</th>
+									<td>ブロックレベル</td>
+								</tr>
+								<tr>
+									<th scope="row">高さ</th>
+									<td>0</td>
+								</tr>
+								<tr>
+									<th scope="row">上パディング</th>
+									<td>60ピクセル</td>
+								</tr>
+								<tr>
+									<th scope="row">オーバーフロー</th>
+									<td>hidden</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>画像置換によって表示するリンクの画像を設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>nav ul li#nav_about a</td>
+								</tr>
+								<tr>
+									<th scope="row">背景画像</th>
+									<td>nav1.png</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>nav ul li#nav_admission a</td>
+								</tr>
+								<tr>
+									<th scope="row">背景画像</th>
+									<td>nav2.png</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>nav ul li#nav_plants a</td>
+								</tr>
+								<tr>
+									<th scope="row">背景画像</th>
+									<td>nav3.png</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>nav ul li#nav_consultation a</td>
+								</tr>
+								<tr>
+									<th scope="row">背景画像</th>
+									<td>nav4.png</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> メイン領域の設定</label>
+				</h4>
+				<div class="inner">
+					<p>メイン領域のスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>#main</td>
+						</tr>
+						<tr>
+							<th scope="row">幅</th>
+							<td>580ピクセル</td>
+						</tr>
+						<tr>
+							<th scope="row">フロート</th>
+							<td>左</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> サブ領域の設定</label>
+				</h4>
+				<div class="inner">
+					<p>サブ領域のスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>#sub</td>
+						</tr>
+						<tr>
+							<th scope="row">幅</th>
+							<td>220ピクセル</td>
+						</tr>
+						<tr>
+							<th scope="row">フロート</th>
+							<td>右</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> フッター領域の設定</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>フッター領域にある、リンク「ページの先頭に戻る」に行揃えを設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>footer #pagetop</td>
+								</tr>
+								<tr>
+									<th scope="row">行揃え</th>
+									<td>右</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>フッター領域にある、住所、電話番号、コピーライトのグループにスタイルを設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">セレクター</th>
+									<td>footer #information_area</td>
+								</tr>
+								<tr>
+									<th scope="row">背景画像</th>
+									<td>footer_top.png</td>
+								</tr>
+								<tr>
+									<th scope="row">背景画像の繰り返し</th>
+									<td>横方向のみ繰り返し</td>
+								</tr>
+								<tr>
+									<th scope="row">文字色</th>
+									<td>#ffffff</td>
+								</tr>
+								<tr>
+									<th scope="row">行揃え</th>
+									<td>中央</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> メイン領域のh1要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>メイン領域のh1要素にスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>#main h1</td>
+						</tr>
+						<tr>
+							<th scope="row">マージン</th>
+							<td><div>上: 0、</div>
+								<div>下: 25ピクセル、</div>
+								<div>左: 0、</div>
+								<div>右: 0</div></td>
+						</tr>
+						<tr>
+							<th scope="row">パディング</th>
+							<td><div>上: 25ピクセル、</div>
+								<div>下: 25ピクセル、</div>
+								<div>左: 105ピクセル、</div>
+								<div>右: 0</div></td>
+						</tr>
+						<tr>
+							<th scope="row">背景画像(複数指定)</th>
+							<td><div>1枚目: h1_top.png、</div>
+								<div>2枚目: h1_bottom.png</div></td>
+						</tr>
+						<tr>
+							<th scope="row">背景画像の繰り返し(複数指定)</th>
+							<td><div>1枚目: なし、</div>
+								<div>2枚目: 横方向のみ繰り返し</div></td>
+						</tr>
+						<tr>
+							<th scope="row">背景画像の位置(複数指定)</th>
+							<td><div>1枚目の水平方向: 左、</div>
+								<div>1枚目の垂直方向: 上、</div>
+								<div>2枚目の水平方向: 左、</div>
+								<div>2枚目の垂直方向: 下</div></td>
+						</tr>
+						<tr>
+							<th scope="row">文字のサイズ</th>
+							<td>162.5%</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q01_03">
+			<h3><span>基本ページを使用した各ページの複製</span></h3>
+			<p class="q_lead">問題1(1)で保存した「base.html」を複製し、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ファイルの保存</label>
+				</h4>
+				<div class="inner">
+					<p>「base.html」を複製し、「index.html」、「about.html」、「admission.html」、「plants.html」、「consultation.html」として保存する。</p>
+				</div>
+			</section>
+		</section>
+		<section id="q01_04">
+			<h3><span>各ページのCSSスプライトに関連するHTMLの編集</span></h3>
+			<p class="q_lead">各HTMLファイルに、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> body要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>以下のファイルのbody要素にid属性を設定する。</p>
+					<table>
+						<tr>
+							<th scope="col">ファイル名</th>
+							<th scope="col">body要素のid名</th>
+						</tr>
+						<tr>
+							<th scope="row">about.html</th>
+							<td>about</td>
+						</tr>
+						<tr>
+							<th scope="row">admission.html</th>
+							<td>admission</td>
+						</tr>
+						<tr>
+							<th scope="row">plants.html</th>
+							<td>plants</td>
+						</tr>
+						<tr>
+							<th scope="row">consultation.html</th>
+							<td>consultation</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q01_05">
+			<h3><span>各ページのCSSスプライトに関連するCSSの編集</span></h3>
+			<p class="q_lead">「css」フォルダーにある「style.css」の「/* 基本レイアウト ここから↓ */」と「/* 基本レイアウト ここまで↑ */」の中に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ナビゲーション領域の設定</label>
+				</h4>
+				<div class="inner">
+					<p>CSSスプライトを用いて、「about.html」、「admission.html」、「plants.html」、「consultation.html」のナビゲーション領域で、現在表示されているページのリンクの背景画像が変わるようにし、各リンクにロールオーバーを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>#about #nav_about a, #admission #nav_admission a, #plants #nav_plants a, #consultation #nav_consultation a, nav ul li a:hover</td>
+						</tr>
+						<tr>
+							<th scope="row">背景画像の位置</th>
+							<td><div>水平方向: 0、</div>
+								<div>垂直方向: -60ピクセル</div></td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<p class="q_next">問題1は終了です。問題2に進んでください。</p>
+	</article>
+	<article id="q02">
+		<h2><span>問題2 トップページの作成</span></h2>
+		<p class="q_chapter_lead">仕上り見本を参考にトップページを作成しなさい。</p>
+		<ul class="q_this_design">
+			<li><a href="d_design1.html" target="img" id="img_design1">仕上り見本：トップページ</a></li>
+			<li><a href="d_responsive.html" target="img" id="img_responsive">仕上り見本：トップページ（レスポンシブWebデザイン）</a></li>
+		</ul>
+		<section id="q02_01">
+			<h3><span>トップページのタイトルに関連するHTMLの編集</span></h3>
+			<p class="q_lead">問題1(3)で保存した「index.html」に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> title要素の変更</label>
+				</h4>
+				<div class="inner">
+					<p>title要素を以下のテキストに変更する。<br>
+						なお、テキストはコピー&amp;ペーストすること。</p>
+					<table>
+						<tr>
+							<th scope="col">title要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>ふれあいグリーンガーデン</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q02_02">
+			<h3><span>トップページのJavaScriptに関連するHTMLの編集</span></h3>
+			<p class="q_lead">「index.html」に、JavaScriptによるスライドの設定を行い、保存しなさい。<br>
+				なお、スライドの表示はブラウザーで確認すること。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> パンくずリスト領域の変更</label>
+				</h4>
+				<div class="inner">
+					<p>パンくずリスト領域のid属性「breadcrumb」をid属性「graphic_area」に変更し、箇条書きリスト（ul要素、li要素）を削除して、以下のソースに変更する。<br>
+						なお、ソースはコピー&amp;ペーストすること。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;ul&gt;<br>&lt;li class=&quot;now&quot;&gt;&lt;img src=&quot;images/fade1.jpg&quot; alt=&quot;季節を問わず様々な植物を楽しめる緑の庭&quot; class=&quot;image1&quot;&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;img src=&quot;images/fade2.jpg&quot; alt=&quot;春の植物園まつり2015&quot; class=&quot;image2&quot;&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;img src=&quot;images/fade3.jpg&quot; alt=&quot;春休みガーデニング体験教室。3月10日、受講料300円（材料費込み）、定員20名&quot; class=&quot;image3&quot;&gt;&lt;/li&gt;<br>&lt;/ul&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> スクリプト要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>フッター領域の次の行に、スクリプト要素を挿入し、「js」フォルダーの中の「slideshow.js」を設定する。<br>
+						ただし、type属性は省略すること。</p>
+				</div>
+			</section>
+		</section>
+		<section id="q02_03">
+			<h3><span>トップページのメイン領域のHTMLの編集</span></h3>
+			<p class="q_lead">「index.html」のメイン領域に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> article要素の変更</label>
+				</h4>
+				<div class="inner">
+					<p>article要素をsection要素に変更し、id属性「announce_area」を設定する。</p>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> h1要素の変更</label>
+				</h4>
+				<div class="inner">
+					<p>h1要素をh2要素に変更し、テキスト「植物園の紹介」を以下のテキストに変更する。<br>
+						なお、テキストはコピー&amp;ペーストすること。</p>
+					<table>
+						<tr>
+							<th scope="col">h2要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>お知らせ</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ソースのコピー&amp;ペースト</label>
+				</h4>
+				<div class="inner">
+					<p>h2要素の次の行に、以下のソースをコピー&amp;ペーストする。 </p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;ul&gt;<br>&lt;li&gt;2015年02月20日3月上旬から春休みガーデニング体験教室を開催いたします。&lt;/li&gt;<br>&lt;li&gt;2015年02月18日3月上旬から特別展『ハーブの魅力って？』を開催いたします。&lt;/li&gt;<br>&lt;li&gt;2015年01月05日新装オープンいたしました。皆様のご来場をお待ちしています。&lt;/li&gt;<br>&lt;li&gt;2014年11月01日12月上旬から耐震工事に伴い休館いたします。&lt;/li&gt;<br>&lt;/ul&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> time要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>ソースの中にある日付をtime要素でマークアップし、以下の属性を設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">datetime(※1)</th>
+							<td>(YYYY-MM-DD形式)</td>
+						</tr>
+					</table>
+					<p>(※1) 例：2015年01月01日は、「2015-01-01」。</p>
+				</div>
+			</section>
+		</section>
+		<section id="q02_04">
+			<h3><span>トップページのCSSの編集</span></h3>
+			<p class="q_lead">「css」フォルダーにある「style.css」の「/* トップページ  ここから↓ */」と「/* トップページ ここまで↑ */」の中に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 「お知らせ」のリストの設定</label>
+				</h4>
+				<div class="inner">
+					<p>トップページの「お知らせ」のリストにスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>#announce_area ul</td>
+						</tr>
+						<tr>
+							<th scope="row">リストマーカーの種類</th>
+							<td>なし</td>
+						</tr>
+						<tr>
+							<th scope="row">マージン</th>
+							<td>0</td>
+						</tr>
+						<tr>
+							<th scope="row">左パディング</th>
+							<td>0</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>#announce_area ul li</td>
+						</tr>
+						<tr>
+							<th scope="row">パディング</th>
+							<td><div>上: 1.4エム、</div>
+								<div>下: 1.4エム、</div>
+								<div>左: 10.9エム、</div>
+								<div>右: 0</div></td>
+						</tr>
+						<tr>
+							<th scope="row">下ボーダー</th>
+							<td><div>太さ: 1ピクセル、</div>
+								<div>スタイル: 点線、</div>
+								<div>色: #cd9016</div></td>
+						</tr>
+						<tr>
+							<th scope="row">インデント</th>
+							<td>-10.9エム</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q02_05">
+			<h3><span>トップページのレスポンシブWebデザインに関連するHTMLの編集</span></h3>
+			<p class="q_lead rwd">問題2(3)で保存した「index.html」に、レスポンシブWebデザインの設定を行い、保存しなさい。</p>
+			<ul class="q_lead">
+				<li>・レスポンシブWebデザインの表示はブラウザーの幅を縮めて確認すること。</li>
+				<li>・ブラウザーがEdgeの場合はInternet Explorerで開き、レスポンシブWebデザインの表示を確認すること。</li>
+			</ul>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> link要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>link要素の次の行に、続けてlink要素を挿入し、「css」フォルダーの「responsive.css」を設定するとともに、以下の属性を設定する。<br>
+						ただし、type属性は省略すること。</p>
+					<table>
+						<tr>
+							<th scope="row">メディアクエリー</th>
+							<td>screen and (max-width: 480px)</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<p class="q_next">問題2は終了です。問題3に進んでください。</p>
+	</article>
+	<article id="q03">
+		<h2><span>問題3 「植物園の紹介」ページの作成</span></h2>
+		<p class="q_chapter_lead">仕上り見本を参考に「植物園の紹介」ページを作成しなさい。</p>
+		<ul class="q_this_design">
+			<li><a href="d_design2.html" target="img" id="img_design2">仕上り見本：「植物園の紹介」ページ</a></li>
+		</ul>
+		<section id="q03_01">
+			<h3><span>「植物園の紹介」ページのメイン領域のHTMLの編集</span></h3>
+			<p class="q_lead">問題1(4)で保存した「about.html」のメイン領域に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> section要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>h1要素の次の行に、section要素を挿入し、クラス「about_area」を設定するとともに、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;h2&gt;当園の概要&lt;/h2&gt;<br>&lt;p&gt;&lt;img src=&quot;images/about_image1.jpg&quot; alt=&quot;&quot; class=&quot;image_left&quot;&gt;ふれあいグリーンガーデンは、都市部で失われつつある人と緑とのふれあいを創出・促進する目的で、1995年に開園しました。&lt;/p&gt;<br>&lt;p&gt;四季を通じて草木や花の美しさを感じていただけるよう、温度や湿度を最適にした温室で徹底した管理を行っています。&lt;br&gt;このため、日本とは気候の異なる地域に生育する植物の育成が可能になり、日本で普通に生活しているとまず見かけることのない、エキゾチックな植物たちを観賞することができます。&lt;/p&gt;<br>&lt;p&gt;また、当園では、近隣大学との連携のもと、薬用植物の研究も行っています。植物には、私たちの体調を整えてくれたり、病気を治してくれたりする作用を持つものもあるのです。奥深い植物の世界を、どうぞお楽しみください。&lt;/p&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> section要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>section要素の次の行に、続けてsection要素を挿入し、クラス「about_area」を設定するとともに、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;h2&gt;育成室について&lt;/h2&gt;<br>&lt;p&gt;&lt;img src=&quot;images/about_image2.jpg&quot; alt=&quot;&quot; class=&quot;image_right&quot;&gt;研究用や展示用の植物を育成する育成室には、自然に近い状態にするため、昆虫が放たれているところもあります。&lt;/p&gt;<br>&lt;p&gt;運が良ければ、ガラス越しに、虫達による受粉の様子や、花の蜜を集める姿などが見られるかもしれません。ぜひ探してみてください。&lt;/p&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q03_02">
+			<h3><span>「植物園の紹介」ページのCSSの編集</span></h3>
+			<p class="q_lead">「css」フォルダーにある「style.css」の「/* 「植物園の紹介」ページ  ここから↓ */」と「/* 「植物園の紹介」ページ ここまで↑ */」の中に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> クラス「about_area」の設定</label>
+				</h4>
+				<div class="inner">
+					<p>section要素の余白を空けるためにクラス「about_area」のスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>.about_area</td>
+						</tr>
+						<tr>
+							<th scope="row">下マージン</th>
+							<td>30ピクセル</td>
+						</tr>
+						<tr>
+							<th scope="row">オーバーフロー</th>
+							<td>hidden</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> クラス「about_area」の設定</label>
+				</h4>
+				<div class="inner">
+					<p>メイン領域をトップページの余白と合わせるためにクラス「about_area」のスタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>.about_area:last-child</td>
+						</tr>
+						<tr>
+							<th scope="row">下マージン</th>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<p class="q_next">問題3は終了です。問題4に進んでください。</p>
+	</article>
+	<article id="q04">
+		<h2><span>問題4 「入園案内」ページの作成</span></h2>
+		<p class="q_chapter_lead">仕上り見本を参考に「入園案内」ページを作成しなさい。</p>
+		<ul class="q_this_design">
+			<li><a href="d_design3.html" target="img" id="img_design3">仕上り見本：「入園案内」ページ</a></li>
+		</ul>
+		<section id="q04_01">
+			<h3><span>「入園案内」ページのタイトルに関連するHTMLの編集</span></h3>
+			<p class="q_lead">問題1(4)で保存した「admission.html」に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 各テキストの変更</label>
+				</h4>
+				<div class="inner">
+					<p>各要素内のテキストを以下のテキストに変更する。<br>
+						なお、テキストはコピー&amp;ペーストすること。</p>
+					<table>
+						<tr>
+							<th scope="col">title要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>入園案内 : ふれあいグリーンガーデン</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="col">パンくずリスト領域のli要素のテキスト「植物園の紹介」</th>
+						</tr>
+						<tr>
+							<td>入園案内</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="col">メイン領域のh1要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>入園案内</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q04_02">
+			<h3><span>「入園案内」ページのメイン領域のHTMLの編集</span></h3>
+			<p class="q_lead">「admission.html」のメイン領域に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ソースのコピー&amp;ペースト</label>
+				</h4>
+				<div class="inner">
+					<p>h1要素の次の行に、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;table&gt;<br>&lt;tr&gt;&lt;th scope=&quot;col&quot;&gt;区分&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;入園料（一人あたり）&lt;/th&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;大人（高校生を除く18歳以上）&lt;/th&gt;&lt;td&gt;600円&lt;/td&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;小人（5歳以上高校生以下）&lt;/th&gt;&lt;td&gt;300円&lt;/td&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;幼児（5歳未満）&lt;/th&gt;&lt;td&gt;無料&lt;/td&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;団体（大人30名以上）&lt;/th&gt;&lt;td&gt;400円&lt;/td&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;定期券（半年）&lt;/th&gt;&lt;td&gt;2,000円&lt;/td&gt;&lt;/tr&gt;<br>&lt;/table&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> caption要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>table要素の中にcaption要素を挿入し、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;strong&gt;入園料&lt;/strong&gt;&lt;p&gt;ふれあいグリーンガーデンへの入園料は、以下のとおりです。日々変化する草花たちの表情をご覧いただけるよう、お得な定期券を販売しています。&lt;/p&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> thead要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>テーブルの一行目をthead要素でマークアップする。</p>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> tbody要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>テーブルの二行目～六行目を一つの括りとして、tbody要素でマークアップする。</p>
+				</div>
+			</section>
+		</section>
+		<section id="q04_03">
+			<h3><span>「入園案内」ページのCSSの編集</span></h3>
+			<p class="q_lead">「css」フォルダーにある「style.css」の「/* 「入園案内」ページ  ここから↓ */」と「/* 「入園案内」ページ ここまで↑ */」の中に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 一行目のテーブルの設定</label>
+				</h4>
+				<div class="inner">
+					<p>テーブルの一行目に背景色を設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>table thead</td>
+						</tr>
+						<tr>
+							<th scope="row">背景色</th>
+							<td>#339900</td>
+						</tr>
+						<tr>
+							<th scope="row">文字色</th>
+							<td>#ffffff</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 二行目以降のテーブルの設定</label>
+				</h4>						
+				<div class="inner">
+					<p>テーブルの二行目以降に交互の背景色を設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>table tbody tr:nth-child(奇数のアルファベット値を設定)</td>
+						</tr>
+						<tr>
+							<th scope="row">背景色</th>
+							<td>#ffffff</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>table tbody tr:nth-child(偶数のアルファベット値を設定)</td>
+						</tr>
+						<tr>
+							<th scope="row">背景色</th>
+							<td>#e3f2dd</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<p class="q_next">問題4は終了です。問題5に進んでください。</p>
+	</article>
+	<article id="q05">
+		<h2><span>問題5 「園内の植物」ページの作成</span></h2>
+		<p class="q_chapter_lead">仕上り見本を参考に「園内の植物」ページを作成しなさい。</p>
+		<ul class="q_this_design">
+			<li><a href="d_design4.html" target="img" id="img_design4">仕上り見本：「園内の植物」ページ</a></li>
+		</ul>
+		<section id="q05_01">
+			<h3><span>「園内の植物」ページのタイトルに関連するHTMLの編集</span></h3>
+			<p class="q_lead">問題1(4)で保存した「plants.html」に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 各テキストの変更</label>
+				</h4>
+				<div class="inner">
+					<p>各要素内のテキストを以下のテキストに変更する。<br>
+						なお、テキストはコピー&amp;ペーストすること。</p>
+					<table>
+						<tr>
+							<th scope="col">title要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>園内の植物 : ふれあいグリーンガーデン</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="col">パンくずリスト領域のli要素のテキスト「植物園の紹介」</th>
+						</tr>
+						<tr>
+							<td>園内の植物</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="col">メイン領域のh1要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>園内の植物</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q05_02">
+			<h3><span>「園内の植物」ページのメイン領域のHTMLの編集</span></h3>
+			<p class="q_lead">「plants.html」のメイン領域に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ソースのコピー&amp;ペースト</label>
+				</h4>
+				<div class="inner">
+					<p>h1要素の次の行に、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;p&gt;蓮の花やユリ、バラなどの身近なものから、ベニヒモノキやウツボカズラ、パパイヤなどの他地域から入ってきたものまで、様々な植物を展示しています。&lt;/p&gt;<br>&lt;div class=&quot;image_area&quot;&gt;<br>&lt;img src=&quot;images/plants_image1.jpg&quot;&gt;<br>蓮の花&lt;br&gt;インド原産で、花が水面からのぞきます。茎はレンコンとして食用に用いられる、とても身近な植物です。<br>&lt;img src=&quot;images/plants_image2.jpg&quot;&gt;<br>ベニヒモノキ&lt;br&gt;原産はインドやマレー諸島周辺です。その名前の通り、赤く垂れ下がる長い花穂が特徴で、6月から9月頃が見頃です。<br>&lt;/div&gt;<br>&lt;div class=&quot;image_area&quot;&gt;<br>&lt;img src=&quot;images/plants_image3.jpg&quot;&gt;<br>ウツボカズラ&lt;br&gt;原産は東南アジアが中心で、食虫植物として有名です。熱帯の気候を好み、日本では主に温室で育てられます。<br>&lt;img src=&quot;images/plants_image4.jpg&quot;&gt;<br>パパイヤ&lt;br&gt;西インド諸島が原産です。一見樹木のような高さにまで成長しますが、茎は木質化せずやわらかいのが特徴です。<br>&lt;/div&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> figure要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>img要素とimg要素の直下にあるテキストをfigure要素で4箇所にマークアップする。</p>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> figcaption要素の設定</label>
+				</h4>
+				<div class="inner">
+					<p>figure要素の中にあるテキストをfigcaption要素で4箇所にマークアップする。</p>
+				</div>
+			</section>
+		</section>
+		<section id="q05_03">
+			<h3><span>「園内の植物」ページのCSSの編集</span></h3>
+			<p class="q_lead">「css」フォルダーにある「style.css」の「/* 「園内の植物」ページ ここから↓ */」と「/* 「園内の植物」ページ ここまで↑ */」の中に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> サムネイルの設定</label>
+				</h4>
+				<div class="inner">
+					<p>サムネイルを横並びにし、スタイルを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>.image_area figure</td>
+						</tr>
+						<tr>
+							<th scope="row">幅</th>
+							<td>270ピクセル</td>
+						</tr>
+						<tr>
+							<th scope="row">マージン</th>
+							<td><div>上: 0、</div>
+								<div>下: 15ピクセル、</div>
+								<div>左: 30ピクセル、</div>
+								<div>右: 0</div></td>
+						</tr>
+						<tr>
+							<th scope="row">フロート</th>
+							<td>左</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> サムネイルの設定</label>
+				</h4>
+				<div class="inner">
+					<p>サムネイルの二列目がカラム落ちしないように、マージンを設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>.image_area figure:first-child</td>
+						</tr>
+						<tr>
+							<th scope="row">左マージン</th>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<p class="q_next">問題5は終了です。問題6に進んでください。</p>
+	</article>
+	<article id="q06">
+		<h2><span>問題6 「緑と花の相談所」ページの作成</span></h2>
+		<p class="q_chapter_lead">仕上り見本を参考に「緑と花の相談所」ページを作成しなさい。</p>
+		<ul class="q_this_design">
+			<li><a href="d_design5.html" target="img" id="img_design5">仕上り見本：「緑と花の相談所」ページ</a></li>
+		</ul>
+		<section id="q06_01">
+			<h3><span>「緑と花の相談所」ページのタイトルに関連するHTMLの編集</span></h3>
+			<p class="q_lead">問題1(4)で保存した「consultation.html」に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 各テキストの設定</label>
+				</h4>
+				<div class="inner">
+					<p>各要素内のテキストを以下のテキストに変更する。<br>
+						なお、テキストはコピー&amp;ペーストすること。</p>
+					<table>
+						<tr>
+							<th scope="col">title要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>緑と花の相談所 : ふれあいグリーンガーデン</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="col">パンくずリスト領域のli要素のテキスト「植物園の紹介」</th>
+						</tr>
+						<tr>
+							<td>緑と花の相談所</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th scope="col">メイン領域のh1要素のテキスト</th>
+						</tr>
+						<tr>
+							<td>緑と花の相談所</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q06_02">
+			<h3><span>「緑と花の相談所」ページのメイン領域のHTMLの編集</span></h3>
+			<p class="q_lead">「consultation.html」のメイン領域に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> ソースのコピー&amp;ペースト</label>
+				</h4>
+				<div class="inner">
+					<p>h1要素の次の行に、以下のソースをコピー&amp;ペーストする。</p>
+					<table>
+						<tr>
+							<th scope="col">ソース</th>
+						</tr>
+						<tr>
+							<td>&lt;p&gt;植物についてのご相談やふれあいグリーンガーデンに関するご質問などがありましたら、下記フォームよりお気軽にお問い合わせください。&lt;/p&gt;<br>&lt;ul&gt;<br>&lt;li&gt;必要事項を記入し、ご確認の上、「確認する」をクリックしてください。&lt;/li&gt;<br>&lt;li&gt;ご登録いただいた個人情報は、お問い合わせの確認以外には使用いたしません。&lt;/li&gt;<br>&lt;/ul&gt;<br>&lt;form action=&quot;#&quot;&gt;<br>&lt;p&gt;お名前（必須）&lt;/p&gt;<br>&lt;p&gt;メールアドレス（必須）&lt;/p&gt;<br>&lt;p&gt;お問い合わせ種類&lt;br&gt;<br>植物について<br>ふれあいグリーンガーデンについて&lt;/p&gt;<br>&lt;p&gt;お問い合わせ内容&lt;/p&gt;<br>&lt;/form&gt;</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 「お名前」欄の設定</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「お名前（必須）」の後に、段落内改行を挿入し、続けて名前を入力するためのテキストフィールドを挿入するとともに、以下の属性を設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">type</th>
+									<td>(テキスト形式を設定）</td>
+								</tr>
+								<tr>
+									<th scope="row">name</th>
+									<td>name</td>
+								</tr>
+								<tr>
+									<th scope="row">必須</th>
+									<td>(属性名のみ設定)</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「お名前（必須）」からテキストフィールドまでをlabel要素でマークアップする。<br>
+								なお、label要素はp要素の中に設定すること。</p>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 「メールアドレス」欄の設定</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「メールアドレス（必須）」の後に、段落内改行を挿入し、続けてメールアドレスを入力するためのテキストフィールドを挿入するとともに、以下の属性を設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">type</th>
+									<td>(メールアドレス形式を設定)</td>
+								</tr>
+								<tr>
+									<th scope="row">name</th>
+									<td>email</td>
+								</tr>
+								<tr>
+									<th scope="row">必須</th>
+									<td>(属性名のみ設定)</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「メールアドレス（必須）」からテキストフィールドまでをlabel要素でマークアップする。<br>
+								なお、label要素はp要素の中に設定すること。</p>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 「お問い合わせ種類」欄の設定</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「植物について」の前に、一つ目のラジオボタンを挿入し、以下の属性を設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">type</th>
+									<td>(ラジオボタンを設定)</td>
+								</tr>
+								<tr>
+									<th scope="row">name</th>
+									<td>category</td>
+								</tr>
+								<tr>
+									<th scope="row">value</th>
+									<td>0</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>一つ目のラジオボタンからテキスト「植物について」までをlabel要素でマークアップする。</p>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「ふれあいグリーンガーデンについて」の前に、二つ目のラジオボタンを挿入し、以下の属性を設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">type</th>
+									<td>(ラジオボタンを設定)</td>
+								</tr>
+								<tr>
+									<th scope="row">name</th>
+									<td>category</td>
+								</tr>
+								<tr>
+									<th scope="row">value</th>
+									<td>1</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>二つ目のラジオボタンからテキスト「ふれあいグリーンガーデンについて」までをlabel要素でマークアップする。</p>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 「お問い合わせ内容」欄の設定</label>
+				</h4>
+				<div class="inner">
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「お問い合わせ内容」の後に、段落内改行を挿入し、続けて内容を入力するためのテキストエリアを挿入するとともに、以下の属性を設定する。</p>
+							<table>
+								<tr>
+									<th scope="row">name</th>
+									<td>matter</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5>
+							<label><span>
+								<input type="checkbox">
+								</span></label>
+						</h5>
+						<div class="inner">
+							<p>テキスト「お問い合わせ内容」からテキストエリアまでをlabel要素でマークアップする。<br>
+								なお、label要素はp要素の中に設定すること。</p>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 送信ボタンの設定</label>
+				</h4>
+				<div class="inner">
+					<p>テキストエリアを内包しているp要素の次の行に、送信ボタンを挿入し、p要素でマークアップする。<br>
+						なお、送信ボタンには、以下の属性を設定すること。</p>
+					<table>
+						<tr>
+							<th scope="row">type</th>
+							<td>submit</td>
+						</tr>
+						<tr>
+							<th scope="row">value</th>
+							<td>確認する</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section id="q06_03">
+			<h3><span>「緑と花の相談所」ページのCSSの編集</span></h3>
+			<p class="q_lead">「css」フォルダーにある「style.css」の「/* 「緑と花の相談所」ページ  ここから↓ */」と「/* 「緑と花の相談所」ページ ここまで↑ */」の中に、以下の設定を行い、保存しなさい。</p>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 「お名前」欄の設定</label>
+				</h4>
+				<div class="inner">
+					<p>「お名前」のテキストフィールドの幅を設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>input[(type属性を設定)]</td>
+						</tr>
+						<tr>
+							<th scope="row">幅</th>
+							<td>200ピクセル</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h4>
+					<label><span>
+						<input type="checkbox">
+						</span> 「メールアドレス」欄の設定</label>
+				</h4>
+				<div class="inner">
+					<p>「メールアドレス」のテキストフィールドの幅を設定する。</p>
+					<table>
+						<tr>
+							<th scope="row">セレクター</th>
+							<td>input[(type属性を設定)]</td>
+						</tr>
+						<tr>
+							<th scope="row">幅</th>
+							<td>300ピクセル</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<p class="q_next">問題6は終了です。実技問題は以上です。</p>
+	</article>
+</div>
+<script src="../common/jquery-min.js"></script> 
+<script src="../common/q_common.js"></script>
+</body>
+</html>

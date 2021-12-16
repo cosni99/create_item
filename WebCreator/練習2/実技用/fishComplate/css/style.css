@@ -1,0 +1,145 @@
+﻿@charset "utf-8";
+
+/* 基本レイアウト ここから↓ */
+@import url(common.css);
+
+body{
+	color: 	#333333;
+	line-height: 1.5;
+}
+header, nav, #path_arrow, #contents, footer #footer_box{
+	width: 820px;
+	margin-left: auto;
+	margin-right: auto;
+}
+header h1{
+	margin: 0;
+	padding: 30px 0;
+	text-align: center;
+}
+nav ul{
+	list-style-type: none;
+	margin: 0 0 30px 0;
+	padding-left: 0;
+	overflow: hidden;
+}
+nav ul li{
+	width: 205px;
+	float: left;
+}
+nav ul li a{
+	display: block;
+	height: 0;
+	padding-top: 55px;
+	overflow: hidden;
+}
+nav ul li#nav_concept a{
+	background-image: url(../images/global_nav1.png);
+}
+nav ul li#nav_shop a{
+	background-image: url(../images/global_nav2.png);
+}
+nav ul li#nav_fish a{
+	background-image: url(../images/global_nav3.png);
+}
+nav ul li#nav_contact a{
+	background-image: url(../images/global_nav4.png);
+}
+#main{
+	width: 590px;
+	float: left;
+}
+#sub{
+	width: 200px;
+	float: right;
+}
+footer{
+	margin-top: 50px;
+	background-image:url(../images/footer.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+footer #pagetop{
+	float: right;
+}
+footer address{
+	clear: both;
+}
+footer address, footer #copyright{
+	text-align: center;
+}
+#main h1{
+	margin: 0 0 30px 0;
+	padding: 20px 0 ;
+	background-image: url(../images/h1_top.png),url(../images/h1_bottom.png);
+	background-repeat: repeat-x,repeat-x;
+	background-position:left top,left bottom;
+	color:#26b6d5;
+	font-size: 160%; 
+}
+#concept #nav_concept a, #shop #nav_shop a, #fish #nav_fish a, #contact #nav_contact a, nav ul li a:hover{
+	background-position: 0 -55px;
+}
+
+/* 基本レイアウト ここまで↑ */
+
+/* トップページ ここから↓ */
+#news ul{
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+#news ul li{
+	padding: 1em 0 1em 10em;
+	border-bottom: solid 1px #1f95ad;
+	text-indent: -10em;
+}
+
+
+
+/* トップページ ここまで↑ */
+
+/* 「コンセプト」ページ ここから↓ */
+.concept_box{
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+.concept_box:last-child{
+	margin-bottom: 0;
+}
+
+
+
+/* 「コンセプト」ページ ここまで↑ */
+
+/* 「店舗案内」ページ ここから↓ */
+table thead{
+	background-color: #26b6d5;
+}
+table tbody tr:nth-child(even){
+	background-color:#b8e8f2; 
+}
+
+
+
+/* 「店舗案内」ページ ここまで↑ */
+
+/* 「取扱い観賞魚」ページ ここから↓ */
+.fish_box figure{
+	width: 180px;
+	margin: 0 25px 25px 0;
+	float: left;
+}
+.fish_box figure:nth-child(3){
+	margin-right: 0;
+}
+
+
+/* 「取扱い観賞魚」ページ ここまで↑ */
+
+/* 「お問い合わせ」ページ ここから↓ */
+input[type="text"], input[type="tel"]{
+	width: 200px;
+}
+
+/* 「お問い合わせ」ページ ここまで↑ */

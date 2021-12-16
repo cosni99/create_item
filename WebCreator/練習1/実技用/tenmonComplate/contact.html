@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>お問い合わせ | 月丘天文台</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="contact">
+	<header id="top">
+		<h1><a href="index.html"><img src="images/logo.png" alt="月丘天文台"></a></h1>
+	</header>
+
+		<nav>
+			<ul>
+				<li id="nav_facility"><a href="facility.html">天文台について</a></li>
+				<li id="nav_admission"><a href="admission.html">入館案内</a></li>
+				<li id="nav_astronomy"><a href="astronomy.html">天文情報</a></li>
+				<li id="nav_contact"><a href="contact.html">お問い合わせ</a></li>
+			</ul>
+		</nav>
+
+		<div id="breadcrumb">
+			<ol>
+				<li><a href="index.html">ホーム</a></li>
+				<li>お問い合わせ</li>
+			</ol>
+		</div>
+
+		<div id="contents">
+			<div id="main">
+				<article>
+					<h1>お問い合わせ</h1>
+					<p>天体や月丘天文台に関するご質問などがありましたら、下記フォームよりお気軽にお問い合わせください。</p>
+						<ul>
+							<li>必要事項を記入し、「確認」をクリックしてください。</li>
+							<li>ご記入いただいた個人情報は、お問い合わせの確認以外には使用いたしません。</li>
+						</ul>
+						<form action="#">
+							<p><label>お名前（必須）<br>
+									<input type="text" name="name" required></label>
+							</p>
+
+							<p><label>メールアドレス（必須）<br>
+									<input type="email" name="emailaddress" required></label>
+							</p>
+
+							<p><label>お問い合わせ種類<br>
+									<select name="sort">
+										<option value="celestial">天体</option>
+										<option value="planetarium">プラネタリウム</option>
+										<option value="other">その他	</option>
+									</select></label>
+							</p>
+
+							<p><label>お問い合わせ内容
+									<textarea name="comment"></textarea></label>
+							</p>
+							<p><input type="image" src="images/conf.png" alt="確認"></p>
+						</form>
+				</article>
+			</div>
+			<div id="sub">
+				<aside>
+					<div class="bnr_box">
+							<a href="astronomy.html">
+									<dl>
+										<dt><img src="images/bnr_astronomy.jpg" alt="天文情報"></dt>
+										<dd>毎月1日深夜0時に更新</dd>
+									</dl>
+							</a>
+					</div>
+					<div class="bnr_box">
+						<a href="contact.html">
+						<p><img src="images/bnr_contact.png" alt="お問い合わせ"></p>
+						</a>
+					</div>
+				</aside>
+			</div>
+		</div>
+
+		<footer>
+			<p id="pagetop"><a href="#top">ページの先頭へ戻る</a></p>
+			<div id="information_area">
+				<address>宮城県仙台市月ノ森X-X-X　電話 022-XXXX-7890</address>
+				<p id="copyright"><small>Copyright 2016 月丘天文台 All rights reserved.</small></p>
+			</div>
+		</footer>
+
+</body>
+</html>

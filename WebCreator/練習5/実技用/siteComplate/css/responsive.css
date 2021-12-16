@@ -1,0 +1,81 @@
+﻿@charset "utf-8";
+
+header, nav, #graphic, #contents, footer {
+	width: 100%;
+}
+header h1 img{
+	width: 100%;
+	max-width: 437px;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	border-top: 1px solid #cccccc;
+	overflow: hidden;
+}
+#graphic {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+#graphic ul li img {
+	width: 100%;
+}
+#main, #news ul li, h2 {
+	width: auto;
+	float: none;
+}
+nav ul li#nav_about,
+nav ul li#nav_shop,
+nav ul li#nav_products,
+nav ul li#nav_mag {
+	width: 100%;
+	border-bottom: 1px solid #cccccc;
+}
+nav ul li#nav_about a,
+nav ul li#nav_shop a,
+nav ul li#nav_products a,
+nav ul li#nav_mag a {
+	height: 44px;
+	margin-bottom: 0;
+	padding-top: 0;
+	background: #f5f3f3 none;
+	font-size: 14px;
+	text-decoration: none;
+	line-height: 3;
+	text-align: center;
+}
+nav ul li#nav_about a:hover,
+nav ul li#nav_shop a:hover,
+nav ul li#nav_products a:hover,
+nav ul li#nav_mag a:hover {
+	background-color: #7e7e53;
+	color: #ffffff;
+}
+#news ul {
+	margin-bottom: 40px;
+}
+#news ul li {
+	padding: 20px 0 12px 0;
+	text-indent: 0;
+}
+#news ul li time {
+	display: block;
+	width: auto;
+	margin-bottom: 10px;
+}
+#sub {
+	width: 100%;
+	max-width: 240px;
+	float: none;
+}
+#sub img {
+	width: 100%;
+	max-width: 240px;
+}
+footer {
+	padding-top: 30px;
+}
+footer p {
+	float: none;
+}

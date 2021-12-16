@@ -1,0 +1,1410 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>受験者用リファレンス CSS編</title>
+<link rel="stylesheet" href="../common/q_common.css">
+</head>
+
+<body id="reference">
+<header id="header_r">
+	<h1>受験者用リファレンス CSS編</h1>
+	<nav>
+		<ul id="menu_extra" class="clearfix">
+			<li id="menu_html"><a href="r_refhtml.html">HTML編</a></li>
+			<li id="menu_css"><a href="#r_area">CSS編</a></li>
+		</ul>
+	</nav>
+</header>
+<div id="r_area">
+	<article>
+		<h2><span>目次</span></h2>
+		<section>
+			<h3><span>エンコード・外部スタイルシートの読込み</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#charset">@charset</a></li>
+					<li><a href="#import">@import</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>背景</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#bg">background</a><ul>
+							<li><a href="#bg_image">background-image</a></li>
+							<li><a href="#bg_repeat">background-repeat</a></li>
+							<li><a href="#bg_position">background-position</a></li>
+							<li><a href="#bg_color">background-color</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>ボーダー</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#bd_w">border-width</a><ul>
+							<li><a href="#bd_tw">border-top-width</a></li>
+							<li><a href="#bd_bw">border-bottom-width</a></li>
+							<li><a href="#bd_lw">border-left-width</a></li>
+							<li><a href="#bd_rw">border-right-width</a></li>
+						</ul>
+					</li>
+					<li><a href="#bd_s">border-style</a><ul>
+							<li><a href="#bd_ts">border-top-style</a></li>
+							<li><a href="#bd_bs">border-bottom-style</a></li>
+							<li><a href="#bd_ls">border-left-style</a></li>
+							<li><a href="#bd_rs">border-right-style</a></li>
+						</ul>
+					</li>
+					<li><a href="#bd_c">border-color</a><ul>
+							<li><a href="#bd_tc">border-top-color</a></li>
+							<li><a href="#bd_bc">border-bottom-color</a></li>
+							<li><a href="#bd_lc">border-left-color</a></li>
+							<li><a href="#bd_rc">border-right-color</a></li>
+						</ul>
+					</li>
+					<li><a href="#bd">border</a><ul>
+							<li><a href="#bd_t">border-top</a></li>
+							<li><a href="#bd_b">border-bottom</a></li>
+							<li><a href="#bd_l">border-left</a></li>
+							<li><a href="#bd_r">border-right</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>カラー</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#color">color</a></li>
+					<li><a href="#opacity">opacity</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>テキストとフォント</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#t_align">text-align</a></li>
+					<li><a href="#t_decoration">text-decoration</a></li>
+					<li><a href="#t_indent">text-indent</a></li>
+					<li><a href="#v_align">vertical-align</a></li>
+					<li><a href="#font">font</a><ul>
+							<li><a href="#f_style">font-style</a></li>
+							<li><a href="#f_weight">font-weight</a></li>
+							<li><a href="#f_size">font-size</a></li>
+							<li><a href="#l_height">line-height</a></li>
+							<li><a href="#f_family">font-family</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>マージンとパディング</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#margin">margin</a><ul>
+							<li><a href="#mt">margin-top</a></li>
+							<li><a href="#mb">margin-bottom</a></li>
+							<li><a href="#ml">margin-left</a></li>
+							<li><a href="#mr">margin-right</a></li>
+						</ul>
+					</li>
+					<li><a href="#padding">padding</a><ul>
+							<li><a href="#pt">padding-top</a></li>
+							<li><a href="#pb">padding-bottom</a></li>
+							<li><a href="#pl">padding-left</a></li>
+							<li><a href="#pr">padding-right</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>リスト</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#ls">list-style</a><ul>
+							<li><a href="#ls_t">list-style-type</a></li>
+							<li><a href="#ls_i">list-style-image</a></li>
+							<li><a href="#ls_p">list-style-position</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>ボックス</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#width">width</a></li>
+					<li><a href="#min_w">min-width</a></li>
+					<li><a href="#max_w">max-width</a></li>
+					<li><a href="#height">height</a></li>
+					<li><a href="#min_h">min-height</a></li>
+					<li><a href="#max_h">max-height</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>表示と配置</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#display">display</a></li>
+					<li><a href="#overflow">overflow</a><ul>
+							<li><a href="#of_x">overflow-x</a></li>
+							<li><a href="#of_y">overflow-y</a></li>
+						</ul>
+					</li>
+					<li><a href="#position">position</a></li>
+					<li><a href="#top">top</a></li>
+					<li><a href="#bottom">bottom</a></li>
+					<li><a href="#left">left</a></li>
+					<li><a href="#right">right</a></li>
+					<li><a href="#z_index">z-index</a></li>
+					<li><a href="#float">float</a></li>
+					<li><a href="#clear">clear</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>テーブル</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#t_layout">table-layout</a></li>
+					<li><a href="#b_collapse">border-collapse</a></li>
+					<li><a href="#b_spacing">border-spacing</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>CSSの書式（セレクター、プロパティ、値の指定方法）</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#format">基本書式</a></li>
+					<li><a href="#propertys">複数のプロパティ</a></li>
+					<li><a href="#selectors">複数のセレクター</a></li>
+					<li><a href="#inherit">inherit</a></li>
+					<li><a href="#important">!important</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>セレクターの種類</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#type_s">タイプセレクター</a></li>
+					<li><a href="#universal_s">ユニバーサルセレクター</a></li>
+					<li><a href="#descendant_s">子孫セレクター</a></li>
+					<li><a href="#id_s">IDセレクター</a></li>
+					<li><a href="#class_s">クラスセレクター</a></li>
+					<li><a href="#id_class_s">IDとクラスが混在するセレクター</a></li>
+					<li><a href="#attr_s">属性セレクター</a></li>
+					<li><a href="#link_c">:link</a></li>
+					<li><a href="#visited_c">:visited</a></li>
+					<li><a href="#hover_c">:hover</a></li>
+					<li><a href="#focus_c">:focus</a></li>
+					<li><a href="#active_c">:active</a></li>
+					<li><a href="#nc1_c">:nth-child(値)</a></li>
+					<li><a href="#nc2_c">:nth-child(アルファベット値)</a></li>
+					<li><a href="#nlc1_c">:nth-last-child(値)</a></li>
+					<li><a href="#nlc2_c">:nth-last-child(アルファベット値)</a></li>
+					<li><a href="#fc_c">:first-child</a></li>
+					<li><a href="#lc_c">:last-child</a></li>
+					<li><a href="#not1_c">:nth-of-type(値)</a></li>
+					<li><a href="#not2_c">:nth-of-type(アルファベット値)</a></li>
+					<li><a href="#nlot1_c">:nth-last-of-type(値)</a></li>
+					<li><a href="#nlot2_c">:nth-last-of-type(アルファベット値)</a></li>
+					<li><a href="#fot_c">:first-of-type</a></li>
+					<li><a href="#lot_c">:last-of-type</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>単位</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#u_em">em</a></li>
+					<li><a href="#u_pt">pt</a></li>
+					<li><a href="#u_px">px</a></li>
+				</ul>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>エンコード・外部スタイルシートの読込み</span></h2>
+		<section id="charset">
+			<h3><span>@charset</span></h3>
+			<div class="inner">
+				<p>@charset &quot;文字エンコード&quot;;</p>
+				<p>文字エンコードを指定する。</p>
+				<h4>文字エンコード</h4>
+				<ul>
+					<li>utf-8など</li>
+				</ul>
+			</div>
+		</section>
+		<section id="import">
+			<h3><span>@import</span></h3>
+			<div class="inner">
+				<p>@import url(URL);<br>
+					@import &quot;URL&quot;;</p>
+				<p>外部スタイルシートのURLを指定する。</p>
+				<h4>URL</h4>
+				<ul>
+					<li>外部スタイルシートのURL<br>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>背景</span></h2>
+		<section id="bg">
+			<h3><span>background</span></h3>
+			<div class="inner">
+				<p>{background: background-imageの値 background-repeatの値 background-positionの値 background-colorの値;}</p>
+				<p>背景に関する属性をまとめて指定する。</p>
+				<p>{background: 1つ目の背景の値, 2つ目の背景の値, &#8943;, 最後の背景の値}</p>
+				<p>複数の背景に関する属性をまとめて指定する。<br>
+					※最後の背景の値のみ背景色が設定可。</p>
+			</div>
+		</section>
+		<section id="bg_image">
+			<h3><span>background-image</span></h3>
+			<div class="inner">
+				<p>{background-image: 画像;}</p>
+				<p>背景画像を指定する。</p>
+				<h4>画像</h4>
+				<ul>
+					<li>url(&#8943;)（画像のURL）</li>
+					<li>none（なし）</li>
+				</ul>
+				<p>{background-image: 1つ目の背景画像の値, 2つ目の背景画像の値, &#8943;}</p>
+				<p>複数の背景画像を指定する。</p>
+			</div>
+		</section>
+		<section id="bg_repeat">
+			<h3><span>background-repeat</span></h3>
+			<div class="inner">
+				<p>{background-repeat: 繰り返し;}<br>
+					{background-repeat: 横方向の値 縦方向の値;}</p>
+				<p>背景画像の繰り返しを指定する。</p>
+				<h4>繰り返し</h4>
+				<ul>
+					<li>repeat（並べて表示）</li>
+					<li>repeat-x（横方向のみに並べて表示）</li>
+					<li>repeat-y（縦方向のみに並べて表示）</li>
+					<li>no-repeat（繰り返しなし）</li>
+				</ul>
+				<p>{background-repeat: 1つ目の繰り返しの値, 2つ目の繰り返しの値, &#8943;}</p>
+				<p>複数の繰り返しを指定する。</p>
+			</div>
+		</section>
+		<section id="bg_position">
+			<h3><span>background-position</span></h3>
+			<div class="inner">
+				<p>{background-position: 水平方向 垂直方向;}<br>
+					{background-position: 水平方向 水平方向の値 垂直方向 垂直方向の値;}</p>
+				<p>背景画像の開始位置を指定する。</p>
+				<h4>水平方向</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値＋%</li>
+					<li>left（左端）</li>
+					<li>center（中央）</li>
+					<li>right（右端）</li>
+				</ul>
+				<h4>垂直方向</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値＋%</li>
+					<li>top（上端）</li>
+					<li>center（中央）</li>
+					<li>bottom（下端）</li>
+				</ul>
+				<p>{background-position: 1つ目の開始位置の値, 2つ目の開始位置の値, &#8943;}</p>
+				<p>複数の背景画像の開始位置を指定する。</p>
+			</div>
+		</section>
+		<section id="bg_color">
+			<h3><span>background-color</span></h3>
+			<div class="inner">
+				<p>{background-color: 色;}</p>
+				<p>背景色を指定する。</p>
+				<h4>色</h4>
+				<ul>
+					<li>#RRGGBB/#RGB</li>
+					<li>色名</li>
+					<li>rgb()/rgba()</li>
+					<li>hsl()/hsla()</li>
+					<li>transparent（透明）</li>
+				</ul>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>ボーダー</span></h2>
+		<section id="bd_w">
+			<h3><span>border-width</span></h3>
+			<div class="inner">
+				<p>{border-width: 太さ;}</p>
+				<p>ボーダーの太さをまとめて指定する。</p>
+				<h4>太さ</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>thin（細線）</li>
+					<li>medium（通常の太さの線）</li>
+					<li>thick（太線）</li>
+				</ul>
+				<p>{border-width: 上下の太さ 左右の太さ;}</p>
+				<p>上下と左右のボーダーの太さを指定する。</p>
+				<p>{border-width: 上の太さ 左右の太さ 下の太さ;}</p>
+				<p>上、左右、下のボーダーの太さを指定する。</p>
+				<p>{border-width: 上の太さ 右の太さ 下の太さ 左の太さ;}</p>
+				<p>全ボーダーの太さを個別に指定する。</p>
+			</div>
+		</section>
+		<section id="bd_tw">
+			<h3><span>border-top-width</span></h3>
+			<div class="inner">
+				<p>{border-top-width: 太さ;}</p>
+				<p>上ボーダーの太さを指定する。</p>
+			</div>
+		</section>
+		<section id="bd_bw">
+			<h3><span>border-bottom-width</span></h3>
+			<div class="inner">
+				<p>{border-bottom-width: 太さ;}</p>
+				<p>下ボーダーの太さを指定する。</p>
+			</div>
+		</section>
+		<section id="bd_lw">
+			<h3><span>border-left-width</span></h3>
+			<div class="inner">
+				<p>{border-left-width: 太さ;}</p>
+				<p>左ボーダーの太さを指定する。</p>
+			</div>
+		</section>
+		<section id="bd_rw">
+			<h3><span>border-right-width</span></h3>
+			<div class="inner">
+				<p>{border-right-width: 太さ;}</p>
+				<p>右ボーダーの太さを指定する。</p>
+			</div>
+		</section>
+		<section id="bd_s">
+			<h3><span>border-style</span></h3>
+			<div class="inner">
+				<p>{border-style: スタイル;}</p>
+				<p>ボーダーのスタイルをまとめて指定する。</p>
+				<h4>スタイル</h4>
+				<ul>
+					<li>solid（実線）</li>
+					<li>double（二重線）</li>
+					<li>groove（溝線）</li>
+					<li>ridge（稜線）</li>
+					<li>inset（沈みこみ）</li>
+					<li>outset（浮き出し）</li>
+					<li>none（ボーダーなし）</li>
+					<li>hidden（ボーダーを表示しない）</li>
+					<li>dashed（破線）</li>
+					<li>dotted（点線）</li>
+				</ul>
+				<p>{border-style: 上下のスタイル 左右のスタイル;}</p>
+				<p>上下と左右のボーダーのスタイルを指定する。</p>
+				<p>{border-style: 上のスタイル 左右のスタイル 下のスタイル;}</p>
+				<p>上、左右、下のボーダーのスタイルを指定する。</p>
+				<p>{border-style: 上のスタイル 右のスタイル 下のスタイル 左のスタイル;}</p>
+				<p>全ボーダーのスタイルを個別に指定する。</p>
+			</div>
+		</section>
+		<section id="bd_ts">
+			<h3><span>border-top-style</span></h3>
+			<div class="inner">
+				<p>{border-top-style: スタイル;}</p>
+				<p>上ボーダーのスタイルを指定する。</p>
+			</div>
+		</section>
+		<section id="bd_bs">
+			<h3><span>border-bottom-style</span></h3>
+			<div class="inner">
+				<p>{border-bottom-style: スタイル;}</p>
+				<p>下ボーダーのスタイルを指定する。</p>
+			</div>
+		</section>
+		<section id="bd_ls">
+			<h3><span>border-left-style</span></h3>
+			<div class="inner">
+				<p>{border-left-style: スタイル;}</p>
+				<p>左ボーダーのスタイルを指定する。</p>
+			</div>
+		</section>
+		<section id="bd_rs">
+			<h3><span>border-right-style</span></h3>
+			<div class="inner">
+				<p>{border-right-style: スタイル;}</p>
+				<p>右ボーダーのスタイルを指定する。</p>
+			</div>
+		</section>
+		<section id="bd_c">
+			<h3><span>border-color</span></h3>
+			<div class="inner">
+				<p>{border-color: 色;}</p>
+				<p>ボーダーの色をまとめて指定する。</p>
+				<h4>色</h4>
+				<ul>
+					<li>#RRGGBB/#RGB</li>
+					<li>色名</li>
+					<li>rgb()/rgba()</li>
+					<li>hsl()/hsla()</li>
+					<li>transparent（透明）</li>
+				</ul>
+				<p>{border-color: 上下の色 左右の色;}</p>
+				<p>上下と左右のボーダーの色を一括指定する。</p>
+				<p>{border-color: 上の色 左右の色 下の色;}</p>
+				<p>上、左右、下のボーダーの色を指定する。</p>
+				<p>{border-color: 上の色 右の色 下の色 左の色;}</p>
+				<p>全ボーダーの色を個別に指定する。</p>
+			</div>
+		</section>
+		<section id="bd_tc">
+			<h3><span>border-top-color</span></h3>
+			<div class="inner">
+				<p>{border-top-color: 色;}</p>
+				<p>上ボーダーの色を指定する。</p>
+			</div>
+		</section>
+		<section id="bd_bc">
+			<h3><span>border-bottom-color</span></h3>
+			<div class="inner">
+				<p>{border-bottom-color: 色;}</p>
+				<p>下ボーダーの色を指定する。</p>
+			</div>
+		</section>
+		<section id="bd_lc">
+			<h3><span>border-left-color</span></h3>
+			<div class="inner">
+				<p>{border-left-color: 色;}</p>
+				<p>左ボーダーの色を指定する。</p>
+			</div>
+		</section>
+		<section id="bd_rc">
+			<h3><span>border-right-color</span></h3>
+			<div class="inner">
+				<p>{border-right-color: 色;}</p>
+				<p>右のボーダーの色を指定する。</p>
+			</div>
+		</section>
+		<section id="bd">
+			<h3><span>border</span></h3>
+			<div class="inner">
+				<p>{border: border-widthの値 border-styleの値 border-colorの値;}</p>
+				<p>すべてのボーダーに関する属性をまとめて指定する。</p>
+			</div>
+		</section>
+		<section id="bd_t">
+			<h3><span>border-top</span></h3>
+			<div class="inner">
+				<p>{border-top: border-top-widthの値 border-top-styleの値 border-top-colorの値;}</p>
+				<p>上ボーダーに関する属性をまとめて指定する。</p>
+			</div>
+		</section>
+		<section id="bd_b">
+			<h3><span>border-bottom</span></h3>
+			<div class="inner">
+				<p>{border-bottom: border-bottom-widthの値 border-bottom-styleの値 border-bottom-colorの値;}</p>
+				<p>下ボーダーに関する属性をまとめて指定する。</p>
+			</div>
+		</section>
+		<section id="bd_l">
+			<h3><span>border-left</span></h3>
+			<div class="inner">
+				<p>{border-left: border-left-widthの値 border-left-styleの値 border-left-colorの値;}</p>
+				<p>左ボーダーに関する属性をまとめて指定する。</p>
+			</div>
+		</section>
+		<section id="bd_r">
+			<h3><span>border-right</span></h3>
+			<div class="inner">
+				<p>{border-right: border-right-widthの値 border-right-styleの値 border-right-colorの値;}</p>
+				<p>右ボーダーに関する属性をまとめて指定する。</p>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>カラー</span></h2>
+		<section id="color">
+			<h3><span>color</span></h3>
+			<div class="inner">
+				<p>{color: 色;}</p>
+				<p>文字色を指定する。</p>
+				<h4>色</h4>
+				<ul>
+					<li>#RRGGBB/#RGB</li>
+					<li>色名</li>
+					<li>rgb()/rgba()</li>
+					<li>hsl()/hsla()</li>
+					<li>transparent（透明）</li>
+				</ul>
+			</div>
+		</section>
+		<section id="opacity">
+			<h3><span>opacity</span></h3>
+			<div class="inner">
+				<p>{opacity: ボックスの透明度;}</p>
+				<p>ボックスの透明度を指定する。</p>
+				<h4>ボックスの透明度</h4>
+				<ul>
+					<li>数値（0～1.0）</li>
+				</ul>
+				<p>&nbsp;</p>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>テキストとフォント</span></h2>
+		<section id="t_align">
+			<h3><span>text-align</span></h3>
+			<div class="inner">
+				<p>{text-align: 位置;}</p>
+				<p>テキストの水平方向位置を指定する。</p>
+				<h4>位置</h4>
+				<ul>
+					<li>left（左揃え）</li>
+					<li>center（中央揃え）</li>
+					<li>right（右揃え）</li>
+				</ul>
+			</div>
+		</section>
+		<section id="t_decoration">
+			<h3><span>text-decoration</span></h3>
+			<div class="inner">
+				<p>{text-decoration: 装飾;}</p>
+				<p>テキストの文字装飾を指定する。</p>
+				<h4>装飾</h4>
+				<ul>
+					<li>underline（下線）</li>
+					<li>overline（上線）</li>
+					<li>line-through（取り消し線）</li>
+					<li>none（なし）</li>
+				</ul>
+			</div>
+		</section>
+		<section id="t_indent">
+			<h3><span>text-indent</span></h3>
+			<div class="inner">
+				<p>{text-indent: 幅;}</p>
+				<p>テキストのインデントを指定する。</p>
+				<h4>幅</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値+%</li>
+				</ul>
+			</div>
+		</section>
+		<section id="v_align">
+			<h3><span>vertical-align</span></h3>
+			<div class="inner">
+				<p>{vertical-align: 位置;}</p>
+				<p>ボックス内のコンテンツの垂直方向位置を指定する。</p>
+				<h4>位置</h4>
+				<ul>
+					<li>baseline（ベースライン）</li>
+					<li>sub（下付き文字）</li>
+					<li>super（上付き文字）</li>
+					<li>top（上揃え）</li>
+					<li>text-top（テキストを基準とした上揃え）</li>
+					<li>middle（上下中央揃え）</li>
+					<li>bottom（下揃え）</li>
+					<li>text-bottom（テキストを基準とした下揃え）</li>
+					<li>auto</li>
+				</ul>
+			</div>
+		</section>
+		<section id="font">
+			<h3><span>font</span></h3>
+			<div class="inner">
+				<p>{font: font-styleの値 font-weightの値  font-sizeの値/line-heightの値 font-familyの値;}</p>
+				<p>フォントに関する属性をまとめて指定する。</p>
+			</div>
+		</section>
+		<section id="f_style">
+			<h3><span>font-style</span></h3>
+			<div class="inner">
+				<p>{font-style: スタイル;}</p>
+				<p>フォントのスタイルを指定する。</p>
+				<h4>スタイル</h4>
+				<ul>
+					<li>normal</li>
+					<li>italic</li>
+					<li>oblique</li>
+				</ul>
+			</div>
+		</section>
+		<section id="f_weight">
+			<h3><span>font-weight</span></h3>
+			<div class="inner">
+				<p>{font-weight: 太さ;}</p>
+				<p>フォントの太さを指定する。</p>
+				<h4>太さ</h4>
+				<ul>
+					<li>normal</li>
+					<li>bold</li>
+					<li>bolder</li>
+					<li>lighter</li>
+				</ul>
+			</div>
+		</section>
+		<section id="f_size">
+			<h3><span>font-size</span></h3>
+			<div class="inner">
+				<p>{font-size: サイズ;}</p>
+				<p>フォントサイズ（文字のサイズ）を指定する。</p>
+				<h4>サイズ</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値+%</li>
+					<li>xx-small</li>
+					<li>x-small</li>
+					<li>small</li>
+					<li>medium</li>
+					<li>large</li>
+					<li>x-large</li>
+					<li>xx-large</li>
+					<li>larger</li>
+					<li>smaller</li>
+				</ul>
+			</div>
+		</section>
+		<section id="l_height">
+			<h3><span>line-height</span></h3>
+			<div class="inner">
+				<p>{line-height: 高さ;}</p>
+				<p>行の高さを指定する。</p>
+				<h4>高さ</h4>
+				<ul>
+					<li>数値（整数）</li>
+					<li>数値+単位</li>
+					<li>数値+%</li>
+					<li>normal</li>
+				</ul>
+			</div>
+		</section>
+		<section id="f_family">
+			<h3><span>font-family</span></h3>
+			<div class="inner">
+				<p>{font-family: フォント名;}</p>
+				<p>フォントの種類を指定する。</p>
+				<h4>フォント名</h4>
+				<ul>
+					<li>フォントの正式名称</li>
+					<li>一般名（serif、sans-serif、cursive、fantasy、monospace）<br>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>マージンとパディング</span></h2>
+		<section id="margin">
+			<h3><span>margin</span></h3>
+			<div class="inner">
+				<p>{margin: 幅;}</p>
+				<p>マージンの幅をまとめて指定する。</p>
+				<h4>幅</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値＋%</li>
+					<li>auto</li>
+				</ul>
+				<p>{margin: 上下の幅 左右の幅;}</p>
+				<p>上下と左右のマージンの幅を指定する。</p>
+				<p>{margin: 上の幅 左右の幅 下の幅;}</p>
+				<p>上、左右、下のマージンの幅を指定する。</p>
+				<p>{margin: 上の幅 右の幅 下の幅 左の幅;}</p>
+				<p>全マージンの幅を個別に指定する。</p>
+			</div>
+		</section>
+		<section id="mt">
+			<h3><span>margin-top</span></h3>
+			<div class="inner">
+				<p>{margin-top: 幅;}</p>
+				<p>上マージンの幅を指定する。</p>
+			</div>
+		</section>
+		<section id="mb">
+			<h3><span>margin-bottom</span></h3>
+			<div class="inner">
+				<p>{margin-bottom: 幅;}</p>
+				<p>下マージンの幅を指定する。</p>
+			</div>
+		</section>
+		<section id="ml">
+			<h3><span>margin-left</span></h3>
+			<div class="inner">
+				<p>{margin-left: 幅;}</p>
+				<p>左マージンの幅を指定する。</p>
+			</div>
+		</section>
+		<section id="mr">
+			<h3><span>margin-right</span></h3>
+			<div class="inner">
+				<p>{margin-right: 幅;}</p>
+				<p>右マージンの幅を指定する。</p>
+			</div>
+		</section>
+		<section id="padding">
+			<h3><span>padding</span></h3>
+			<div class="inner">
+				<p>{padding: 幅;}</p>
+				<p>パディングの幅をまとめて指定する。</p>
+				<h4>幅</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値＋%</li>
+				</ul>
+				<p>{padding: 上下の幅 左右の幅;}</p>
+				<p>上下と左右のパディングの幅を指定する。</p>
+				<p>{padding: 上の幅 左右の幅 下の幅;}</p>
+				<p>上、左右、下のパディングの幅を指定する。</p>
+				<p>{padding: 上の幅 右の幅 下の幅 左の幅;}</p>
+				<p>全パディングの幅を個別に指定する。</p>
+			</div>
+		</section>
+		<section id="pt">
+			<h3><span>padding-top</span></h3>
+			<div class="inner">
+				<p>{padding-top: パディング幅;}</p>
+				<p>上パディングを指定する。</p>
+			</div>
+		</section>
+		<section id="pb">
+			<h3><span></span>padding-bottom</h3>
+			<div class="inner">
+				<p>{padding-bottom: パディング幅;}</p>
+				<p>下パディングを指定する。</p>
+			</div>
+		</section>
+		<section id="pl">
+			<h3><span>padding-left</span></h3>
+			<div class="inner">
+				<p>{padding-left: パディング幅;}</p>
+				<p>左パディングを指定する。</p>
+			</div>
+		</section>
+		<section id="pr">
+			<h3><span>padding-right</span></h3>
+			<div class="inner">
+				<p>{padding-right: パディング幅;}</p>
+				<p>右パディングを指定する。</p>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>リスト</span></h2>
+		<section id="ls">
+			<h3><span>list-style</span></h3>
+			<div class="inner">
+				<p>{list-style:  list-style-typeの値 list-style-imageの値 list-style-positionの値;}</p>
+				<p>リストのマーカーに関する属性をまとめて指定する。</p>
+			</div>
+		</section>
+		<section id="ls_t">
+			<h3><span>list-style-type</span></h3>
+			<div class="inner">
+				<p>{list-style-type: マーカー;}</p>
+				<p>リストのマーカーの種類を指定する。</p>
+				<h4>マーカー</h4>
+				<ul>
+					<li>disc（黒丸）</li>
+					<li>circle（白丸）</li>
+					<li>square（四角）</li>
+					<li>decimal（10進数）</li>
+					<li>none（なし）</li>
+				</ul>
+			</div>
+		</section>
+		<section id="ls_i">
+			<h3><span>list-style-image</span></h3>
+			<div class="inner">
+				<p>{list-style-image: 画像;}</p>
+				<p>リストのマーカーに画像を指定する。</p>
+				<h4>画像</h4>
+				<ul>
+					<li>url()（画像のURL）</li>
+					<li>none（なし）</li>
+				</ul>
+			</div>
+		</section>
+		<section id="ls_p">
+			<h3><span>list-style-position</span></h3>
+			<div class="inner">
+				<p>{list-style-position: 位置;}</p>
+				<p>リストのマーカーの位置を指定する。</p>
+				<h4>位置</h4>
+				<ul>
+					<li>inside（内側）</li>
+					<li>outside（外側）</li>
+				</ul>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>ボックス</span></h2>
+		<section id="width">
+			<h3><span>width</span></h3>
+			<div class="inner">
+				<p>{width: 幅;}</p>
+				<p>ボックスの幅を指定する。</p>
+				<h4>幅</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値＋%</li>
+					<li>auto</li>
+				</ul>
+			</div>
+		</section>
+		<section id="min_w">
+			<h3><span>min-width</span></h3>
+			<div class="inner">
+				<p>{min-width: 幅;}</p>
+				<p>ボックスの最小の幅を指定する。</p>
+				<h4>幅</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値＋%</li>
+				</ul>
+			</div>
+		</section>
+		<section id="max_w">
+			<h3><span>max-width</span></h3>
+			<div class="inner">
+				<p>{max-width: 幅;}</p>
+				<p>ボックスの最大の幅を指定する。</p>
+				<h4>幅</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値＋%</li>
+					<li>none（なし）</li>
+				</ul>
+			</div>
+		</section>
+		<section id="height">
+			<h3><span>height</span></h3>
+			<div class="inner">
+				<p>{height: 高さ;}</p>
+				<p>ボックスの高さを指定する。</p>
+				<h4>高さ</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値＋%</li>
+					<li>auto</li>
+				</ul>
+			</div>
+		</section>
+		<section id="min_h">
+			<h3><span>min-height</span></h3>
+			<div class="inner">
+				<p>{min-height: 高さ;}</p>
+				<p>ボックスの最小の高さを指定する。</p>
+				<h4>高さ</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値＋%</li>
+				</ul>
+			</div>
+		</section>
+		<section id="max_h">
+			<h3><span>max-height</span></h3>
+			<div class="inner">
+				<p>{max-height: 高さ;}</p>
+				<p>ボックスの最大の高さを指定する。</p>
+				<h4>高さ</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値＋%</li>
+					<li>none（なし）</li>
+				</ul>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>表示と配置</span></h2>
+		<section id="display">
+			<h3><span>display</span></h3>
+			<div class="inner">
+				<p>{display: 形式;}</p>
+				<p>ボックスの表示形式を変更する。</p>
+				<h4>形式</h4>
+				<ul>
+					<li>block（ブロックレベル形式にする）</li>
+					<li>inline（インライン形式にする）</li>
+					<li>inline-block（インラインブロックレベル形式にする）</li>
+					<li>none（存在しないものとして処理される）</li>
+				</ul>
+			</div>
+		</section>
+		<section id="overflow">
+			<h3><span>overflow</span></h3>
+			<div class="inner">
+				<p>{overflow: 処理;}</p>
+				<p>ボックスの内容あふれの処理方法を指定する。</p>
+				<h4>処理</h4>
+				<ul>
+					<li>visible（高さ、幅の指定を無視してすべて表示）</li>
+					<li>hidden（高さ、幅の指定により範囲内のみ表示）</li>
+					<li>scroll（スクロールバーを表示）</li>
+					<li>auto（ブラウザーの処理に任せる）</li>
+				</ul>
+			</div>
+		</section>
+		<section id="of_x">
+			<h3><span>overflow-x</span></h3>
+			<div class="inner">
+				<p>{overflow-x: 処理;}</p>
+				<p>ボックスの幅（x軸）の内容あふれの処理方法を指定する。</p>
+				<h4>処理</h4>
+				<ul>
+					<li>visible（幅の指定を無視してすべて表示）</li>
+					<li>hidden（幅の指定により範囲内のみ表示）</li>
+					<li>scroll（スクロールバーを表示）</li>
+					<li>auto（ブラウザーの処理に任せる）</li>
+				</ul>
+			</div>
+		</section>
+		<section id="of_y">
+			<h3><span>overflow-y</span></h3>
+			<div class="inner">
+				<p>{overflow-y: 処理;}</p>
+				<p>ボックスの高さ（y軸）の内容あふれの処理方法を指定する。</p>
+				<h4>処理</h4>
+				<ul>
+					<li>visible（高さの指定を無視してすべて表示）</li>
+					<li>hidden（高さの指定により範囲内のみ表示）</li>
+					<li>scroll（スクロールバーを表示）</li>
+					<li>auto（ブラウザーの処理に任せる）</li>
+				</ul>
+			</div>
+		</section>
+		<section id="position">
+			<h3><span>position</span></h3>
+			<div class="inner">
+				<p>{position: 配置;}</p>
+				<p>要素の配置方法を指定する。</p>
+				<h4>配置</h4>
+				<ul>
+					<li>static（指定なし）</li>
+					<li>relative（通常配置される位置からの相対的な位置で指定）</li>
+					<li>absolute（親要素に対して絶対的な位置で指定）</li>
+					<li>fixed（固定配置で指定）</li>
+				</ul>
+			</div>
+		</section>
+		<section id="top">
+			<h3><span>top</span></h3>
+			<div class="inner">
+				<p>{top: 位置;}</p>
+				<p>上からの位置を指定する。</p>
+				<h4>位置</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値+%</li>
+					<li>auto</li>
+				</ul>
+			</div>
+		</section>
+		<section id="bottom">
+			<h3><span>bottom</span></h3>
+			<div class="inner">
+				<p>{bottom: 位置;}</p>
+				<p>下からの位置を指定する。</p>
+				<h4>位置</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値+%</li>
+					<li>auto</li>
+				</ul>
+			</div>
+		</section>
+		<section id="left">
+			<h3><span>left</span></h3>
+			<div class="inner">
+				<p>{left: 位置;}</p>
+				<p>左からの位置を指定する。</p>
+				<h4>位置</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値+%</li>
+					<li>auto</li>
+				</ul>
+			</div>
+		</section>
+		<section id="right">
+			<h3><span>right</span></h3>
+			<div class="inner">
+				<p>{right: 位置;}</p>
+				<p>右からの位置を指定する。</p>
+				<h4>位置</h4>
+				<ul>
+					<li>数値+単位</li>
+					<li>数値+%</li>
+					<li>auto</li>
+				</ul>
+			</div>
+		</section>
+		<section id="z_index">
+			<h3><span>z-index</span></h3>
+			<div class="inner">
+				<p>{z-index: 値;}</p>
+				<p>重ね合わせの順序を指定する。</p>
+				<h4>値</h4>
+				<ul>
+					<li>数値（整数）</li>
+					<li>auto</li>
+				</ul>
+			</div>
+		</section>
+		<section id="float">
+			<h3><span>float</span></h3>
+			<div class="inner">
+				<p>{float: フロート;}</p>
+				<p>ボックスをフロートさせ、寄せて配置する（後続するボックスは回り込む）。</p>
+				<h4>フロート</h4>
+				<ul>
+					<li>left（左寄せ）</li>
+					<li>right（右寄せ）</li>
+					<li>none（なし）</li>
+				</ul>
+			</div>
+		</section>
+		<section id="clear">
+			<h3><span>clear</span></h3>
+			<div class="inner">
+				<p>{clear: 対象;}</p>
+				<p>ボックスのフロートを解除する。</p>
+				<h4>対象</h4>
+				<ul>
+					<li>left（左寄せのフロートを解除）</li>
+					<li>right（右寄せのフロートを解除）</li>
+					<li>both（両方解除）</li>
+					<li>none（解除しない）</li>
+				</ul>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>テーブル</span></h2>
+		<section id="t_layout">
+			<h3><span>table-layout</span></h3>
+			<div class="inner">
+				<p>{table-layout: レイアウト方法;}</p>
+				<p>テーブル（表）のレイアウト方法を指定する。</p>
+				<h4>レイアウト方法</h4>
+				<ul>
+					<li>auto</li>
+					<li>fixed（列幅を均等）</li>
+				</ul>
+				<p>&nbsp;</p>
+			</div>
+		</section>
+		<section id="b_collapse">
+			<h3><span>border-collapse</span></h3>
+			<div class="inner">
+				<p>{border-collapse: 表示モデル;}</p>
+				<p>テーブル（表）のボーダーの表示モデルを指定する。</p>
+				<h4>表示モデル</h4>
+				<ul>
+					<li>collapse（隣接するセルのボーダーを重ねて表示）</li>
+					<li>separate（隣接するセルのボーダーを間隔をあけて表示）<br>
+					</li>
+				</ul>
+				<p>&nbsp;</p>
+			</div>
+		</section>
+		<section id="b_spacing">
+			<h3><span>border-spacing</span></h3>
+			<div class="inner">
+				<p>{border-spacing: 間隔;}</p>
+				<p>ボーダーとセル内容との間隔を指定する。</p>
+				<h4>間隔</h4>
+				<ul>
+					<li>数値+単位</li>
+				</ul>
+				<p>&nbsp;</p>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>CSSの書式（セレクター、プロパティ、値の指定方法）</span></h2>
+		<section id="format">
+			<h3><span>基本書式</span></h3>
+			<div class="inner">
+				<p>セレクター {プロパティ: 値;}</p>
+				<p>セレクターにプロパティと値を設定する。</p>
+			</div>
+		</section>
+		<section id="propertys">
+			<h3><span>複数のプロパティ</span></h3>
+			<div class="inner">
+				<p>セレクター {<br>
+					&nbsp;&nbsp;プロパティ1: 値;<br>
+					&nbsp;&nbsp;プロパティ2: 値;<br>
+					&nbsp;&nbsp;&#8943;<br>
+					}</p>
+				<p>複数のプロパティに値を設定する。</p>
+			</div>
+		</section>
+		<section id="selectors">
+			<h3><span>複数のセレクター</span></h3>
+			<div class="inner">
+				<p>セレクター1, セレクター2, セレクター3,&#8943; {<br>
+					&nbsp;&nbsp;プロパティ: 値;<br>
+					&nbsp;&nbsp;&#8943;<br>
+					}</p>
+				<p>複数のセレクターにプロパティと値を設定する。</p>
+			</div>
+		</section>
+		<section id="inherit">
+			<h3><span>inherit</span></h3>
+			<div class="inner">
+				<p>セレクター {プロパティ: inherit;}</p>
+				<p>親要素を継承する。</p>
+			</div>
+		</section>
+		<section id="important">
+			<h3><span>!important</span></h3>
+			<div class="inner">
+				<p>セレクター {プロパティ: 値!important;}</p>
+				<p>プロパティの値に最優先の設定をする。</p>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>セレクターの種類</span></h2>
+		<section id="type_s">
+			<h3><span>タイプセレクター</span></h3>
+			<div class="inner">
+				<p>要素名 {&#8943;}</p>
+			</div>
+		</section>
+		<section id="universal_s">
+			<h3><span>ユニバーサルセレクター</span></h3>
+			<div class="inner">
+				<p>* {&#8943;}</p>
+			</div>
+		</section>
+		<section id="descendant_s">
+			<h3><span>子孫セレクター</span></h3>
+			<div class="inner">
+				<p>親要素 子孫要素 {&#8943;}</p>
+			</div>
+		</section>
+		<section id="id_s">
+			<h3><span>IDセレクター</span></h3>
+			<div class="inner">
+				<p>要素名#ID名 {&#8943;}</p>
+				<p>※要素名を省略した場合、全ての要素が対象となる。</p>
+			</div>
+		</section>
+		<section id="class_s">
+			<h3><span>クラスセレクター</span></h3>
+			<div class="inner">
+				<p>要素名.クラス名 {&#8943;}<br>
+					要素名.クラス名1.クラス名2.クラス名3&#8943; {&#8943;}</p>
+				<p>※要素名を省略した場合、全ての要素が対象となる。</p>
+			</div>
+		</section>
+		<section id="id_class_s">
+			<h3><span>IDとクラスが混在するセレクター</span></h3>
+			<div class="inner">
+				<p>要素名#ID名.クラス名 {&#8943;}</p>
+				<p>※要素名を省略した場合、全ての要素が対象となる。</p>
+			</div>
+		</section>
+		<section id="attr_s">
+			<h3><span>属性セレクター</span></h3>
+			<div class="inner">
+				<p>要素名[属性] {&#8943;}<br>
+					要素名[属性="属性値"] {&#8943;}</p>
+				<p>※要素名を省略した場合、属性に関連する要素が対象となる。</p>
+			</div>
+		</section>
+		<section id="link_c">
+			<h3><span>:link</span></h3>
+			<div class="inner">
+				<p>未アクセスであるものを指定する疑似クラス。</p>
+			</div>
+		</section>
+		<section id="visited_c">
+			<h3><span>:visited</span></h3>
+			<div class="inner">
+				<p>アクセス済みであるものを指定する疑似クラス。</p>
+			</div>
+		</section>
+		<section id="hover_c">
+			<h3><span>:hover</span></h3>
+			<div class="inner">
+				<p>マウスでポイントしたオブジェクトを指定する疑似クラス。</p>
+			</div>
+		</section>
+		<section id="focus_c">
+			<h3><span>:focus</span></h3>
+			<div class="inner">
+				<p>カーソルがフォーカスしたものを指定する疑似クラス。</p>
+			</div>
+		</section>
+		<section id="active_c">
+			<h3><span>:active</span></h3>
+			<div class="inner">
+				<p>マウスのボタンが押されているなど、アクティブなオブジェクトを指定する疑似クラス。</p>
+			</div>
+		</section>
+		<section id="nc1_c">
+			<h3><span>:nth-child(値)</span></h3>
+			<div class="inner">
+				<h4>値</h4>
+				<ul>
+					<li>数値</li>
+					<li>○n+△（○ずつ連続する△番目）</li>
+				</ul>
+				<p>連続するすべての要素（ID、クラスなど含む）の最初から数えた個数の中から番号を指定する疑似クラス。</p>
+				<p>&nbsp;</p>
+			</div>
+		</section>
+		<section id="nc2_c">
+			<h3><span>:nth-child(アルファベット値)</span></h3>
+			<div class="inner">
+				<h4>アルファベット値</h4>
+				<ul>
+					<li>odd（奇数）</li>
+					<li>even（偶数）</li>
+				</ul>
+				<p>連続するすべての要素（ID、クラスなど含む）の最初から数えた個数の中から奇数や偶数を指定する疑似クラス。</p>
+			</div>
+		</section>
+		<section id="nlc1_c">
+			<h3><span>:nth-last-child(値)</span></h3>
+			<div class="inner">
+				<h4>値</h4>
+				<ul>
+					<li>数値</li>
+					<li>○n+△（○ずつ連続する△番目）</li>
+				</ul>
+				<p>連続するすべての要素（ID、クラスなど含む）の最後から数えた個数の中から番号を指定する疑似クラス。</p>
+				<p>&nbsp;</p>
+			</div>
+		</section>
+		<section id="nlc2_c">
+			<h3><span>:nth-last-child(アルファベット値)</span></h3>
+			<div class="inner">
+				<h4>アルファベット値</h4>
+				<ul>
+					<li>odd（奇数）</li>
+					<li>even（偶数）</li>
+				</ul>
+				<p>連続するすべての要素（ID、クラスなど含む）の最後から数えた個数の中から奇数や偶数を指定する疑似クラス。</p>
+			</div>
+		</section>
+		<section id="fc_c">
+			<h3><span>:first-child</span></h3>
+			<div class="inner">
+				<p>連続するすべての要素（ID、クラスなど含む）の最初から数えた個数の中から1番目を指定する疑似クラス。</p>
+			</div>
+		</section>
+		<section id="lc_c">
+			<h3><span>:last-child</span></h3>
+			<div class="inner">
+				<p>連続するすべての要素（ID、クラスなど含む）の最後から数えた個数の中から1番目を指定する疑似クラス。</p>
+			</div>
+		</section>
+		<section id="not1_c">
+			<h3><span>:nth-of-type(値)</span></h3>
+			<div class="inner">
+				<h4>値</h4>
+				<ul>
+					<li>数値</li>
+					<li>○n+△（○ずつ連続する△番目）</li>
+				</ul>
+				<p>連続する同じ要素のみ（ID、クラスなど含む）の最初から数えた個数の中から番号を指定する疑似クラス。</p>
+			</div>
+		</section>
+		<section id="not2_c">
+			<h3><span>:nth-of-type(アルファベット値)</span></h3>
+			<div class="inner">
+				<h4>アルファベット値</h4>
+				<ul>
+					<li>odd（奇数）</li>
+					<li>even（偶数）</li>
+				</ul>
+				<p>連続する同じ要素のみ（ID、クラスなど含む）の最初から数えた個数の中から奇数や偶数を指定する疑似クラス。</p>
+			</div>
+		</section>
+		<section id="nlot1_c">
+			<h3><span>:nth-last-of-type(値)</span></h3>
+			<div class="inner">
+				<h4>値</h4>
+				<ul>
+					<li>数値</li>
+					<li>○n+△（○ずつ連続する△番目）</li>
+				</ul>
+				<p>連続する同じ要素のみ（ID、クラスなど含む）の最後から数えた個数の中から番号を指定する疑似クラス。</p>
+			</div>
+		</section>
+		<section id="nlot2_c">
+			<h3><span>:nth-last-of-type(アルファベット値)</span></h3>
+			<div class="inner">
+				<h4>アルファベット値</h4>
+				<ul>
+					<li>odd（奇数）</li>
+					<li>even（偶数）</li>
+				</ul>
+				<p>連続する同じ要素のみ（ID、クラスなど含む）の最後から数えた個数の中から奇数や偶数を指定する疑似クラス。</p>
+			</div>
+		</section>
+		<section id="fot_c">
+			<h3><span>:first-of-type</span></h3>
+			<div class="inner">
+				<p>連続する同じ要素のみ（ID、クラスなど含む）の最初から数えた個数の中から1番目を指定する疑似クラス。</p>
+			</div>
+		</section>
+		<section id="lot_c">
+			<h3><span>:last-of-type</span></h3>
+			<div class="inner">
+				<p>連続する同じ要素のみ（ID、クラスなど含む）の最後から数えた個数の中から1番目を指定する疑似クラス。</p>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>単位</span></h2>
+		<section id="u_em">
+			<h3><span>em</span></h3>
+			<div class="inner">
+				<p>エム（文字の高さ）</p>
+			</div>
+		</section>
+		<section id="u_pt">
+			<h3><span>pt</span></h3>
+			<div class="inner">
+				<p>ポイント</p>
+			</div>
+		</section>
+		<section id="u_px">
+			<h3><span>px</span></h3>
+			<div class="inner">
+				<p>ピクセル</p>
+			</div>
+		</section>
+	</article>
+</div>
+<script src="../common/jquery-min.js"></script>
+<script src="../common/q_common.js"></script>
+</body>
+</html>

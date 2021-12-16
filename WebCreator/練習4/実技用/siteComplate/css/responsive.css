@@ -1,0 +1,62 @@
+﻿@charset "utf-8";
+
+header, nav, #pickup_area, #contents, footer #pagetop {
+	width: 450px;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+}
+#pickup_area {
+	height: 193px;
+	padding-top: 10px;
+}
+#pickup_area ul li img {
+	width: 450px;
+}
+#main {
+	width: auto;
+	float: none;
+}
+nav ul li#nav_info,
+nav ul li#nav_reserve,
+nav ul li#nav_lineup,
+nav ul li#nav_mailmagazine {
+	width: 223px;
+	margin: 1px;
+	background-color: #d35a49;
+}
+nav ul li#nav_info a,
+nav ul li#nav_reserve a,
+nav ul li#nav_lineup a,
+nav ul li#nav_mailmagazine a {
+	min-height: 14px;
+	margin-bottom: 0;
+	padding: 15px 0 15px 0;
+	background-image: none;
+	color: #ffffff;
+	line-height: 1.1;
+	text-align: center;
+	text-decoration: none;
+}
+nav ul li#nav_info a:hover,
+nav ul li#nav_reserve a:hover,
+nav ul li#nav_lineup a:hover,
+nav ul li#nav_mailmagazine a:hover {
+	background-color: #7b291e;
+}
+#news ul li {
+	padding: 10px 0 10px 0;
+	text-indent: 0;
+}
+#news ul li time {
+	display: block;
+	width: auto;
+	margin-bottom: 5px;
+}
+#sub {
+	margin-top: 50px;
+	margin-left: 10px;
+	float: none;
+}

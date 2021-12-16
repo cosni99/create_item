@@ -1,0 +1,615 @@
+﻿@charset "utf-8";
+/************* common parts **************/
+/*--------- common ---------*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 87.5%;
+}
+body * {
+	font-size: 100%;
+}
+a {
+	text-decoration: none;
+}
+.clearfix:after {
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	zoom: 1;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+header {
+	border-bottom: 1px solid #ddd;
+}
+p.q_chapter_lead,
+p.q_lead {
+	font-weight: bold;
+}
+.inner {
+	margin: 0 0.5em 0;
+	padding-bottom: 1.5em;
+}
+/*--------- menu_extra ---------*/
+#menu_extra {
+	margin: 0;
+	padding: 0.3em 0.5em;
+	background-color: #f5f5f5;
+	font-size: 87.5%;
+}
+#menu_extra li span,
+#menu_extra li a {
+	display: block;
+	padding: 0 0.1em;
+	color: #4D4D4D;
+}
+#menu_extra li span span {
+	display: inline;
+	font-size: 75%;
+}
+#menu_extra a:hover,
+#menu_extra span:hover {
+	color: #000;
+}
+#menu_extra #menu_note a {
+	width: 5.5em;
+	padding: 0 0.1em;
+}
+#menu_extra #menu_note a::before,
+#question #menu_extra li ul li a::before,
+#reference #menu_extra a::before {
+	content: "\00BB"" ";
+}
+/*--------- question menu_extra ---------*/
+#question #menu_extra li {
+	position: relative;
+}
+#question #menu_extra #menu_img span {
+	width: 6.5em;
+}
+#question #menu_extra #menu_reference span {
+	width: 11.5em;
+}
+#question #menu_extra li ul li {
+	margin: 0;
+	padding: 0.2em 0.3em;
+	font-size: 87.5%;
+}
+#question #menu_extra #menu_img ul li {
+	width: 22em;
+}
+#question #menu_extra #menu_reference ul li {
+	width: 8em;
+}
+#question #menu_extra li ul li a {
+	display: block;
+	width: 100%;
+}
+/*--------- reference menu_extra ---------*/
+#reference #menu_extra #menu_html a {
+	width: 5.5em;
+}
+#reference #menu_extra #menu_css a {
+	width: 5em;
+}
+/*--------- h1 ---------*/
+header h1 {
+	margin: 0;
+	padding: 0.3em 0.5em;
+	background-color: #0F0F0F;
+	border-bottom: 1px solid #555656;
+	font-size: 87.5%;
+	color: #F5F5F5;
+}
+/*--------- h2 ---------*/
+h2 {
+	padding: 0.2em;
+	font-size: 125%;
+	color: #FFF;
+	background-color: #0F0F0F;
+}
+h2 span {
+	border-left: 3px solid #FFF;
+	display: block;
+	padding: 0 3px;
+}
+/*--------- h3 ---------*/
+h3 {
+	padding: 0.2em;
+	border-top: 1px solid #D4D4D4;
+	border-bottom: 1px solid #D4D4D4;
+	background-color: #F1F1F1;
+}
+h3 span {
+	display: block;
+	border-left: 3px solid #000;
+	padding: 0 3px;
+}
+/************* start AND question **************/
+/*--------- common ---------*/
+#start article ul,
+#question article ul {
+	margin: 0;
+}
+#question #q_area {
+	position: relative;
+	clear: both;
+}
+#start p.q_chapter_lead,
+#question p.q_chapter_lead {
+	margin-bottom: 0;
+}
+#start p.q_chapter_lead,
+#question p.q_chapter_lead,
+#start p.q_lead,
+#question p.q_lead,
+#question ul.q_this_design {
+	padding: 0 0.5em;
+}
+#question ul.q_this_design {
+	margin-top: 0.3em;
+	margin-left: 0.5em;
+	margin-bottom: 1.1em;
+	font-size: 87.5%;
+}
+#question ul.q_this_design li {
+	margin-bottom: 0.1em;
+}
+#question ul.q_this_design li a {
+	color: #1A31A8;
+	text-decoration: underline;
+}
+#question ul.q_this_design li a:hover {
+	color: #581F76;
+}
+#question ul.q_this_design li a::before {
+	content: "\00BB"" ";
+}
+.q_lead.rwd {
+	margin-bottom: 0;
+}
+#question article ul.q_lead {
+	margin-top: 0.3em;
+	margin-bottom: 1.1em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	font-size: 87.5%;
+}
+#question article ul.q_lead li {
+	padding-left: 1em;
+	font-weight: bold;
+	text-indent: -1em;
+}
+#question article section {
+	padding-bottom: 1.5em;
+}
+#question article section:last-of-type {
+	padding-bottom: 0;
+}
+#question input[type="checkbox"] {
+	vertical-align: text-top;
+}
+#question section section {
+	background-color: #F8F8F8;
+	padding-bottom: 1px;
+}
+#question section section section {
+	background-color: #FFF;
+	border: 1px solid #E5E5E5;
+	margin: 0 0.5em 1.0em;
+}
+#question section .inner section:first-child  {
+	margin-top: 1em;
+}
+#question section .inner p:last-child {
+	margin-bottom: 0;
+}
+#question section table {
+	width: 100%;
+	margin-top: 0.5em;
+	border-collapse: collapse;
+	background-color: #FFF;
+}
+#question section th,
+#question section td {
+	border: 1px solid #999;
+	padding: 0.3em;
+	font-weight: normal;
+}
+#question section th[scope="col"],
+#question section th[scope="row"] {
+	background-color: #F5F5F5;
+}
+#question section th[scope="row"] {
+	width: 6em;
+	text-align: left;
+}
+#question section td div {
+	float: left;
+}
+#question .q_next {
+	padding-bottom: 2.6em;
+	font-weight: bold;
+}
+/*--------- header_q ---------*/
+#question #header_q {
+	width:100%;
+	background-color: #fff;
+	padding: 0 0 0.5em;
+}
+/*--------- start nextbtn ---------*/
+#start .nextbtn {
+	text-align: center;
+	font-size: 125%;
+}
+#start .nextbtn a {
+	text-decoration: underline;
+}
+/*--------- lv ---------*/
+#lv {
+	border: 3px double #333333;
+	margin-top: 1.1em;
+	padding: 1.1em 1.5em 1.5em 0;
+}
+#lv ul * {
+	line-height: 1em;
+}
+#lv ul li span#lv1 {
+	display: block;
+	margin-bottom: 0.3em;
+}
+#lv ul li ul  {
+	margin-left: 0.5em;
+}
+#lv ul li.folder_block1 ul {
+	margin-left: 2em;
+}
+#lv ul li.folder_block2 ul {
+	margin-left: 0;
+}
+#lv ul li.folder_block3 ul {
+	margin-left: 2em;
+}
+#lv ul li ul li::before {
+	content: "├ ";
+}
+#lv ul li ul li:last-child::before {
+	content: "└ ";
+}
+#lv ul li.folder_block2 ul li::before {
+	content: "│　├ ";
+}
+#lv ul li.folder_block2 ul li:last-child::before {
+	content: "│　└ ";
+}
+#lv ul li.folder_block2::after {
+	content: "│";
+}
+/*--------- menu_question_chapter  ---------*/
+#question #menu_question_chapter {
+	clear: both;
+	margin: 1em 0 0 1px;
+	font-size: 87.5%;
+}
+#question #menu_question_chapter li {
+	float: left;
+	margin: 0 1px 1px 0;
+}
+#question #menu_question_chapter li:nth-child(2) {
+	clear: both;
+}
+#question #menu_question_chapter li a {
+	display: block;
+	width: 4em;
+	text-align: center;
+	border: 1px solid #ddd;
+	padding: 0.2em 0;
+	color: #777;
+	text-decoration: none;
+}
+#question #menu_question_chapter li a#q_anchor_constitution {
+	width: 12.56em;
+}
+#question #menu_question_chapter a:hover {
+	color: #3c3c3c;
+	background-color: #f5f5f5;
+}
+#question #menu_question_chapter li a.selected {
+	color: #fff;
+	background-color: #0F0F0F;
+}
+/*--------- menu_question_chapter(number)  ---------*/
+#question #menu_question_chapter li a#q_anchor_constitution::after {
+	content: normal;
+}
+#question #menu_question_chapter li a::after {
+	content: counter(mqc_num);
+	counter-increment: mqc_num;
+}
+#question #menu_question_chapter {
+	counter-reset: mqc_num;
+}
+#question #menu_question_chapter li a#q_anchor_all::after {
+	content: normal;
+}
+/*--------- menu_question_section  ---------*/
+#question #menu_question_section .section_number {
+	clear: both;
+	margin: 0.5em 0 0 1px;
+	font-size: 87.5%;
+}
+#question #menu_question_section .section_number li {
+	float: left;
+	margin: 0 6px 0 0;
+}
+#question #menu_question_section .section_number li a {
+	display: block;
+	width: 2em;
+	text-align: center;
+	color: #777;
+	text-decoration: none;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+	border:solid 1px #f5f5f5;
+}
+#question #menu_question_section .section_number li a:hover {
+	color: #000;
+	background-color: #d2d2d2;
+	border-radius: 10px;
+	border:solid 1px #d2d2d2;
+}
+/*--------- menu_question_section(number)  ---------*/
+#question #menu_question_section ul li a::after {
+	content: counter(mqs_num)")";
+	counter-increment: mqs_num;
+}
+#question #menu_question_section ul {
+	counter-reset: mqs_num;
+}
+/*--------- q_constitution ---------*/
+#start #q_constitution ul.list,
+#question #q_constitution ul.list {
+	margin-top: 1.1em;
+	padding: 0;
+}
+#start #q_constitution ul.list li,
+#question #q_constitution ul.list li {
+	margin-bottom: 4px;
+	padding: 0.3em 0.3em 0.3em 1em;
+	text-indent: -1em;
+	background-color: #F9F9F9;
+
+}
+#start #q_constitution ul.list li:before,
+#question #q_constitution ul.list li:before {
+	content: "・";
+}
+/*--------- hx common ---------*/
+#start h2,
+#question h2,
+#question h4,
+#question h6 {
+	margin: 1em 0 0;
+}
+/*--------- h3 ---------*/
+#start h3,
+#question h3 {
+	margin: 0.5em 0 0;
+}
+#question #q_area article section h3 span::before {
+	content: "("counter(qs_num)") ";
+	counter-increment: qs_num;
+}
+#question #q_area article#q_constitution section h3 span::before {
+	content: normal;
+}
+#question #q_area article h2 {
+	counter-reset: qs_num;
+}
+/*--------- h4 ---------*/
+#question #q_area h4 label {
+	display: block;
+	background-color: #EAEAEA;
+	padding: 0.2em 0 0.2em 0;
+}
+#question #q_area article section section h4 label span::after {
+	content: "設定"counter(q_lv4_num);
+	counter-increment: q_lv4_num;
+}
+#question #q_area article section h3 {
+	counter-reset: q_lv4_num;
+}
+/*--------- h5 ---------*/
+#question h5 {
+	margin: 0;
+}
+#question #q_area h5 label {
+	display: block;
+	border-bottom: 1px solid #B7B7B7;
+	padding: 0.3em 0 0;
+}
+#question #q_area article section section section h5 label::after  {
+	content: "設定"counter(q_lv4_num)"-"counter(q_lv5_num);
+	counter-increment: q_lv5_num;
+}
+#question #q_area article section section h4 {
+	counter-reset: q_lv5_num;
+}
+/************* reference **************/
+/*--------- common ---------*/
+#reference article ul {
+	margin-left: 1em;
+}
+#reference section a {
+	text-decoration: underline;
+}
+#reference section p:nth-of-type(odd) {
+	margin-bottom: 0;
+}
+#reference section p:nth-of-type(even) {
+	margin-top: 0;
+	margin-left: 1em;
+	color: #4D4D4D;
+	font-size: 87.5%;
+}
+#reference section ul {
+	margin-left: 2em;
+}
+#reference section section {
+	border: 1px solid #999999;
+	margin-bottom: 1em;
+}
+#reference section section .innerin {
+	margin: 0.5em;
+}
+#reference section section p {
+	margin: 0;
+}
+#reference section section ul {
+	margin-top: 0;
+	font-size: 87.5%;
+}
+#reference .inner > ul {
+	margin-top: 0;
+}
+/*--------- h4 ---------*/ 
+#reference section section h4 {
+	margin: 0;
+	padding: 0.2em 0.2em;
+	border-bottom: 1px solid #999999;
+	background-color: #F5F5F5;
+}
+#reference section section h4 span {
+    border-left: 3px solid #999999;
+    display: block;
+    padding: 0 3px;
+}
+#reference .inner > h4 {
+	margin: 0.5em 0 0 1em;
+}
+#reference .inner > h4::before {
+    content: "◆";
+}
+/*--------- h5 ---------*/ 
+#reference section section h5 {
+	margin: 0.5em 0 0 1em;
+	font-size: 87.5%;
+}
+#reference section section h5::before {
+    content: "◆";
+}
+/************* note **************/
+#note #note_box {
+	margin: 0.6em;
+}
+#note h2 {
+	margin-bottom: 0;
+	padding: 0.2em;
+	font-size: 200%;
+	color: #000;
+	background-color: #ffffff;
+}
+#note p {
+    margin: 0.5em 0 0.5em 1em;
+}
+#note ol li {
+    margin-bottom: 0.5em;
+}
+#note ol li table {
+	border-collapse: collapse;
+}
+#note ol li table th,
+#note ol li table td {
+	padding: 0;
+	border-width: 0;
+}
+#note ol li table th {
+    font-weight: normal;
+	text-align: left;
+}
+#note ol li table td {
+	text-align: right;
+}
+#note ol li img {
+    margin-top: 0.5em;
+}
+#note p.asterisk {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
+#note img[src="../img/instructions.jpg"] {
+    padding-left: 1.8em;
+}
+#note #copyright {
+	margin: 0;
+	padding: 0.5em;
+	clear: both;
+	background-color: #f5f5f5;
+	color: #4D4D4D;
+	font-size: 87.5%;
+	text-align: center;
+}
+#note footer {
+	margin-top: 3em;
+}
+/************* print **************/
+@media print {
+	#menu_extra li {
+		float: none !important;
+	}
+	#menu_extra li span, #menu_extra li a {
+		display: inline !important;
+	}
+	#menu_extra li ul {
+		display: block !important;
+		position: relative !important;
+	}
+	#question #q_anchor01.selected {
+		color: #777 !important;
+		background-color: #fff !important;
+	}
+	#question #q_constitution, #question #q02, #question #q03, #question #q04, #question #q05, #question #q06 {
+		display: block !important;
+	}
+	#question #q02_link, #question #q03_link, #question #q04_link, #question #q05_link, #question #q06_link {
+		display: inline !important;
+	}
+	#question #header_q {
+		position: relative !important;
+		top: auto !important;
+	}
+	#question #q_area {
+		top: auto !important;
+	}
+	#reference #header_r {
+		position: relative !important;
+		top: auto !important;
+	}
+	#reference #r_area {
+		top: auto !important;
+	}
+	header h1 br {
+		display:none !important;
+	}
+	.print,
+	#start #q00_02,
+	#start #q00_03,
+	#start #q00_04,
+	#question #q_constitution,
+	#question #q00_03,
+	#question #q00_04,
+	#question #q01,
+	#question #q02,
+	#question #q03,
+	#question #q04,
+	#question #q05,
+	#question #q06 {
+		page-break-before: always !important;
+	}
+}

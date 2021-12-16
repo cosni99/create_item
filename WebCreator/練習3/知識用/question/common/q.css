@@ -1,0 +1,183 @@
+﻿@charset "utf-8";
+/************* common parts **************/
+/*--------- common ---------*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳＰゴシック", "MS PGothic", sans-serif;
+	font-size: 87.5%;
+}
+header h1 {
+	margin: 0;
+	padding: 0.3em 0.5em;
+	background-color: #0F0F0F;
+	border-bottom: 1px solid #555656;
+	font-size: 87.5%;
+	color: #F5F5F5;
+}
+#question_box {
+	margin: 1em;
+}
+footer {
+	margin-top: 3em;
+}
+footer #copyright {
+	margin: 0;
+	padding: 0.5em;
+	clear: both;
+	background-color: #f5f5f5;
+	color: #4D4D4D;
+	font-size: 87.5%;
+	text-align: center;
+}
+.clearfix:after,
+#question ul#imgleft:after,
+#question ul.page_nav:after {
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	zoom: 1;
+}
+p.lead {
+	font-weight: bold;
+}
+/*--------- menu_question_chapter ---------*/
+#menu_question_chapter {
+	padding: 0.3em 0 0.3em 0.3em;
+	font-size: 80%;
+	background-color: #f5f5f5;
+	clear: both;
+	border-bottom: 1px solid #ddd;
+}
+#menu_question_chapter ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+	clear: both;
+}
+#menu_question_chapter li {
+	margin: 0 0 1px 1px;
+	float: left;
+}
+#menu_question_chapter li.both {
+	clear: both;
+}
+#menu_question_chapter li a {
+	display: block;
+	width: 60px;
+	border: 1px solid #ddd;
+	padding: 0.2em 0;
+	background-color: #F9F9F9;
+	color: #777;
+	text-decoration: none;
+	text-align: center;
+}
+#menu_question_chapter li a:hover {
+	color: #000;
+	background-color: #d2d2d2;
+}
+#menu_question_chapter li a.selected {
+	color: #fff;
+	background-color: #0F0F0F;
+}
+/************* note **************/
+#note h2 {
+	font-size: 200%
+}
+#note p#lead {
+    margin: 0.5em 0 0.5em 1em;
+}
+#note ol li {
+    margin-left: -1em;
+    margin-bottom: 0.5em;
+}
+#note ol li img {
+    margin-top: 0.5em;
+}
+#note p.asterisk {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
+#note img[src="images/instructions.jpg"] {
+    padding-left: 2.9em;
+}
+/************* question **************/
+/*--------- page_nav ---------*/
+#question ul.page_nav {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+#question ul.page_nav li#prev {
+	float: left;
+	padding-right: 1em;
+}
+#question ul.page_nav li#next {
+	float: left;
+}
+#question ul.page_nav li.nonlink {
+	color: #9E9E9E
+}
+/*--------- common ---------*/
+#question dl {
+	padding-left: 0;
+	clear: both;
+}
+#question dl dt {
+	margin-bottom: 0;
+	margin-right: 1em;
+	font-size: 126%;
+	font-weight: bold;
+}
+#question dl dd {
+	margin-left: 0;
+}
+#question dl dd p {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+#question dl dd ul {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	list-style-type: none;
+	padding-left: 1em;
+}
+#question dl dd ul li {
+	margin-bottom: 0.5em;
+	padding-left: 2em;
+	text-indent: -2em;
+}
+#question span.line {
+	text-decoration: underline;
+}
+#question span.not {
+	font-weight: bold;
+}
+#question ul#imgleft li {
+	float: left;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+#question ul#imgleft li img {
+	vertical-align: text-top;
+}
+#question #designimg {
+	margin-top: 3em;
+}
+#question #designimg img {
+	width: 800px;
+}
+/************* print **************/
+@media print {
+	.print, #designimg {
+		page-break-before: always;
+	}
+	#question #designimg img[alt="トップページ"], #question #designimg img[alt="下層ページ"] {
+		width: auto;
+		height: 24.5cm;
+	}
+}
+

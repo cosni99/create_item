@@ -1,0 +1,127 @@
+﻿@charset "utf-8";
+
+
+/* 基本レイアウト ここから↓ */
+@import url(common.css);
+
+body{background:#fffee6;
+ color:#333333;
+
+}
+header, nav, #breadcrumb, #contents, footer #pagetop{
+	width: 840px;
+ margin-left: auto;
+ margin-right: auto;
+
+}
+nav ul{
+	list-style-type: none;
+ margin:0 0 20px 0;
+ padding-left: 0;
+ overflow: hidden;
+
+}
+nav ul li{width: 210px;
+ float: left;
+
+}
+nav ul li a{display: block;
+ height: 0;
+ padding-top: 60px;
+ overflow: hidden;
+
+}
+nav ul li#nav_about a{
+	background-image: url(../images/nav1.png);
+
+}
+nav ul li#nav_admission a{
+	background-image: url(../images/nav2.png);
+
+}
+nav ul li#nav_plants a{
+	background-image: url(../images/nav3.png);
+
+}
+nav ul li#nav_consultation a{
+	background-image: url(../images/nav4.png);
+
+}
+#main{
+	width: 580px;
+ float: left;
+
+}
+#sub{
+	width: 220px;
+ float: right;
+
+}
+footer #pagetop{
+	text-align: right;
+
+}
+footer #information_area{ 
+	background-image: url(../images/footer_top.png);
+ background-repeat: repeat-x;
+ color:#ffffff
+;
+ text-align: center;
+ }
+#main h1{margin: 0 0 25px 0;
+ padding: 25px 0 25px 105px;
+ background-image:url(../images/h1_top.png), url(../images/h1_bottom.png);
+
+background-repeat: no-repeat,repeat-x;
+ background-position: left top,left bottom;
+ font-size: 162.5%;
+ }
+#about #nav_about a, #admission #nav_admission a, #plants #nav_plants a, #consultation #nav_consultation a, nav ul li a:hover
+{background-position: 0 -60px;
+}
+/* 基本レイアウト ここまで↑ */
+
+/* トップページ ここから↓ */
+#announce_area ul{list-style-type: none;
+ margin: 0;
+ padding-left: 0;
+ }
+#announce_area ul li{padding: 1.4em 0 1.4em 10.9em;
+ border-bottom: 1px dotted #cd9016;
+ text-indent: -10.9em;
+ }
+/* トップページ ここまで↑ */
+
+/* 「植物園の紹介」ページ ここから↓ */
+.about_area{margin-bottom: 30px;
+ overflow: hidden;
+}
+.about_area:last-child{margin-bottom: 0;
+}
+/* 「植物園の紹介」ページ ここまで↑ */
+
+/* 「入園案内」ページ ここから↓ */
+table thead{background-color:#339900;
+ color:#ffffff;
+ }
+	table tbody tr:nth-child(odd){background-color: #ffffff;
+}
+	table tbody tr:nth-child(even){background-color: #e3f2dd;
+}
+/* 「入園案内」ページ ここまで↑ */
+
+/* 「園内の植物」ページ ここから↓ */
+.image_area figure{width: 270px;
+ margin: 0 0 15px 30px;
+ float: left;
+}
+.image_area figure:first-child{margin-left: 0;
+}
+/* 「園内の植物」ページ ここまで↑ */
+
+/* 「緑と花の相談所」ページ ここから↓ */
+input[type="text"]{width: 200px;
+}
+input[type="email"]{width: 300px;
+}
+/* 「緑と花の相談所」ページ ここまで↑ */

@@ -1,0 +1,1230 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>受験者用リファレンス HTML編</title>
+<link rel="stylesheet" href="../common/q_common.css">
+</head>
+
+<body id="reference">
+<header id="header_r">
+	<h1>受験者用リファレンス HTML編</h1>
+	<nav>
+		<ul id="menu_extra" class="clearfix">
+			<li id="menu_html"><a href="#r_area">HTML編</a></li>
+			<li id="menu_css"><a href="r_refcss.html">CSS編</a></li>
+		</ul>
+	</nav>
+</header>
+<div id="r_area">
+	<article>
+		<h2><span>目次</span></h2>
+		<section>
+			<h3><span>グローバル属性</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#id">id</a></li>
+					<li><a href="#class">class</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>文書型宣言</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#doctype">&lt;!DOCTYPE html&gt;</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>ルート要素</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#html">&lt;html&gt;</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>ドキュメントメタデータ</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#head">&lt;head&gt;</a></li>
+					<li><a href="#title">&lt;title&gt;</a></li>
+					<li><a href="#link">&lt;link&gt;</a></li>
+					<li><a href="#meta">&lt;meta&gt;</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>スクリプティング</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#script">&lt;script&gt;</a></li>
+					<li><a href="#noscript">&lt;noscript&gt;</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>セクション</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#body">&lt;body&gt;</a></li>
+					<li><a href="#article">&lt;article&gt;</a></li>
+					<li><a href="#section">&lt;section&gt;</a></li>
+					<li><a href="#nav">&lt;nav&gt;</a></li>
+					<li><a href="#aside">&lt;aside&gt;</a></li>
+					<li><a href="#hx">&lt;h1&gt;～&lt;h6&gt;</a></li>
+					<li><a href="#header">&lt;header&gt;</a></li>
+					<li><a href="#footer">&lt;footer&gt;</a></li>
+					<li><a href="#address">&lt;address&gt;</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>グルーピングコンテンツ</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#p">&lt;p&gt;</a></li>
+					<li><a href="#ol">&lt;ol&gt;</a></li>
+					<li><a href="#ul">&lt;ul&gt;</a></li>
+					<li><a href="#li">&lt;li&gt;</a></li>
+					<li><a href="#dl">&lt;dl&gt;</a></li>
+					<li><a href="#dt">&lt;dt&gt;</a></li>
+					<li><a href="#dd">&lt;dd&gt;</a></li>
+					<li><a href="#figure">&lt;figure&gt;</a></li>
+					<li><a href="#figcaption">&lt;figcaption&gt;</a></li>
+					<li><a href="#div">&lt;div&gt;</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>テキストレベルの意味</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#a">&lt;a&gt;</a></li>
+					<li><a href="#em">&lt;em&gt;</a></li>
+					<li><a href="#strong">&lt;strong&gt;</a></li>
+					<li><a href="#small">&lt;small&gt;</a></li>
+					<li><a href="#time">&lt;time&gt;</a></li>
+					<li><a href="#i">&lt;i&gt;</a></li>
+					<li><a href="#b">&lt;b&gt;</a></li>
+					<li><a href="#span">&lt;span&gt;</a></li>
+					<li><a href="#br">&lt;br&gt;</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>埋め込みコンテンツ</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#img">&lt;img&gt;</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>テーブル（表）</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#table">&lt;table&gt;</a></li>
+					<li><a href="#caption">&lt;caption&gt;</a></li>
+					<li><a href="#tbody">&lt;tbody&gt;</a></li>
+					<li><a href="#thead">&lt;thead&gt;</a></li>
+					<li><a href="#tfoot">&lt;tfoot&gt;</a></li>
+					<li><a href="#tr">&lt;tr&gt;</a></li>
+					<li><a href="#th">&lt;th&gt;</a></li>
+					<li><a href="#td">&lt;td&gt;</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>フォーム</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#form">&lt;form&gt;</a></li>
+					<li><a href="#label">&lt;label&gt;</a></li>
+					<li><a href="#input">&lt;input&gt;</a></li>
+					<li><a href="#input_text">&lt;input type=&quot;text&quot;&gt;</a></li>
+					<li><a href="#input_tel">&lt;input type=&quot;tel&quot;&gt;</a></li>
+					<li><a href="#input_email">&lt;input type=&quot;email&quot;&gt;</a></li>
+					<li><a href="#input_checkbox">&lt;input type=&quot;checkbox&quot;&gt;</a></li>
+					<li><a href="#input_radio">&lt;input type=&quot;radio&quot;&gt;</a></li>
+					<li><a href="#input_submit">&lt;input type=&quot;submit&quot;&gt;</a></li>
+					<li><a href="#input_image">&lt;input type=&quot;image&quot;&gt;</a></li>
+					<li><a href="#select">&lt;select&gt;</a></li>
+					<li><a href="#option">&lt;option&gt;</a></li>
+					<li><a href="#textarea">&lt;textarea&gt;</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3><span>文字実体参照</span></h3>
+			<div class="inner">
+				<ul>
+					<li><a href="#nbsp">(半角スペース)</a></li>
+					<li><a href="#amp">(&amp;)</a></li>
+					<li><a href="#quot">(&quot;)</a></li>
+					<li><a href="#lt">(&lt;)</a></li>
+					<li><a href="#gt">(&gt;)</a></li>
+					<li><a href="#copy">(&copy;)</a></li>
+				</ul>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>グローバル属性</span></h2>
+		<section id="id">
+			<h3><span>id</span></h3>
+			<div class="inner">
+				<p>&lt;要素名 id=&quot;ID名&quot;&gt;～&lt;/要素名&gt;</p>
+				<p>IDを指定する。</p>
+			</div>
+		</section>
+		<section id="class">
+			<h3><span>class</span></h3>
+			<div class="inner">
+				<p>&lt;要素名 class=&quot;クラス名&quot;&gt;～&lt;/要素名&gt;</p>
+				<p>クラスを指定する。</p>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>文書型宣言</span></h2>
+		<section id="doctype">
+			<h3><span>&lt;!DOCTYPE html&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;!DOCTYPE html&gt;</p>
+				<p>文書型宣言を定義する。</p>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>ルート要素</span></h2>
+		<section id="html">
+			<h3><span>&lt;html&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;html&gt;～&lt;/html&gt;</p>
+				<p>HTML文書の最上位要素（ルート要素）を定義する。</p>
+				<ul>
+					<li>lang=&quot;言語&quot;</li>
+				</ul>
+				<section>
+					<h4><span>lang=&quot;言語&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;html lang=&quot;言語&quot;&gt;～&lt;/html&gt;</p>
+						<p>言語を指定する。</p>
+						<h5>言語</h5>
+						<ul>
+							<li>ja（日本語）</li>
+							<li>en（英語）など</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>ドキュメントメタデータ</span></h2>
+		<section id="head">
+			<h3><span>&lt;head&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;head&gt;～&lt;/head&gt;</p>
+				<p>HTML文書の基本情報（ページタイトルやサーバー等が利用する情報）を定義する。</p>
+			</div>
+		</section>
+		<section id="title">
+			<h3><span>&lt;title&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;title&gt;～&lt;/title&gt;</p>
+				<p>HTML文書のタイトルを定義する。</p>
+			</div>
+		</section>
+		<section id="link">
+			<h3><span>&lt;link&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;link&gt;</p>
+				<p>文書間の関係を定義する。</p>
+				<ul>
+					<li>rel=&quot;関係&quot;</li>
+					<li>href=&quot;URL&quot;</li>
+					<li>media=&quot;メディア&quot;</li>
+					<li>media=&quot;メディアクエリー&quot;</li>
+					<li>type=&quot;MIMEタイプ&quot;</li>
+				</ul>
+				<section>
+					<h4><span>rel=&quot;関係&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;link rel=&quot;関係&quot;&gt;</p>
+						<p>文書間の関係を指定する。</p>
+						<h5>関係</h5>
+						<ul>
+							<li>stylesheet（スタイルシート）</li>
+							<li>alternative（代替文書）など</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>href=&quot;URL&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;link href=&quot;URL&quot;&gt;</p>
+						<p>リンク先を指定する。</p>
+						<h5>URL</h5>
+						<ul>
+							<li>リンク先のURL</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>media=&quot;メディア&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;link media=&quot;メディア&quot;&gt;</p>
+						<p>メディアを定義する。</p>
+						<h5>メディア</h5>
+						<ul>
+							<li>all（すべてのデバイス）</li>
+							<li>screen（スクリーン）</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>media=&quot;メディアクエリー&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;link media=&quot;メディア and (プロパティ: 値)&quot;&gt;<br>
+							&lt;link media=&quot;メディアクエリー1の値, メディアクエリー2の値, ～&quot;&gt;</p>
+						<p>メディアクエリーを定義する。</p>
+						<h5>プロパティ</h5>
+						<ul>
+							<li>max-width（ブラウザー画面の最大横幅）</li>
+							<li>min-width（ブラウザー画面の最少横幅）</li>
+						</ul>
+						<h5>値</h5>
+						<ul>
+							<li>数値+単位</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>type=&quot;MIMEタイプ&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;link type=&quot;MIMEタイプ&quot;&gt;</p>
+						<p>リンク先コンテンツのMIMEタイプを指定する。</p>
+						<h5>MIMEタイプ</h5>
+						<ul>
+							<li>text/css（CSSファイル）</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section id="meta">
+			<h3><span>&lt;meta&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;meta&gt;</p>
+				<p>メタ情報を定義する。</p>
+				<ul>
+					<li>name=&quot;名前&quot;</li>
+					<li>http-equiv=&quot;HTTPヘッダー&quot;</li>
+					<li>content=&quot;値&quot;</li>
+					<li>charset=&quot;文字エンコード&quot;</li>
+				</ul>
+				<section>
+					<h4><span>name=&quot;名前&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;meta name=&quot;名前&quot;&gt;</p>
+						<p>メタ情報における属性名を設定する。</p>
+						<h5>名前</h5>
+						<ul>
+							<li>メタ情報における属性名</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>http-equiv=&quot;HTTPヘッダー&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;meta http-equiv=&quot;HTTPヘッダー&quot;&gt;</p>
+						<p>HTTP通信時のヘッダー生成に用いる。</p>
+						<h5>HTTPヘッダー</h5>
+						<ul>
+							<li>HTTPヘッダーの名前</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>content=&quot;値&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;meta content=&quot;値&quot;&gt;</p>
+						<p>meta要素内での属性値を設定する。</p>
+						<h5>値</h5>
+						<ul>
+							<li>name属性、またはhttp-equiv属性に対する属性値</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>charset=&quot;文字エンコード&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;meta charset=&quot;文字エンコード&quot;&gt;</p>
+						<p>文字エンコードを設定する。</p>
+						<h5>文字エンコード</h5>
+						<ul>
+							<li>utf-8など</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>スクリプティング</span></h2>
+		<section id="script">
+			<h3><span>&lt;script&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;script&gt;&lt;/script&gt;</p>
+				<p>スクリプトを定義する。</p>
+				<ul>
+					<li>src=&quot;URL&quot;</li>
+					<li>type=&quot;MIMEタイプ&quot;</li>
+					<li>charset=&quot;文字エンコード&quot;</li>
+				</ul>
+				<section>
+					<h4><span>src=&quot;URL&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;script src=&quot;URL&quot;&gt;&lt;/script&gt;</p>
+						<p>読み込むスクリプトファイルのURLを指定する。</p>
+						<h5>URL</h5>
+						<ul>
+							<li>ファイル名、ディレクトリ名/ファイル名等</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>type=&quot;MIMEタイプ&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;script type=&quot;MIMEタイプ&quot;&gt;&lt;/script&gt;</p>
+						<p>スクリプトのMIMEタイプを指定する。</p>
+						<h5>MIMEタイプ</h5>
+						<ul>
+							<li>text/javascript（JavaScriptファイル）</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>charset=&quot;文字エンコード&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;script charset=&quot;文字エンコード&quot;&gt;&lt;/script&gt;</p>
+						<p>文字エンコードを設定する。</p>
+						<h5>文字エンコード</h5>
+						<ul>
+							<li>utf-8など</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section id="noscript">
+			<h3><span>&lt;noscript&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;noscript&gt;～&lt;/noscript&gt;</p>
+				<p>スクリプトに対応していない環境を定義する。</p>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>セクション</span></h2>
+		<section id="body">
+			<h3><span>&lt;body&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;body&gt;～&lt;/body&gt;</p>
+				<p>HTML文書の内容を定義する。</p>
+			</div>
+		</section>
+		<section id="article">
+			<h3><span>&lt;article&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;article&gt;～&lt;/article&gt;</p>
+				<p>完結できるセクションを定義する。</p>
+			</div>
+		</section>
+		<section id="section">
+			<h3><span>&lt;section&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;section&gt;～&lt;/section&gt;</p>
+				<p>一般的なセクションを定義する。</p>
+			</div>
+		</section>
+		<section id="nav">
+			<h3><span>&lt;nav&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;nav&gt;～&lt;/nav&gt;</p>
+				<p>主要なナビゲーションを定義する。</p>
+			</div>
+		</section>
+		<section id="aside">
+			<h3><span>&lt;aside&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;aside&gt;～&lt;/aside&gt;</p>
+				<p>サイドバー、補足記事、広告などを定義する。</p>
+			</div>
+		</section>
+		<section id="hx">
+			<h3><span>&lt;h1&gt;～&lt;h6&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;h1&gt;～&lt;/h1&gt;、&lt;h2&gt;～&lt;/h2&gt;、&lt;h3&gt;～&lt;/h3&gt;、&lt;h4&gt;～&lt;/h4&gt;、&lt;h5&gt;～&lt;/h5&gt;、&lt;h6&gt;～&lt;/h6&gt;</p>
+				<p>見出しを定義する。</p>
+			</div>
+		</section>
+		<section id="header">
+			<h3><span>&lt;header&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;header&gt;～&lt;/header&gt;</p>
+				<p>セクションのヘッダーを定義する。</p>
+			</div>
+		</section>
+		<section id="footer">
+			<h3><span>&lt;footer&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;footer&gt;～&lt;/footer&gt;</p>
+				<p>セクションのフッターを定義する。</p>
+			</div>
+		</section>
+		<section id="address">
+			<h3><span>&lt;address&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;address&gt;～&lt;/address&gt;</p>
+				<p>連絡先を定義する。</p>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>グルーピングコンテンツ</span></h2>
+		<section id="p">
+			<h3><span>&lt;p&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;p&gt;～&lt;/p&gt;</p>
+				<p>段落を定義する。</p>
+			</div>
+		</section>
+		<section id="ol">
+			<h3><span>&lt;ol&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;ol&gt;～&lt;/ol&gt;</p>
+				<p>番号付きリストを定義する。</p>
+			</div>
+		</section>
+		<section id="ul">
+			<h3><span>&lt;ul&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;ul&gt;～&lt;/ul&gt;</p>
+				<p>箇条書きリストを定義する。</p>
+			</div>
+		</section>
+		<section id="li">
+			<h3><span>&lt;li&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;li&gt;～&lt;/li&gt;</p>
+				<p>箇条書きリスト、番号付きリストのリスト項目を定義する。</p>
+			</div>
+		</section>
+		<section id="dl">
+			<h3><span>&lt;dl&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;dl&gt;～&lt;/dl&gt;</p>
+				<p>項目付きリストを定義する。</p>
+			</div>
+		</section>
+		<section id="dt">
+			<h3><span>&lt;dt&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;dt&gt;～&lt;/dt&gt;</p>
+				<p>用語や名前を定義する。</p>
+			</div>
+		</section>
+		<section id="dd">
+			<h3><span>&lt;dd&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;dd&gt;～&lt;/dd&gt;</p>
+				<p>用語や名前の説明を定義する。</p>
+			</div>
+		</section>
+		<section id="figure">
+			<h3><span>&lt;figure&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;figure&gt;～&lt;/figure&gt;</p>
+				<p>図版などを定義する。</p>
+			</div>
+		</section>
+		<section id="figcaption">
+			<h3><span>&lt;figcaption&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;figcaption&gt;～&lt;/figcaption&gt;</p>
+				<p>図版などのキャプション（タイトル）を定義する。</p>
+			</div>
+		</section>
+		<section id="div">
+			<h3><span>&lt;div&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;div&gt;～&lt;/div&gt;</p>
+				<p>汎用要素を定義する。</p>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>テキストレベルの意味</span></h2>
+		<section id="a">
+			<h3><span>&lt;a&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;a&gt;～&lt;/a&gt;</p>
+				<p>ハイパーリンクを定義する。</p>
+				<ul>
+					<li>href=&quot;URL&quot;</li>
+				</ul>
+				<section>
+					<h4><span>href=&quot;URL&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;a href=&quot;URL&quot;&gt;～&lt;/a&gt;</p>
+						<p>ハイパーリンク先のURLを指定する。</p>
+						<p>&lt;a href=&quot;#アンカー名&quot;&gt;～&lt;/a&gt;</p>
+						<p>同じHTML文書のアンカー位置へのハイパーリンクを指定する。</p>
+						<p>&lt;a href=&quot;URL#アンカー名&quot;&gt;～&lt;/a&gt;</p>
+						<p>別のHTML文書のアンカー位置へのハイパーリンクを指定する。</p>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section id="em">
+			<h3><span>&lt;em&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;em&gt;～&lt;/em&gt;</p>
+				<p>強調を定義する。</p>
+			</div>
+		</section>
+		<section id="strong">
+			<h3><span>&lt;strong&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;strong&gt;～&lt;/strong&gt;</p>
+				<p>強い重要性を定義する。</p>
+			</div>
+		</section>
+		<section id="small">
+			<h3><span>&lt;small&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;small&gt;～&lt;/small&gt;</p>
+				<p>注釈や細目を定義する。</p>
+			</div>
+		</section>
+		<section id="time">
+			<h3><span>&lt;time&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;time&gt;～&lt;/time&gt;</p>
+				<p>日時や期間を定義する。</p>
+				<ul>
+					<li>datetime=&quot;日時&quot;</li>
+				</ul>
+				<section>
+					<h4><span>datetime=&quot;日時&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;time datetime=&quot;日時&quot;&gt;～&lt;/time&gt;</p>
+						<p>日時を設定する。</p>
+						<h5>日時</h5>
+						<ul>
+							<li>YYYY-MM-DD（年-月-日）</li>
+							<li>HH:MM（時:分）</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section id="i">
+			<h3><span>&lt;i&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;i&gt;～&lt;/i&gt;</p>
+				<p>他と区別したい箇所を定義する。</p>
+			</div>
+		</section>
+		<section id="b">
+			<h3><span>&lt;b&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;b&gt;～&lt;/b&gt;</p>
+				<p>意味的に区別したい箇所を定義する。</p>
+			</div>
+		</section>
+		<section id="span">
+			<h3><span>&lt;span&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;span&gt;～&lt;/span&gt;</p>
+				<p>汎用要素を定義する。</p>
+			</div>
+		</section>
+		<section id="br">
+			<h3><span>&lt;br&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;br&gt;</p>
+				<p>改行する。</p>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>埋め込みコンテンツ</span></h2>
+		<section id="img">
+			<h3><span>&lt;img&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;img&gt;</p>
+				<p>イメージを表示する。</p>
+				<ul>
+					<li>src=&quot;URL&quot;</li>
+					<li>width=&quot;幅&quot;</li>
+					<li>height=&quot;高さ&quot;</li>
+					<li>alt=&quot;代替テキスト&quot;</li>
+				</ul>
+				<section>
+					<h4><span>src=&quot;URL&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;img src=&quot;URL&quot;&gt;</p>
+						<p>表示するイメージファイルのURLを指定する。</p>
+						<h5>URL</h5>
+						<ul>
+							<li>ファイル名、ディレクトリ名/ファイル名等</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>width=&quot;幅&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;img width=&quot;幅&quot;&gt;</p>
+						<p>イメージの幅を指定する。</p>
+						<h5>幅</h5>
+						<ul>
+							<li>数値（ピクセル数）</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>height=&quot;高さ&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;img height=&quot;高さ&quot;&gt;</p>
+						<p>イメージの高さを指定する。</p>
+						<h5>高さ</h5>
+						<ul>
+							<li>数値（ピクセル数）</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>alt=&quot;代替テキスト&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;img alt=&quot;代替テキスト&quot;&gt;</p>
+						<p>イメージの代替テキストを指定する。</p>
+						<h5>代替テキスト</h5>
+						<ul>
+							<li>イメージの代わりに表示するテキスト（文章）</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>テーブル（表）</span></h2>
+		<section id="table">
+			<h3><span>&lt;table&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;table&gt;～&lt;/table&gt;</p>
+				<p>テーブル（表）を定義する。</p>
+			</div>
+		</section>
+		<section id="caption">
+			<h3><span>&lt;caption&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;caption&gt;～&lt;/caption&gt;</p>
+				<p>テーブル（表）にキャプション（タイトル）や説明を定義する。</p>
+			</div>
+		</section>
+		<section id="tbody">
+			<h3><span>&lt;tbody&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;tbody&gt;～&lt;/tbody&gt;</p>
+				<p>テーブル（表）の行グループ（本体）を定義する。</p>
+			</div>
+		</section>
+		<section id="thead">
+			<h3><span>&lt;thead&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;thead&gt;～&lt;/thead&gt;</p>
+				<p>テーブル（表）の行グループ（ヘッダー）を定義する。</p>
+			</div>
+		</section>
+		<section id="tfoot">
+			<h3><span>&lt;tfoot&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;tfoot&gt;～&lt;/tfoot&gt;</p>
+				<p>テーブル（表）の行グループ（フッター）を定義する。</p>
+			</div>
+		</section>
+		<section id="tr">
+			<h3><span>&lt;tr&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;tr&gt;～&lt;/tr&gt;</p>
+				<p>テーブル（表）の行を定義する。</p>
+			</div>
+		</section>
+		<section id="th">
+			<h3><span>&lt;th&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;th&gt;～&lt;/th&gt;</p>
+				<p>テーブル（表）の見出しセルを定義する。</p>
+				<ul>
+					<li>colspan=&quot;セル数&quot;</li>
+					<li>rowspan=&quot;セル数&quot;</li>
+					<li>scope=&quot;方向&quot;</li>
+				</ul>
+				<section>
+					<h4><span>colspan=&quot;セル数&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;th colspan=&quot;セル数&quot;&gt;～&lt;/th&gt;</p>
+						<p>複数列に渡るセルを結合する。</p>
+						<h5>セル数</h5>
+						<ul>
+							<li>結合するセルの列数</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>rowspan=&quot;セル数&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;th rowspan=&quot;セル数&quot;&gt;～&lt;/th&gt;</p>
+						<p>複数行に渡るセルを結合する。</p>
+						<h5>セル数</h5>
+						<ul>
+							<li>結合するセルの行数</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>scope=&quot;方向&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;th scope=&quot;方向&quot;&gt;～&lt;/th&gt;</p>
+						<p>見出しセルに対応するデータの方向を指定する。</p>
+						<h5>方向</h5>
+						<ul>
+							<li>row（行）</li>
+							<li>col（列）</li>
+							<li>rowgroup（行グループ）</li>
+							<li>colgroup（列グループ）</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section id="td">
+			<h3><span>&lt;td&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;td&gt;～&lt;/td&gt;</p>
+				<p>テーブル（表）のデータセルを定義する。</p>
+				<ul>
+					<li>colspan=&quot;セル数&quot;</li>
+					<li>rowspan=&quot;セル数&quot;</li>
+				</ul>
+				<section>
+					<h4><span>colspan=&quot;セル数&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;td colspan=&quot;セル数&quot;&gt;～&lt;/td&gt;</p>
+						<p>複数列に渡るセルを結合する。</p>
+						<h5>セル数</h5>
+						<ul>
+							<li>結合するセルの列数</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>rowspan=&quot;セル数&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;td rowspan=&quot;セル数&quot;&gt;～&lt;/td&gt;</p>
+						<p>複数行に渡るセルを結合する。</p>
+						<h5>セル数</h5>
+						<ul>
+							<li>結合するセルの行数</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>フォーム</span></h2>
+		<section id="form">
+			<h3><span>&lt;form&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;form&gt;～&lt;/form&gt;</p>
+				<p>フォームを定義する。</p>
+				<ul>
+					<li>action=&quot;アクション&quot;</li>
+					<li>method=&quot;メソッド&quot;</li>
+					<li>name=&quot;名前&quot;</li>
+				</ul>
+				<section>
+					<h4><span>action=&quot;アクション&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;form action=&quot;アクション&quot;&gt;～&lt;/form&gt;</p>
+						<p>フォームデータを送信するURLを指定する。</p>
+						<h5>アクション</h5>
+						<ul>
+							<li>送信するURL</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>method=&quot;メソッド&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;form method=&quot;メソッド&quot;&gt;～&lt;/form&gt;</p>
+						<p>フォームデータ送信に使うHTTPメソッドを指定する。</p>
+						<h5>メソッド</h5>
+						<ul>
+							<li>post</li>
+							<li>get</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>name=&quot;名前&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;form name=&quot;名前&quot;&gt;～&lt;/form&gt;</p>
+						<p>フォーム部品を識別するための名前を指定する。</p>
+						<h5>名前</h5>
+						<ul>
+							<li>フォーム部品の名前</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section id="label">
+			<h3><span>&lt;label&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;label&gt;～&lt;/label&gt;</p>
+				<p>フォーム部品のラベルを定義する。</p>
+				<ul>
+					<li>for=&quot;名前&quot;</li>
+				</ul>
+				<section>
+					<h4><span>for=&quot;名前&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;label for=&quot;名前&quot;&gt;～&lt;/label&gt;</p>
+						<p>ラベルを付けるフォーム部品（コントロール）を指定する。</p>
+						<h5>名前</h5>
+						<ul>
+							<li>関連付けるフォーム部品のid名</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section id="input">
+			<h3><span>&lt;input&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;input&gt;</p>
+				<p>フォーム部品を指定する。</p>
+				<ul>
+					<li>name=&quot;名前&quot;</li>
+					<li>value=&quot;初期値&quot;</li>
+					<li>required（必須）</li>
+				</ul>
+				<section>
+					<h4><span>name=&quot;名前&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;input name=&quot;名前&quot;&gt;</p>
+						<p>フォーム部品を識別するための名前を指定する。</p>
+						<h5>名前</h5>
+						<ul>
+							<li>フォーム部品の名前</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>value=&quot;初期値&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;input value=&quot;初期値&quot;&gt;</p>
+						<p>フォーム部品の初期値を指定する。</p>
+						<h5>初期値</h5>
+						<ul>
+							<li>フォーム部品のデータの初期値</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>required（必須）</span></h4>
+					<div class="innerin">
+						<p>&lt;input required&gt;</p>
+						<p>フォーム部品の入力必須項目を指定する。</p>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section id="input_text">
+			<h3><span>&lt;input type=&quot;text&quot;&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;input  type=&quot;text&quot;&gt;</p>
+				<p>テキストフィールド（テキスト形式）を指定する。</p>
+			</div>
+		</section>
+		<section id="input_tel">
+			<h3><span>&lt;input type=&quot;tel&quot;&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;input  type=&quot;tel&quot;&gt;</p>
+				<p>テキストフィールド（電話番号形式）を指定する。</p>
+			</div>
+		</section>
+		<section id="input_email">
+			<h3><span>&lt;input type=&quot;email&quot;&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;input  type=&quot;email&quot;&gt;</p>
+				<p>テキストフィールド（メールアドレス形式）を指定する。</p>
+			</div>
+		</section>
+		<section id="input_checkbox">
+			<h3><span>&lt;input type=&quot;checkbox&quot;&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;input  type=&quot;checkbox&quot;&gt;</p>
+				<p>チェックボックスを指定する。</p>
+			</div>
+		</section>
+		<section id="input_radio">
+			<h3><span>&lt;input type=&quot;radio&quot;&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;input  type=&quot;radio&quot;&gt;</p>
+				<p>ラジオボタンを指定する。</p>
+			</div>
+		</section>
+		<section id="input_submit">
+			<h3><span>&lt;input type=&quot;submit&quot;&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;input  type=&quot;submit&quot;&gt;</p>
+				<p>送信ボタンを指定する。</p>
+				<ul>
+					<li>value=&quot;テキスト&quot;</li>
+				</ul>
+				<section>
+					<h4><span>value=&quot;テキスト&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;input value=&quot;テキスト&quot;&gt;</p>
+						<p>送信ボタンに表示されるテキストを指定する。</p>
+						<h5>テキスト</h5>
+						<ul>
+							<li>送信ボタンに表示されるテキスト</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section id="input_image">
+			<h3><span>&lt;input type=&quot;image&quot;&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;input type=&quot;image&quot;&gt;</p>
+				<p>画像ボタンを指定する。</p>
+				<ul>
+					<li>src=&quot;URL&quot;</li>
+					<li>alt=&quot;代替テキスト&quot;</li>
+				</ul>
+				<section>
+					<h4><span>src=&quot;URL&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;input src=&quot;URL&quot;&gt;</p>
+						<p>画像ボタンとして表示するイメージファイルのURL を指定する。</p>
+						<h5>URL</h5>
+						<ul>
+							<li>ファイル名、ディレクトリ名/ファイル名等</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>alt=&quot;代替テキスト&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;input alt=&quot;代替テキスト&quot;&gt;</p>
+						<p>画像ボタンの代替テキストを指定する。</p>
+						<h5>代替テキスト</h5>
+						<ul>
+							<li>画像ボタンの代わりに表示するテキスト（文章）</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section id="select">
+			<h3><span>&lt;select&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;select&gt;～&lt;/select&gt;</p>
+				<p>選択リストを定義する。</p>
+				<ul>
+					<li>name=&quot;名前&quot;</li>
+					<li>multiple（複数選択）</li>
+					<li>size=&quot;数値&quot;</li>
+					<li>required（必須）</li>
+				</ul>
+				<section>
+					<h4><span>name=&quot;名前&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;select name=&quot;名前&quot;&gt;～&lt;/select&gt;</p>
+						<p>フォーム部品を識別するための名前を指定する。</p>
+						<h5>名前</h5>
+						<ul>
+							<li>フォーム部品の名前</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>multiple（複数選択）</span></h4>
+					<div class="innerin">
+						<p>&lt;select multiple&gt;～&lt;/select&gt;</p>
+						<p>選択肢を複数選択する。</p>
+					</div>
+					<h4><span>size=&quot;数値&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;select size=&quot;値&quot;&gt;～&lt;/select&gt;</p>
+						<p>表示する選択肢の数を指定する。</p>
+						<h5>値</h5>
+						<ul>
+							<li>数値</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>required（必須）</span></h4>
+					<div class="innerin">
+						<p>&lt;select required&gt;～&lt;/select&gt;</p>
+						<p>フォーム部品の入力必須項目を指定する。</p>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section id="option">
+			<h3><span>&lt;option&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;option&gt;～&lt;/option&gt;</p>
+				<p>選択リストの項目を定義する。</p>
+				<ul>
+					<li>value=&quot;値&quot;</li>
+					<li>selected（選択済み）</li>
+				</ul>
+				<section>
+					<h4><span>value=&quot;値&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;option value=&quot;値&quot;&gt;～&lt;/option&gt;</p>
+						<p>選択リストの項目に対応する値を指定する。</p>
+						<h5>値</h5>
+						<ul>
+							<li>項目に対応する値</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>selected（選択済み）</span></h4>
+					<div class="innerin">
+						<p>&lt;option selected&gt;～&lt;/option&gt;</p>
+						<p>選択済みとして表示する項目を指定する。</p>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section id="textarea">
+			<h3><span>&lt;textarea&gt;</span></h3>
+			<div class="inner">
+				<p>&lt;textarea&gt;～&lt;/textarea&gt;</p>
+				<p>テキストエリアを定義する。</p>
+				<ul>
+					<li>name=&quot;名前&quot;</li>
+					<li>cols=&quot;幅&quot;</li>
+					<li>rows=&quot;行数&quot;</li>
+					<li>required（必須）</li>
+				</ul>
+				<section>
+					<h4><span>name=&quot;名前&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;textarea name=&quot;名前&quot;&gt;～&lt;/textarea&gt;</p>
+						<p>フォーム部品を識別するための名前を指定する。</p>
+						<h5>名前</h5>
+						<ul>
+							<li>フォーム部品の名前</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>cols=&quot;幅&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;textarea cols=&quot;幅&quot;&gt;～&lt;/textarea&gt;</p>
+						<p>テキストエリアの幅を指定する。</p>
+						<h5>幅</h5>
+						<ul>
+							<li>テキストエリアの幅</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>rows=&quot;行数&quot;</span></h4>
+					<div class="innerin">
+						<p>&lt;textarea rows=&quot;行数&quot;&gt;～&lt;/textarea&gt;</p>
+						<p>テキストエリアの高さ（行数）を指定する。</p>
+						<h5>行数</h5>
+						<ul>
+							<li>テキストエリアの行数</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4><span>required（必須）</span></h4>
+					<div class="innerin">
+						<p>&lt;textarea required&gt;～&lt;/textarea&gt;</p>
+						<p>フォーム部品の入力必須項目を指定する。</p>
+					</div>
+				</section>
+			</div>
+		</section>
+	</article>
+	<article>
+		<h2><span>文字実体参照</span></h2>
+		<section id="nbsp">
+			<h3><span>(半角スペース)</span></h3>
+			<div class="inner">
+				<p>&amp;nbsp;</p>
+				<p>改行禁止スペース</p>
+			</div>
+		</section>
+		<section id="amp">
+			<h3><span>(&amp;)</span></h3>
+			<div class="inner">
+				<p>&amp;amp;</p>
+				<p>アンド（アンパサンド）</p>
+			</div>
+		</section>
+		<section id="quot">
+			<h3><span>(&quot;)</span></h3>
+			<div class="inner">
+				<p>&amp;quot;</p>
+				<p>二重引用符</p>
+			</div>
+		</section>
+		<section id="lt">
+			<h3><span>(&lt;)</span></h3>
+			<div class="inner">
+				<p>&amp;lt;</p>
+				<p>小なり</p>
+			</div>
+		</section>
+		<section id="gt">
+			<h3><span>(&gt;)</span></h3>
+			<div class="inner">
+				<p>&amp;gt;</p>
+				<p>大なり</p>
+			</div>
+		</section>
+		<section id="copy">
+			<h3><span>(&copy;)</span></h3>
+			<div class="inner">
+				<p>&amp;copy;</p>
+				<p>著作権マーク</p>
+			</div>
+		</section>
+	</article>
+</div>
+<script src="../common/jquery-min.js"></script>
+<script src="../common/q_common.js"></script>
+</body>
+</html>

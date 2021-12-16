@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>お問い合わせ | swim about fish</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="contact">
+	<header id="top">
+		<h1>
+			<a href="index.html">
+				<img src="images/logo.png" alt="swim about fish">
+			</a>
+	</h1>
+	</header>
+	<nav>
+		<ul>
+			<li id="nav_concept"><a href="concept.html">コンセプト</a> </li>
+			<li id="nav_shop"><a href="shop.html">店舗案内</a> </li>
+			<li id="nav_fish"><a href="fish.html">取扱い観賞魚</a> </li>
+			<li id="nav_contact"><a href="contact.html">お問い合わせ</a> </li>
+		</ul>
+	</nav>
+	<div id="path_arrow">
+		<ol>
+		<li><a href="index.html">ホーム</a></li>
+		<li>お問い合わせ</li>
+		</ol>
+	</div>
+	<div id="contents">
+		<div id="main">
+			<article>
+			<h1>お問い合わせ</h1>
+				<p>どんなことでもご相談をお受けいたします。下記のフォームよりお気軽にお問い合わせください。</p>
+				
+				<form action="#">
+					<p><label for="name">お名前（必須）</label><br>
+						<input type="text" name="name" id="name" required>
+					</p>
+					<p><label for="telephone">電話番号（必須）</label><br>
+						<input type="tel" name="telephone" id="telephone" required>
+					</p>
+					<p><label for="kind">お問い合わせ種類</label><br>
+					<select name="kind" id="kind">
+						<option value="0">商品について</option>
+						<option value="1">店舗について</option>
+						<option value="2">その他のお問い合わせ</option>
+					</select>
+					
+				</p>
+				<p> 
+					<label for="comment"> お問い合わせ内容</label><br>
+						<textarea  name="comment" id="comment"></textarea> 
+					
+				</p>
+				<p><input type="submit" value="確認する"></p>
+				</form>
+			</article>
+		</div>
+		<div id="sub">
+			<aside>
+				<div class="aside_box">
+					<a href="fish.html">
+						<dl>
+						<dt><img src="images/fish_btn.jpg" alt="取扱い観賞魚"></dt>
+						<dd>店舗で取り扱っている観賞魚の一部をご紹介します。</dd>
+						</dl>
+					</a>
+				</div>
+				<div class="aside_box">
+				<a href="contact.html">
+				<p><img src="images/contact_btn.png" alt="お問い合わせ"></p>
+				</a>
+				</div>
+			</aside>
+			
+		</div>
+		
+	</div>
+	<footer>
+		<div id="footer_box">
+		<p id="pagetop"><a href="#top">ページの先頭へ戻る</a></p>
+		<address>東京都新宿区X-X-X　ブルーライトビル1階　電話 03-XXX-5674</address>
+		<p id="copyright"><small>Copyright 2015 swim about fish All rights reserved.</small></p>
+		</div>
+	</footer>
+</body>
+</html>

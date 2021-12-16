@@ -1,0 +1,200 @@
+﻿@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 87.5%;
+	line-height: 1.5em;
+}
+p {
+	margin: 0 0 20px 0;
+}
+img {
+	border: 0;
+}
+a {
+	color: #333333;
+}
+a:hover {
+	color: #a24100;
+}
+header {
+	height: 120px;
+}
+header h1 a {
+	display: inline-block;
+}
+header h1 a img {
+	vertical-align: bottom;
+}
+#topicpath ul {
+	list-style-type: none;
+	margin-bottom: 30px;
+	padding: 0;
+}
+#topicpath ul li {
+	display: inline;
+	margin-right: 5px;
+}
+#topicpath ul li a {
+	padding-right: 15px;
+	background-image: url(../images/topicpath.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#contents {
+	overflow: hidden;
+}
+.bnr_box {
+	margin-bottom: 15px;
+}
+.bnr_box p, .bnr_box dl, .bnr_box dl dt, .bnr_box dl dd {
+	margin: 0;
+}
+.bnr_box dl dd {
+	text-align: center;
+}
+#pagetop {
+	margin-bottom: 0;
+	float: right;
+}
+#pagetop a {
+	display: block;
+	margin-bottom: 10px;
+	padding-left: 28px;
+	background-image: url(../images/pagetop.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+address {
+	padding-top: 15px;
+	border-top: 1px solid #cccccc;
+	clear: both;
+	font-style: normal;
+	text-align: center;
+}
+#copyright {
+	margin-bottom: 15px;
+	text-align: center;
+}
+#copyright small {
+	font-size: 100%;
+}
+#main h2 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	padding: 20px 0 12px 30px;
+	background-image: url(../images/h2_icon.png), url(../images/h2_bottom.png);
+	background-repeat: no-repeat, no-repeat;
+	background-position: 0 19px, left bottom;
+	color: #f26161;
+	font-size: 112.5%;
+	font-weight: bold;
+}
+#news h2 {
+	margin-bottom: 0;
+	padding-bottom: 20px;
+	background-position: left center, left bottom;
+}
+#graphic {
+	width: 852px;
+	margin: 0 auto 30px auto;
+}
+#graphic ul {
+	display: block;
+	list-style: none;
+	padding-left: 0;
+	position: relative;
+}
+#graphic ul li {
+	display: block;
+	opacity: 0;
+}
+#graphic ul li:nth-child(2),
+#graphic ul li:nth-child(3) {
+	position: absolute;
+	top: 0;
+}
+#graphic ul li:nth-child(1) {
+	position: relative;
+	z-index: 3;
+}
+#graphic ul li:nth-child(2) {
+	z-index: 2;
+}
+#graphic ul li:nth-child(3) {
+	z-index: 1;
+}
+#graphic ul li.now {
+	opacity: 1;
+}
+#graphic ul li.now:nth-child(1) {
+	z-index: 0;
+}
+#graphic ul li img {
+	vertical-align: bottom;
+}
+#news ul li time {
+	display: inline-block;
+	width: 160px;
+	font-weight: bold;
+	text-indent: 0;
+}
+.about_box p:last-child {
+	margin-bottom: 0;
+}
+.image_right {
+	margin: 0 0 20px 35px;
+	float: right;
+}
+table {
+	border-collapse: collapse;
+}
+table caption {
+	overflow: hidden;
+	text-align: left;
+}
+table caption p {
+	margin-bottom: 30px;
+}
+table tr th, table tr td {
+	padding: 15px;
+	border: 1px solid #cccccc;
+}
+table tr th:nth-child(2), table tr td:nth-child(2) {
+	width: 250px;
+}
+table tr th:nth-child(3), table tr td:nth-child(3) {
+	width: 120px;
+}
+table tr td:nth-child(3) {
+	text-align: right;
+}
+.products_box {
+	margin-top: 30px;
+	overflow: hidden;
+}
+.products_box figure img {
+	margin-bottom: 8px;
+}
+form p {
+	margin-bottom: 30px;
+}
+form p:nth-last-child(2) {
+	margin-bottom: 7px;
+}
+form p:last-child {
+	margin-bottom: 0;
+}
+input, textarea {
+	margin-top: 7px;
+}
+input[type="text"], input[type="email"], textarea {
+	border: 1px solid #cccccc;
+}
+textarea {
+	width: 420px;
+	height: 115px;
+	overflow-y: scroll;
+}

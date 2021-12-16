@@ -1,0 +1,133 @@
+﻿@charset "utf-8";
+
+/* 基本レイアウト ここから↓ */
+@import url(common.css);
+body{
+	background-color: #ffffff;
+	color: #333333;
+
+}
+header, nav, #topicpath, #contents, footer{
+	width: 852px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+header h1{
+	margin: 0;
+	padding-top: 47px;
+	text-align: left;
+}
+nav ul{
+	list-style: none;
+	margin: 0 0 20px 0;
+  padding-left: 0;
+  overflow: hidden;
+}
+nav ul li{
+	width: 213px;
+	float: left;
+}
+nav ul li a{
+	display: block;
+	height: 0;
+	padding-top: 55px;
+	overflow: hidden;
+
+}
+nav ul li#nav_about a{
+	background-image: url(../images/nav1.png);
+}
+nav ul li#nav_shop a{
+	background-image: url(../images/nav2.png);
+}
+nav ul li#nav_products a{
+	background-image: url(../images/nav3.png);
+}
+nav ul li#nav_mag a{
+	background-image: url(../images/nav4.png);
+}
+#main{
+	width: 580px;
+	float: left;
+}
+#sub{
+	width: 240px;
+	float: right;
+}
+footer{
+	padding-top: 30px;
+}
+#main h1{
+	margin: 0 0 30px 0;
+	padding: 30px 0 30px 0; 
+  background-image:url(../images/h1_head.gif),url(../images/h1_bottom.gif);
+  background-repeat: repeat-x,repeat-x;
+  background-position: left top, left bottom;
+  font-size: 156.25%;
+  text-align: center;
+}
+#about #nav_about a, #shop #nav_shop a, #products #nav_products a, #mag #nav_mag a, nav ul li a:hover{
+	background-position: 0 -55px;
+}
+
+/* 基本レイアウト ここまで↑ */
+
+/* トップページ ここから↓ */
+#news ul{
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 60px;
+	padding-left: 0;
+
+}
+#news ul li{
+	padding:20px 0 20px 160px;
+	border-bottom: 1px dotted #6c5f45;
+	text-indent: -160px;
+
+}  
+/* トップページ ここまで↑ */
+
+/* 「ショップについて」ページ ここから↓ */
+
+.about_box{
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.about_box:last-child{
+	margin-bottom: 0;
+
+} 
+/* 「ショップについて」ページ ここまで↑ */
+
+/* 「店舗案内」ページ ここから↓ */
+table thead tr{
+	background-color:#f26161;
+	color:#ffffff; 
+}
+table tbody tr:nth-child(even){
+	background-color:#f5f3f3;
+}
+
+/* 「店舗案内」ページ ここまで↑ */
+
+/* 「取扱商品」ページ ここから↓ */
+	.products_box figure{
+		width: 280px;
+		margin: 0	0	15px 20px;
+		float:left;
+	}
+	.products_box figure:first-child{
+		margin-left: 0;
+	}
+/* 「取扱商品」ページ ここまで↑ */
+
+/* 「メルマガ登録」ページ ここから↓ */
+input[type="text"]{
+	width:150px;
+}
+input[type="email"]{
+	width:280px;
+}
+/* 「メルマガ登録」ページ ここまで↑ */

@@ -1,0 +1,142 @@
+﻿@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 87.5%;
+}
+p {
+	margin: 0 0 25px 0;
+}
+img {
+	border: 0;
+	vertical-align: bottom;
+}
+a {
+	color: #333333;
+}
+a:hover {
+	color: #1a7597;
+}
+header h1 a {
+	display: inline-block;
+}
+#path_arrow ol {
+	list-style-type: none;
+	margin-bottom: 20px;
+	padding: 0;
+}
+#path_arrow ol li {
+	display: inline;
+}
+#path_arrow ol li a {
+	padding-right: 12px;
+	background-image: url("../images/path_arrow.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#contents {
+	overflow: hidden;
+}
+.aside_box {
+	margin-bottom: 25px;
+}
+.aside_box dt img {
+	margin-bottom: 6px;
+}
+.aside_box a {
+	text-decoration: none;
+}
+.aside_box dl, .aside_box dt, .aside_box dd, .aside_box p {
+	margin: 0;
+}
+footer #pagetop a {
+	margin-bottom: 20px;
+	padding-left: 20px;
+	background-image: url(../images/pagetop.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	text-decoration: none;
+}
+footer address {
+	padding-top: 20px;
+	font-style: normal;
+}
+footer #copyright {
+	padding-bottom: 20px;
+}
+footer #copyright small {
+	font-size: 100%;
+}
+#main h2 {
+	margin: 0;
+	padding: 0 0 25px 30px;
+	background-image: url(../images/h2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	font-size: 130%;
+	font-weight: bold;
+}
+#main_img {
+	width: 820px;
+	height: 350px;
+	margin: 0 auto 30px auto;
+}
+#main_img ul {
+	list-style: none;
+	padding-left: 0;
+}
+#main_img ul li {
+	display: none;
+	position: absolute;
+}
+#main_img ul li.now {
+	display: block;
+}
+#news ul li time {
+	display: inline-block;
+	width: 10em;
+	color: #26b6d4;
+	font-weight: bold;
+	text-indent: 0;
+}
+.concept_box p:last-child {
+	margin-bottom: 0;
+}
+.float_left {
+	margin: 0 25px 15px 0;
+	float: left;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+table caption {
+	text-align: left;
+	overflow: hidden;
+}
+table th, table td {
+	padding: 10px;
+	border: 1px solid #337d99;
+	font-weight: normal;
+}
+table thead th:first-child, table tbody th:first-child {
+	width: 160px;
+}
+.fish_box {
+	overflow: hidden;
+}
+form p {
+	color: #2cb8d6;
+	font-weight: bold;
+}
+input, select, textarea {
+	margin-top: 6px;
+}
+textarea {
+	width: 400px;
+	height: 130px;
+	overflow: scroll;
+	font-size: 100%;
+}

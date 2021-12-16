@@ -1,0 +1,59 @@
+﻿@charset "utf-8";
+
+header, nav, #pickup_box, #contents, footer #pagetop {
+	width: 450px;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+}
+#pickup_box {
+	height: 193px;
+	padding-top: 10px;
+}
+#pickup_box ul li img {
+	width: 450px;
+}
+#main {
+	width: auto;
+	float: none;
+}
+nav ul li#nav_facility,
+nav ul li#nav_admission,
+nav ul li#nav_astronomy,
+nav ul li#nav_contact {
+	width: 223px;
+	margin: 1px;
+	background-color: #525252;
+}
+nav ul li#nav_facility a,
+nav ul li#nav_admission a,
+nav ul li#nav_astronomy a,
+nav ul li#nav_contact a {
+	min-height: 22px;
+	margin-bottom: 0;
+	padding: 18px 0 18px 0;
+	background-image: none;
+	color: #ffffff;
+	text-decoration: none;
+	text-align: center;
+}
+nav ul li#nav_facility a:hover,
+nav ul li#nav_admission a:hover,
+nav ul li#nav_astronomy a:hover,
+nav ul li#nav_contact a:hover {
+	background-color: #3261c0;
+}
+#news ul li {
+	padding: 10px 0 10px 0;
+	text-indent: 0;
+}
+#news ul li time {
+	display: block;
+	width: auto;
+}
+#sub {
+	margin: 50px auto 10px auto;
+	float: none;
+}

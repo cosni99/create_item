@@ -1,0 +1,77 @@
+﻿@charset "utf-8";
+
+header, nav, #graphic_area, #contents {
+	width: 451px;
+}
+header h1 {
+	text-align: center;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+}
+#graphic_area {
+	height: 193px;
+	padding-top: 10px;
+}
+#graphic_area ul li img {
+	width: 451px;
+}
+#main {
+	width: auto;
+	float: none;
+}
+nav ul li#nav_about,
+nav ul li#nav_admission,
+nav ul li#nav_plants,
+nav ul li#nav_consultation {
+	width: 219px;
+	margin: 1px;
+	border: 2px solid #339900;
+}
+nav ul li#nav_about a,
+nav ul li#nav_admission a,
+nav ul li#nav_plants a,
+nav ul li#nav_consultation a {
+	min-height: 15px;
+	margin-bottom: 0;
+	padding: 15px 0 15px 0;
+	background-image: none;
+	color: #339900;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+}
+nav ul li#nav_about a:hover,
+nav ul li#nav_admission a:hover,
+nav ul li#nav_plants a:hover,
+nav ul li#nav_consultation a:hover {
+	background-color: #fffa9c;
+}
+#announce_area h2 {
+	margin-bottom: 0;
+}
+#announce_area ul li {
+	padding: 10px 0 10px 0;
+	text-indent: 0;
+}
+#announce_area ul li time {
+	display: block;
+	width: auto;
+	margin-bottom: 5px;
+}
+#sub {
+	margin-top: 50px;
+	margin-left: 10px;
+	float: none;
+}
+footer #pagetop {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer #information_area {
+	padding-left: 10px;
+	padding-right: 10px;
+}

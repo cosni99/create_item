@@ -1,0 +1,122 @@
+﻿@charset "utf-8";
+
+/* 基本レイアウト ここから↓ */
+@import "common.css";
+body{
+	line-height: 1.5;
+}
+header, nav, #path_level, #contents, footer #pagetop{
+	width: 840px;
+	margin-left: auto;
+	margin-right: auto;
+}
+nav ul{
+	list-style-type: none;
+	margin: 0 -12px 30px 0;
+	padding-left: 0;
+	overflow: hidden;
+}
+nav ul li{
+	width: 201px;
+	margin-right: 12px;
+	float: left;
+}
+nav ul li a{
+	display: block;
+	height: 0;
+	padding-top: 60px;
+	overflow: hidden;
+}
+nav ul li#nav_info a{background-image: url(../images/nav1.png);}
+nav ul li#nav_reserve a{background-image: url(../images/nav2.png);}
+nav ul li#nav_lineup a{background-image: url(../images/nav3.png);}
+nav ul li#nav_mailmagazine a{background-image: url(../images/nav4.png);}
+#main{
+	width: 570px;
+	float: left;
+}
+#sub{
+	width: 230px;
+	float: right;
+}
+footer #pagetop a{
+	display: block;
+	float: right;
+}
+footer #footer_inner{
+	clear: both;
+}
+#main h1{
+	margin: 0 0 25px 0 ;
+	padding: 10px 0 10px 30px;
+	background-image: url(../images/h1_head.png), url(../images/h1_foot.png);
+	background-repeat: no-repeat, repeat-x ;
+	background-position: left top , left bottom ;
+	font-size: 1.7em;
+}
+#info #nav_info a, #reserve #nav_reserve a, #lineup #nav_lineup a, #mailmagazine #nav_mailmagazine a, nav ul li a:hover{
+	background-position: 0 -60px;
+}
+/* 基本レイアウト ここまで↑ */
+
+/* トップページ ここから↓ */
+#news ul{
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	border-top: 1px dotted #6b4636;
+}
+#news ul li{
+	padding: 0.9em 0 0.9em 9.5em;
+	border-bottom: 1px dotted #6b4636;
+	text-indent: -9.5em;
+}
+
+/* トップページ ここまで↑ */
+
+/* 「ご案内」ページ ここから↓ */
+.section_area{
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+.section_area:last-child{
+	margin-bottom: 0;
+}
+
+
+/* 「ご案内」ページ ここまで↑ */
+
+/* 「ケーキのご予約」ページ ここから↓ */
+table thead{
+	background: #e08c81;
+}
+table tbody tr:nth-child(even){
+	background: #f3d8d3;
+}
+
+
+/* 「ケーキのご予約」ページ ここまで↑ */
+
+/* 「商品ラインナップ」ページ ここから↓ */
+.lineup_area figure{
+	width: 270px;
+	margin: 0 30px 30px 0;
+	float: left;
+}
+.lineup_area figure:nth-child(2n){
+	margin-right: 0;
+}
+.lineup_area figcaption{
+	text-align: center;
+}
+
+
+/* 「商品ラインナップ」ページ ここまで↑ */
+
+/* 「メルマガ登録」ページ ここから↓ */
+input[required]{
+	width: 250px;
+	background: #fff8df;
+}
+
+/* 「メルマガ登録」ページ ここまで↑ */
