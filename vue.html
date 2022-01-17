@@ -1,0 +1,26 @@
+
+javascriptフレームワークvuejsを使ったDOM操作例<br>
+
+<div id="app-5">
+  <p>{{ message }}</p>
+  <input v-model="message"><br>
+  <button v-on:click="reverseMessage">メッセージ反転</button>
+</div>
+
+<!--vuejs CDN読み込み-->
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+<!--操作プログラム-->
+<script>
+  var app5 = new Vue({
+  el: '#app-5',
+  data: {
+    message: 'ここに入力された文字がでます。'
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
+</script>
